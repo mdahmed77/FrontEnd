@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/developmentDetail.css" />
+    <title>Property Detail | AllRize</title>
+  </head>
+
+  <body>
+    <header class="ar-header">
+      <div class="container-fluid p-0">
+        <div class="flex-wrapper">
+          <a href="#" class="ar-brand">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <div class="navs">
+            <a href="#">Buy</a>
+            <a href="#">Rent</a>
+            <a href="#">Sell</a>
+            <div class="drop">
+              <button>
+                AllRize Exclusive <i class="far fa-angle-down"></i>
+              </button>
+              <div class="drop-items">
+                <a href="#"> Private Exclusives </a>
+                <a href="#">Coming Soon</a>
+                <a href="#">AllRize Listings</a>
+              </div>
+            </div>
+            <a href="#">New Development</a>
+            <div class="drop">
+              <button>Agents <i class="far fa-angle-down"></i></button>
+              <div class="drop-items">
+                <a href="#">Find an Agent</a>
+                <a href="#">Join as an Agent</a>
+              </div>
+            </div>
+            <div class="userNavs">
+              <div class="drop">
+                <button>Saved Items <i class="far fa-angle-down"></i></button>
+                <div class="drop-items">
+                  <a href="#">Collection</a>
+                  <a href="#">Saved Searches</a>
+                  <a href="#">Saved Buildings</a>
+                </div>
+              </div>
+              <div class="drop">
+                <button><i class="fal fa-user"></i></button>
+                <div class="drop-items open-left">
+                  <a href="#">Account Settings</a>
+                  <a href="#">Email Settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="gallary">
+            <div class="carousel slide" id="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a
+                    data-fancybox="gallary"
+                    href="assets/images/room.jpg"
+                    class="img-holder"
+                  >
+                    <img
+                      src="assets/images/room.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a
+                    data-fancybox="gallary"
+                    href="assets/images/after.jpg"
+                    class="img-holder"
+                  >
+                    <img
+                      src="assets/images/after.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a
+                    data-fancybox="gallary"
+                    href="assets/images/skyscrappers.jpg"
+                    class="img-holder"
+                  >
+                    <img
+                      src="assets/images/skyscrappers.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="gallary-controls">
+                <div class="scrollable">
+                  <ul class="carousel-indicators">
+                    <li
+                      data-target="#carousel"
+                      data-slide-to="0"
+                      class="active"
+                    >
+                      <img
+                        src="assets/images/room.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </li>
+                    <li data-target="#carousel" data-slide-to="1">
+                      <img
+                        src="assets/images/after.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </li>
+                    <li data-target="#carousel" data-slide-to="2">
+                      <img
+                        src="assets/images/skyscrappers.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="controls">
+                  <button class="btn btn-box" id="view-gallary">
+                    <i class="fal fa-images"></i>
+                    <span>View All</span>
+                  </button>
+                  <button class="btn btn-box" id="view-map">
+                    <i class="fal fa-map"></i>
+                    <span>Map</span>
+                  </button>
+                  <button class="btn btn-box" id="view-street">
+                    <i class="fal fa-street-view"></i>
+                    <span>Street View</span>
+                  </button>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev hide-after"
+                href="#"
+                role="button"
+              >
+                <i class="far fa-angle-left"></i>
+              </a>
+              <a
+                class="carousel-control-next hide-after"
+                href="#"
+                role="button"
+              >
+                <i class="far fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="description">
+            <p>
+              Charlotte of the Upper West Side is a sanctuary of wellness and
+              sustainability in the heart of a beloved and historic Upper West
+              Side neighborhood. Its seven full-floor residences artfully
+              combine the highest level craftsmanship and finest materials with
+              innovative wellness features and top-tier systems in every
+              category.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 pt-3">
+          <div class="sliding-card">
+            <span>BUILDING</span>
+            <h6>Charlotte of the Upper West Side</h6>
+            <p>470 Columbus Avenue, <a href="#">Manhattan, NY 10024</a></p>
+            <hr />
+            <ul class="bulleted-list">
+              <li><a href="#">Condo</a> in <a href="#">Upper West Side</a></li>
+              <li>7 Units, 8 Stories</li>
+              <li><a href="#">4 Active Sales</a></li>
+              <li>Built in 2021, New Development</li>
+              <li>Elevator</li>
+              <li>Full-Time Doorman</li>
+              <li>Pets Allowed</li>
+            </ul>
+            <hr />
+            <a href="#">View available floor plans</a> <br />
+            <a href="#">Visit building website</a>
+            <hr />
+            <div class="btns">
+              <button class="btn btn-default">
+                <i class="fal fa-heart"></i> Save
+              </button>
+              <button class="btn btn-outline">
+                <i class="far fa-share"></i> Share
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h3>Units</h3>
+          <div class="relative-container">
+            <div class="flexed bb2">
+              <ul class="nav nav-pills m-0">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#alisting"
+                    >Active Listings</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#psales"
+                    >Past Sales</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#prentals"
+                    >Past Rentals</a
+                  >
+                </li>
+              </ul>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Filter by unit or tier/line"
+              />
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="alisting">
+                <div class="flexed bb1">
+                  <h6>Sales ( 4 )</h6>
+                  <p>
+                    <i class="far fa-search"></i>
+                    <a href="#">View 4 Sales in search</a>
+                  </p>
+                </div>
+                <table class="table m-0">
+                  <thead>
+                    <tr>
+                      <td>Unit</td>
+                      <td>Status</td>
+                      <td>Price <span>$12,123,412 Avg.</span></td>
+                      <td>Price/Sq. Ft. <span>$3,402/sf Avg.</span></td>
+                      <td>Bd</td>
+                      <td>Ba</td>
+                      <td>Sq. Ft.</td>
+                      <td>Floor Plan</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="#">470 Columbus Ave - #PH1</a>
+                        <span>Listed By Compass</span>
+                      </td>
+                      <td>Contract Signed</td>
+                      <td>$11,260,000</td>
+                      <td>$3,154/sf</td>
+                      <td>4</td>
+                      <td>4.5</td>
+                      <td>3,570</td>
+                      <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">470 Columbus Ave - #PH1</a>
+                        <span>Listed By Compass</span>
+                      </td>
+                      <td>Contract Signed</td>
+                      <td>$11,260,000</td>
+                      <td>$3,154/sf</td>
+                      <td>4</td>
+                      <td>4.5</td>
+                      <td>3,570</td>
+                      <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">470 Columbus Ave - #PH1</a>
+                        <span>Listed By Compass</span>
+                      </td>
+                      <td>Contract Signed</td>
+                      <td>$11,260,000</td>
+                      <td>$3,154/sf</td>
+                      <td>4</td>
+                      <td>4.5</td>
+                      <td>3,570</td>
+                      <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">470 Columbus Ave - #PH1</a>
+                        <span>Listed By Compass</span>
+                      </td>
+                      <td>Contract Signed</td>
+                      <td>$11,260,000</td>
+                      <td>$3,154/sf</td>
+                      <td>4</td>
+                      <td>4.5</td>
+                      <td>3,570</td>
+                      <td><a href="#">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">470 Columbus Ave - #PH1</a>
+                        <span>Listed By Compass</span>
+                      </td>
+                      <td>Contract Signed</td>
+                      <td>$11,260,000</td>
+                      <td>$3,154/sf</td>
+                      <td>4</td>
+                      <td>4.5</td>
+                      <td>3,570</td>
+                      <td><a href="#">View</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="psales">
+                <p class="text-center p-3">No List</p>
+              </div>
+              <div class="tab-pane" id="prentals">
+                <p class="text-center p-3">No List</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <h3>Building Amenities</h3>
+          <div class="row">
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Central AC</li>
+                <li>Elevator</li>
+                <li>Full-Time Doorman</li>
+                <li>Golf Room</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Gym</li>
+                <li>Laundry in Every Unit</li>
+                <li>Pet Spa</li>
+                <li>Private Storage Included</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <h3>Building Policies <small>UPDATED 06/29/2021</small></h3>
+          <h5>General Policies</h5>
+          <ul class="bulleted-list">
+            <li>Pet Policy: <strong>Pets Allowed</strong></li>
+          </ul>
+          <p class="text-muted mt-3">
+            Policies are subject to change at the discretion of building
+            management and may not apply to renters.
+          </p>
+          <hr />
+          <h3>Building Facts</h3>
+          <h5>Building Overview</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Property Type: <strong>Condo</strong></li>
+                <li>Building Size: <strong>Lowrise</strong></li>
+                <li>Access: <strong>Elevator</strong></li>
+                <li>Service Level: <strong>Full-Time Doorman</strong></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Year Built: <strong>2021</strong></li>
+                <li>Building Era: <strong>New Development</strong></li>
+                <li>Architect: <strong>BKSK</strong></li>
+                <li>Developer: <strong>Roe Corporation</strong></li>
+              </ul>
+            </div>
+          </div>
+          <h5>Size & Dimensions</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Units: <strong>7</strong></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Stories: <strong>8</strong></li>
+              </ul>
+            </div>
+          </div>
+          <h5>Zoning & Use</h5>
+          <ul class="bulleted-list">
+            <li>Total Units: <strong>7</strong></li>
+          </ul>
+          <h5>Location Details</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Neighborhood: <strong>Upper West Side</strong></li>
+                <li>Borough: <strong>Manhattan</strong></li>
+                <li>City: <strong>Manhattan</strong></li>
+                <li>State: <strong>NY</strong></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="bulleted-list">
+                <li>Street Address: <strong>470 Columbus Avenue</strong></li>
+                <li>Zip Code: <strong>10024</strong></li>
+                <li>
+                  Building Name:
+                  <strong>Charlotte of the Upper West Side</strong>
+                </li>
+                <li>Complex Name: <strong>-</strong></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <h3>Listing Agents</h3>
+          <div class="agent-slip">
+            <div class="agent">
+              <div class="img-holder">
+                <img src="assets/images/person.png" alt="" />
+              </div>
+              <div class="text">
+                <a href="#">Sofia Zen</a>
+                <h6>Listing Agent</h6>
+                <h6>RizeRealty</h6>
+              </div>
+            </div>
+            <div class="creds">
+              <a href="mailto:abc@someone.com">sofiazen@example.com</a>
+              <p>P: (718) 123-4321</p>
+            </div>
+          </div>
+          <div class="agent-slip">
+            <div class="agent">
+              <div class="img-holder">
+                <img src="assets/images/person.png" alt="" />
+              </div>
+              <div class="text">
+                <a href="#">Sofia Zen</a>
+                <h6>Listing Agent</h6>
+                <h6>RizeRealty</h6>
+              </div>
+            </div>
+            <div class="creds">
+              <a href="mailto:abc@someone.com">sofiazen@example.com</a>
+              <p>P: (718) 123-4321</p>
+            </div>
+          </div>
+          <div class="agent-slip">
+            <div class="agent">
+              <div class="img-holder">
+                <img src="assets/images/person.png" alt="" />
+              </div>
+              <div class="text">
+                <a href="#">Sofia Zen</a>
+                <h6>Listing Agent</h6>
+                <h6>RizeRealty</h6>
+              </div>
+            </div>
+            <div class="creds">
+              <a href="mailto:abc@someone.com">sofiazen@example.com</a>
+              <p>P: (718) 123-4321</p>
+            </div>
+          </div>
+          <hr />
+          <h3>3D Flyover</h3>
+          <div class="video-holder">
+            <iframe
+              src="https://player.vimeo.com/video/607956858"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 py-3">
+          <div class="sliding-card">
+            <span>BUILDING</span>
+            <h6>Charlotte of the Upper West Side</h6>
+            <p>470 Columbus Avenue, <a href="#">Manhattan, NY 10024</a></p>
+            <hr />
+            <ul class="bulleted-list">
+              <li><a href="#">Condo</a> in <a href="#">Upper West Side</a></li>
+              <li>7 Units, 8 Stories</li>
+              <li><a href="#">4 Active Sales</a></li>
+              <li>Built in 2021, New Development</li>
+              <li>Elevator</li>
+              <li>Full-Time Doorman</li>
+              <li>Pets Allowed</li>
+            </ul>
+            <hr />
+            <a href="#">View available floor plans</a> <br />
+            <a href="#">Visit building website</a>
+            <hr />
+            <div class="btns">
+              <button class="btn btn-default">
+                <i class="fal fa-heart"></i> Save
+              </button>
+              <button class="btn btn-outline">
+                <i class="far fa-share"></i> Share
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <div class="guide">
+            <div class="row no-gutters">
+              <div class="col-lg-6 col-12">
+                <img
+                  src="assets/images/westside-thumb.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="text-block h-100 d-flex justify-content-center">
+                  <h2>Upper West Side</h2>
+                  <p>
+                    A cultural enclave with edge. Nestled between Riverside and
+                    Central Park, the Upper West Side is one of the greenest
+                    parts of Manhattan. The Upper West Side is known for popular
+                    attractions like the Natural History Museum and Lincoln
+                    Center, but relaxed bistros and a lively bar scene defy
+                  </p>
+                  <div class="d-flex">
+                    <a href="#" class="mr-3">Upper West Side Guide</a>
+                    <a href="#">All Neigbhorhood</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="ar-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <div class="finfo">
+              <a href="#" class="f-logo">
+                <img src="assets/images/logo.png" alt="" />
+              </a>
+              <p>
+                Lorem ipsum doler siet dummy text using for the dummy content
+                here you can use any text later for here.
+              </p>
+              <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-medium-m"></i></a>
+              </div>
+              <div class="copy">
+                &copy; Copyright 2021 - 2022 All Rights Reserved.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12">
+            <div class="row">
+              <div class="col-6">
+                <h4>Company</h4>
+                <div class="quick-links">
+                  <a href="#"> About Us </a>
+                  <a href="#"> Team </a>
+                  <a href="#"> Investors </a>
+                  <a href="#"> Careers </a>
+                  <a href="#"> Contact Us </a>
+                  <a href="#"> Offices </a>
+                  <a href="#"> Agent Experience </a>
+                  <a href="#"> Newsroom </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <h4>Explore</h4>
+                <div class="quick-links">
+                  <a href="#">Concierge</a>
+                  <a href="#">Bridge Loan Services</a>
+                  <a href="#">Private Exclusives</a>
+                  <a href="#">Alirez Coming Soon</a>
+                  <a href="#">Find an Agent</a>
+                  <a href="#">Mortgage Calculator</a>
+                  <a href="#">Alirez Academy</a>
+                  <a href="#">Alirez Cares</a>
+                  <a href="#">Neighborhood Guides</a>
+                  <a href="#">New Development</a>
+                  <a href="#">Commercial</a>
+                  <a href="#">Sports & Entertainment</a>
+                  <a href="#">Market Research</a>
+                  <a href="#">Collections</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="newsletter widget">
+              <h4>Newsletter</h4>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-default mt-3">Submit</button>
+              </div>
+            </div>
+            <div class="apps widget mt-4">
+              <h4>Mobile Apps</h4>
+              <div class="d-flex">
+                <a href="#">
+                  <img src="assets/images/playstore.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="assets/images/appstore.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="fullscreen">
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24842.390000877258!2d-76.98746929674532!3d38.89428304436249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1618738643516!5m2!1sen!2s"
+        allowfullscreen=""
+      ></iframe>
+      <iframe
+        class="street"
+        src="https://www.google.com/maps/embed?pb=!4v1633195900124!6m8!1m7!1sRyg7HEVToRr3ObglC3OPqg!2m2!1d40.7541530943971!2d-73.97068171429237!3f30.013935796144963!4f1.9363875104878048!5f0.7820865974627469"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="switch">
+        <div class="s-map"><i class="fal fa-map"></i> Map</div>
+        <div class="s-street"><i class="fal fa-street-view"></i> Street</div>
+      </div>
+      <div class="close-map"><i class="far fa-times"></i> Close</div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/hammer.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#view-gallary").on("click", function () {
+          $(".gallary .carousel-item.active > a").click();
+        });
+        $("#view-map").on("click", function () {
+          $(".fullscreen").addClass("open open-map");
+          $(".fullscreen").removeClass("open-street");
+          $(".switch .s-map").addClass("active");
+          $(".switch .s-street").removeClass("active");
+        });
+        $("#view-street").on("click", function () {
+          $(".fullscreen").addClass("open open-street");
+          $(".fullscreen").removeClass("open-map");
+          $(".switch .s-street").addClass("active");
+          $(".switch .s-map").removeClass("active");
+        });
+        $(".fullscreen .close-map").on("click", function () {
+          $(".fullscreen").removeClass("open open-street open-map");
+        });
+
+        $(".switch .s-map").on("click", function () {
+          $(".fullscreen").addClass("open-map");
+          $(".fullscreen").removeClass("open-street");
+          $(".switch .s-map").addClass("active");
+          $(".switch .s-street").removeClass("active");
+        });
+        $(".switch .s-street").on("click", function () {
+          $(".fullscreen").addClass("open-street");
+          $(".fullscreen").removeClass("open-map");
+          $(".switch .s-street").addClass("active");
+          $(".switch .s-map").removeClass("active");
+        });
+
+        if ($(".fullscreen").hasClass("open")) {
+          $("html").css("overflow-y", "hidden");
+        }
+      });
+      $(function ($, window, document) {
+        "use strict";
+
+        var $slider = $("#carousel"),
+          hammer = new Hammer($slider.get(0));
+        $slider.find("img").each((index, elem) => {
+          $(elem).prop("draggable", false);
+        });
+        $slider.carousel();
+        $slider.find(".carousel-control-prev").click((e) => {
+          e.preventDefault();
+          $slider.carousel("prev");
+        });
+        $slider.find(".carousel-control-next").click((e) => {
+          e.preventDefault();
+          $slider.carousel("next");
+        });
+        hammer.on("panleft panright", (e) => {
+          e.preventDefault();
+
+          if (e.type == "panleft") {
+            $slider.carousel("next");
+          }
+
+          if (e.type == "panright") {
+            $slider.carousel("prev");
+          }
+        });
+        $slider.find(".carousel-indicators li").click((e) => {
+          $slider.carousel($(e.target).data("slide-to"));
+        });
+      })(jQuery, window, document);
+    </script>
+  </body>
+</html>

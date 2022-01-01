@@ -1,0 +1,179 @@
+.app-data
+{
+    padding:22px 15px;
+    display: flex;
+    background-color:#F7F7F7;
+    position: relative;
+    z-index: 5;
+    
+    @media(max-width:991px)
+    {
+        padding:22px 15px 46px;
+        > .d-flex
+        {
+            flex-direction: column;
+        }
+    }
+    .img-holder
+    {
+        margin-bottom:5px;
+    }
+    .text
+    {
+        margin:0px 14px 0px 13px;
+        flex-grow: 1;
+        h5
+        {
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: -0.30000001192092896px;
+            color:$atext;
+            margin:0px 0px 6px;
+            @media(max-width:991px)
+            {
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                width: calc(100vw - 142px);
+                white-space: nowrap;
+            }
+        }
+        h6
+        {
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.30000001192092896px;
+            color:$btext;   
+            margin:0px 0px 8px;
+        }
+        p
+        {
+
+            @media(max-width:991px)
+            {
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                width: calc(100vw - 142px);
+                white-space: nowrap;
+            }
+        }
+    }
+    .more
+    {
+        position:absolute;
+        bottom:10px;
+        right:15px;
+    }
+    .actions
+    {
+        text-align: right;
+        min-width: 180px;
+        position: relative;
+        span
+        {
+            color:$blue;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.30000001192092896px;
+            text-align: left;
+            display:inline-block;
+            margin-right: 10px;
+        }
+    }
+    p
+    {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.30000001192092896px;
+        text-align: left;
+        margin:0px 0px 5px;
+    }
+}
+.counters
+{
+    @media (max-width:991px) {
+       position: absolute;
+       bottom:10px;
+       left:15px; 
+    }
+    span
+    {
+        font-size: 12px;
+    }
+}
+.install-btn
+{
+    color:#fff;
+    background: $blue;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    text-align: left;
+    height: 36px;
+    @media (max-width:991px) {    
+        width: calc(100vw - 142px);
+        text-align: center;
+        margin:10px 0px 0px 15px;
+    }
+    .fa-download
+    {
+        opacity: .45;
+        margin-right: 5px;
+    }
+    .fa-chevron-down
+    {
+        margin-left:5px;
+    }
+}
+.public
+{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin:8px 0px;
+    strong
+    {
+        color:$atext;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .fa-star
+    {
+        color:#f4b61e;
+        font-size: 12px;
+        margin:0px 5px;
+    }
+    span ~ span
+    {
+        &::before
+        {
+            display: none;
+        }
+    }
+    img
+    {
+        margin-left:5px;
+    }
+    a
+    {
+        color:$blue;
+    }
+}

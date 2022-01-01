@@ -1,0 +1,691 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <title>Veriheal | MMJ Doctor</title>
+
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+   <link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/new-home.css">   
+   <link rel="stylesheet" type="text/css" href="css/state.css">   
+
+   <style>
+
+      .hero-banner.m-less
+      {
+         padding-top:60px !important;
+      }
+      .hero-banner.m-less .state-drop
+      {
+         margin-bottom:0px !important;
+      }
+      .hero-banner.m-less .thumb-img img
+      {
+         width: auto;
+      }
+      .hero-banner.m-less .hero-text h1,
+      .hero-banner.m-less .hero-text h1 span
+      {
+         font-size: 40px;
+      }
+      #mmj-appiontment {
+         background: url(images/oppointment-bg.jpg) no-repeat;
+         background-size: cover;
+         background-position: 10% 100%;
+         padding:70px 0px;
+         position: relative;
+      }
+      #mmj-appiontment .text-box{
+         padding:40px;
+         position: relative;
+      }
+      #mmj-appiontment .text-box h2
+      {
+         font-size: 24px;
+         font-family: 'Museo_Slab';
+         color:#000032;
+         margin:0px 0px 20px;
+      }
+      #mmj-appiontment .text-box p
+      {
+         font-size: 18px;
+         margin:0px;
+         color:#4e4e4e;
+      }
+      #mmj-appiontment .text-box p ~ p
+      {
+         margin-top:20px;
+      }
+      #mmj-appiontment .text-box .plus-img
+      {
+         position: absolute;
+         bottom: 0;
+         left: -64px;
+         height: auto;
+         width: auto;
+         transform: translateY(50%);
+      }
+      @media(max-width:991px)
+      {
+         #mmj-appiontment
+         {
+            padding:40px 0px;
+         }
+         #mmj-appiontment::after
+         {
+            position: absolute;
+            top:0px;
+            left:0px;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            content:"";
+            opacity: .7;
+         }   
+         #mmj-appiontment .container
+         {
+            position: relative;
+            z-index: 1;
+
+         }
+         #mmj-appiontment .text-box
+         {
+            padding:0px
+         }   
+         #mmj-appiontment .text-box h2
+         {
+            margin-bottom: 15px;
+         }
+         #mmj-appiontment .text-box p ~ p
+         {
+            margin-top:12px
+         }
+         #mmj-appiontment .text-box p
+         {
+            font-size: 14px;
+            font-weight: 600;
+         }
+         #mmj-appiontment .text-box ~ .text-box
+         {
+            margin-top:20px;
+         }
+         #mmj-appiontment .text-box .plus-img   
+         {
+            display: none;
+         }
+      }
+
+      .text-only
+      {
+         padding:70px 0px 80px;
+      }
+      .text-only h1
+      {
+         font-size:40px;
+         color:#51beb0;
+         font-family: 'Museo_Slab';
+         margin-bottom:30px;
+      }
+      .text-only p
+      {
+         margin:0px;
+         font-size: 18px;
+         color:#79797b;
+         max-width: 950px;
+         margin:0 auto;
+         display: block;
+
+      }
+      .text-only p ~ p
+      {
+         margin-top:20px;
+      }
+      .video-review .video-holder
+      {
+         padding-top:0px;
+      }
+
+      .superior
+      {
+         position: relative;
+      }
+      .superior::after
+      {
+         width: 120px;
+         height: 4px;
+         background-color: #51beb0;
+         content:"";
+         position: absolute;
+         left:50%;
+         bottom:0px;
+         transform: translateX(-50%);
+      }
+
+
+
+      .pricing-pod
+      {
+         width:475px;
+         padding:50px;
+         border-radius:10px;
+         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+         margin:15px;
+      }
+      .pricing-pod .hyper-text
+      {
+         color:#51beb0;
+         font-size: 16px;
+         font-family: 'Museo_Slab';
+      }
+      .pricing-pod h2
+      {
+         color:#000032;
+         font-size: 34px;
+         font-family: 'Museo_Slab';
+         margin:0px;
+      }
+      .pricing-pod h2 small
+      {
+         color:#51beb0;
+         font-size: 16px;
+         font-family: 'Museo_Slab';
+      }
+
+      .pricing-pod .h-divider
+      {
+         width: 120px;
+         height: 4px;
+         background-color: #51beb0;
+         display: inline-block;
+         margin:30px 0px;
+      }
+      .pricing-pod .pod-services li
+      {
+         display: flex;
+         align-items: center;
+      }
+      .pricing-pod .pod-services li ~ li
+      {
+         margin-top:30px
+      }
+      .pricing-pod .pod-services i
+      {
+         margin-right: 20px;
+         font-size: 24px;
+         color:#51beb0;
+      }
+      .pricing-pod .state-drop
+      {
+         margin-top:50px;
+         position: relative;
+         left: 50%;
+         transform: translateX(-50%);
+         margin:50px auto 0px;
+      }
+
+      .mbottom
+      {
+         margin-bottom: 80px;
+      }
+      .mtop
+      {
+         margin-top: 80px;
+      }
+      @media(max-width:900px)
+      {
+         .pp-holder
+         {
+            flex-direction: column;
+            align-items: center;
+         }
+      }
+      @media(max-width:576px)
+      {
+         .pp-holder .pricing-pod
+         {
+            width: 100%;
+            padding:35px 20px;
+         }
+         .pp-holder .pricing-pod h2
+         {
+            font-size: 24px;
+         }
+         .pp-holder .pricing-pod .state-drop
+         {
+            margin-top:15px;
+         }
+         .pp-holder .pricing-pod .pod-services li ~ li
+         {
+            margin-top:10px;
+         } 
+         .pp-holder .pricing-pod .pod-services li i 
+         {
+            margin-right: 10px;
+            font-size: 16px;
+         }
+      }
+   </style>
+
+
+</head>
+
+<body>
+
+   <!-- Header Start -->
+   <header class="site-header">
+      <div class="topbar d-none d-lg-block">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6">
+                  <ul class="socials simples">
+                     <li><a href="#."> <i class="fab fa-facebook-f"></i> </a></li>
+                     <li><a href="#."> <i class="fab fa-instagram"></i> </a></li>
+                     <li><a href="#."> <i class="fab fa-twitter"></i> </a></li>
+                     <li><a href="#."> <i class="fab fa-youtube"></i> </a></li>
+                     <li><a href="#."> <i class="fab fa-linkedin-in"></i> </a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                  <div class="btn-group drop-drown">
+                     <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Login
+                     </button>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Patient Login</a>
+                        <a class="dropdown-item" href="#">Doctor Login</a>
+                        <a class="dropdown-item" href="#">Dispensary Login</a>
+                        <a class="dropdown-item" href="#">Partner Login</a>
+                     </div>
+                  </div>
+                  <div class="btn-group drop-drown">
+                     <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Contact
+                     </button>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Patient Login</a>
+                        <a class="dropdown-item" href="#">Doctor Login</a>
+                        <a class="dropdown-item" href="#">Dispensary Login</a>
+                        <a class="dropdown-item" href="#">Partner Login</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide">
+         <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="site brand"></a>
+
+            <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse justify-content-md-end">
+               <ul class="navbar-nav navbar-mobile mr-0">
+                  <li class="nav-item mobile-showing"><a class="nav-link" href="#">Login</a></li>
+                  <li class="nav-item mobile-showing border-mobile"><a class="nav-link" href="#">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">MMJ Doctors</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Dispensaries</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Cannabis Central</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Personalized Consult</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                  <li class="nav-item mobile-showing border-mobile">&nbsp;</li>
+                  <li class="nav-item mobile-showing">
+                     <ul class="socials mb-30">
+                        <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                        <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                        <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+                     </ul>
+                  </li>
+               </ul>
+
+            </div>
+
+            <div class="btn-group drop-drown mobile-showing">
+               <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <i class="far fa-user"></i>
+               </button>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Patient Login</a>
+                  <a class="dropdown-item" href="#">Doctor Login</a>
+                  <a class="dropdown-item" href="#">Dispensary Login</a>
+                  <a class="dropdown-item" href="#">Partner Login</a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="bsnav-mobile">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar"></div>
+      </div>
+
+   </header>
+   <!-- Header Ends -->
+
+
+   <section id="ourhome" class="main-banner hero-banner m-less">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12 text-sm-center text-center text-md-center text-lg-left">
+               <div class="hero-text">
+                  <h1><span>Meet With a Medical</span>Marijuana Doctor</h1>
+                  <p>Applying for your medical marijuana card is easier than ever. Just book an appointment. Talk to a doctor. And get your card. Bing. Bam. Boom.</p>
+                  <div class="state-drop">
+                     <select name="sst" id="">
+                        <option value="select" selected="" disabled="">Select Your State</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-5 col-md-12 d-flex d-md-flex flex-column-reverse d-sm-none">
+               <div class="thumb-img d-none d-lg-block">
+                  <img alt="" src="images/daagdaar.png">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- mmj Doctor appointment -->
+   <section id="mmj-appiontment">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-md-9 col-md-10 col-12 offset-lg-4 offset-lg-3 offset-md-2">
+               <div class="text-box">
+                  <img class="plus-img" src="images/axis.png" alt="">
+                  <h2>Our appointments are a breeze. </h2>
+                  <p>Just provide a basic medical history, and we’ll set you up with a licensed marijuana doctor. You’ll have a brief talk in-person or over video, depending where you live. </p>
+                  <p>Tell them what’s wrong and ask questions about treatment, like: what to use; how to use it; where to get it.</p>
+               </div>
+               <div class="text-box">
+                  <h2>These doctors are the real deal.</h2>
+                  <p>Every one of our doctors is licensed in the state(s) they practice in. So they can certify patients for medical marijuana cards—legally.</p>
+                  <p>Our doctors are also 100% HIPAA compliant. When it comes to retrieving and storing patient data, PHI & EHR, we do so in the safest and securest way possible.   </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- mmj Doctor appointment End -->
+
+   <section class="text-only text-center">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <h1>Your card is on its way</h1>
+               <p>Every one of our doctors is licensed in the state(s) they practice in. So they can certify patients for medical marijuana cards—legally.</p>
+               <p>Our doctors are also 100% HIPAA compliant. When it comes to retrieving and storing patient data, PHI & EHR, we do so in the safest and securest way possible.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="video-review mbottom">
+      <div class="video-banner">
+         <h1>Still not sure about the process?</h1>
+         <p>Watch this video to learn more about getting a medical marijuana card in New Jersey.</p>
+         <div class="video-holder">
+            <div class="contain">
+               <iframe src="https://www.youtube.com/embed/bJkhPD3hZu0" frameborder="0"></iframe>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="placetaker"></div>
+
+         <div class="pp-holder d-flex justify-content-center mtop">
+            <div class="pricing-pod">
+               <span class="hyper-text">"Just For You"</span>
+               <h2>Individual Package</h2>
+               <h2>$199 / <small>Per Year</small></h2>
+               <div class="h-divider"></div>
+               <ul class="pod-services">
+                  <li><i class="far fa-check-circle"></i> One MMJ Recommendation</li>
+                  <li><i class="far fa-check-circle"></i> One Marijuana Consultation</li>
+                  <li><i class="far fa-check-circle"></i> One Digital MMJ Certification</li>
+                  <li><i class="far fa-check-circle"></i> New Patients & Renewals</li>
+                  <li><i class="far fa-check-circle"></i> 24/7 Dispensary Verification</li>
+                  <li><i class="far fa-check-circle"></i> 100% Money-Back Guarantee</li>
+               </ul>
+               <div class="state-drop">
+                  <select name="sst" id="">
+                     <option value="select" selected="" disabled="">Select Your State</option>
+                  </select>
+               </div>
+            </div>
+            <div class="pricing-pod">
+               <span class="hyper-text">"Just For You"</span>
+               <h2>Individual Package</h2>
+               <h2>$199 / <small>Per Year</small></h2>
+               <div class="h-divider"></div>
+               <ul class="pod-services">
+                  <li><i class="far fa-check-circle"></i> One MMJ Recommendation</li>
+                  <li><i class="far fa-check-circle"></i> One Marijuana Consultation</li>
+                  <li><i class="far fa-check-circle"></i> One Digital MMJ Certification</li>
+                  <li><i class="far fa-check-circle"></i> New Patients & Renewals</li>
+                  <li><i class="far fa-check-circle"></i> 24/7 Dispensary Verification</li>
+                  <li><i class="far fa-check-circle"></i> 100% Money-Back Guarantee</li>
+               </ul>
+               <div class="state-drop">
+                  <select name="sst" id="">
+                     <option value="select" selected="" disabled="">Select Your State</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+         
+         <div class="text-only text-center superior">
+            <h1>No surprises here.</h1>
+            <p>Both fees listed are your only doctor payments. There are no additional fees or copays. In addition, you can rest easy knowing your payment is completely secure. Our site has undergone serious testing to ensure that all data entered, including credit card info, doesn’t leave the site.</p>
+         </div>
+
+         <div class="text-only text-center">
+            <h1>The Easiest Way To Get a Medical Marijuana Card</h1>
+            <p>As medical marijuana continues to sweep the nation, it is extremely important for those who are interested in using cannabis as a treatment option to understand what their state is offering and where it stands with cannabis. More importantly, patients are looking for the simplest way to gain access to dispensaries. You may have heard of a medical marijuana card referred to as a 420 card, weed card, cannabis card, recommendation, etc but it is important to note that in almost all instances, a patient needs to be approved by a doctor who is licensed from the state(s) they operate in to certify patients for cannabis. That’s where we come in.</p>
+         </div>
+   
+   
+         <div class="faqz" id="accordion">
+   
+            <div class="card open-card">
+                <a class="card-header" data-toggle="collapse" href="#collapseOne">
+                  Do I qualify for medical marijuana?
+                </a>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Every state has its own list of qualifying conditions. A plethora of states have chronic pain listed as a qualifying condition, so in those cases, any ailment that causes general pain or discomfort and is seen as long-lasting will get you approved.</p>
+               </div>
+              </div>
+            </div>
+          
+            <div class="card">
+                <a class="collapsed card-header" data-toggle="collapse" href="#collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+                <a class="collapsed card-header" data-toggle="collapse" href="#collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>
+            </div>
+          
+         </div>
+         
+       
+      </div>
+   </section>
+
+<p class="last-update">Data Last Updated 20/20/2020</p>
+
+
+   <!-- Footer Start -->
+   <footer class="site-footer bg-dark-grey">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 mt-20">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                     <h4 class="text-green font-fourth muesoFont">RESOURCES</h4>
+                     <ul class="footer-links mt-20">
+                        <li><a href="#." class="whitecolor">MMJ Doctors</a></li>
+                        <li><a href="#." class="whitecolor"> Personalized Consult </a></li>
+                        <li><a href="#." class="whitecolor"> Dispensaries </a></li>
+                        <li><a href="#." class="whitecolor"> Cannabis Central </a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                     <h4 class="text-green font-fourth muesoFont">EDUCATION</h4>
+                     <ul class="footer-links mt-20">
+                        <li><a href="#." class="whitecolor"> Cannabis 101 </a></li>
+                        <li><a href="#." class="whitecolor"> Conditions Treated </a></li>
+                        <li><a href="#." class="whitecolor"> Patient FAQ </a></li>
+                        <li><a href="#." class="whitecolor"> Doctor FAQ </a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                     <h4 class="text-green font-fourth muesoFont">INVOLVEMENT</h4>
+                     <ul class="footer-links mt-20">
+                        <li><a href="#." class="whitecolor"> Contact </a></li>
+                        <li><a href="#." class="whitecolor"> Careers </a></li>
+                        <li><a href="#." class="whitecolor"> Partnerships </a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                     <h4 class="text-green font-fourth muesoFont">CONTACT</h4>
+                     <ul class="footer-links mt-20">
+                        <li><a href="#." class="whitecolor">
+                              <i class="fas fa-phone"></i> 1-833-663-7284 </a>
+                        </li>
+                        <li><a href="#." class="whitecolor">
+                              <i class="fas fa-blender-phone"></i> 1-844-287-3486 </a></li>
+                        <li><a href="#." class="whitecolor">
+                              <i class="far fa-envelope"></i> info@veriheal.com </a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 mt-50">
+                     <div class="mobile-center">
+                        <h4 class="text-green text-uppercase rbotoFont">Search by state</h4>
+                        <form class="webForm mt-10  d-inline-block">
+                           <select class="custom-select rbotoFont state-select">
+                              <option selected>ALABAMA</option>
+                              <option value="1">HTML5</option>
+                              <option value="2">CSS3</option>
+                              <option value="3">SCSS</option>
+                           </select>
+                        </form>
+                     </div>
+                  </div>
+                  <div
+                     class="col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-6 col-6 mt-50 d-flex justify-content-end desktop-showing ">
+                     <ul class="socials mb-30">
+                        <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                        <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                        <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-3 offset-lg-1 col-md-4 mt-20">
+               <div class="contact-box mb-30">
+                  <h4 class="text-green font-fourth text-uppercase muesoFont text-center">
+                     It’s time to clear the smoke.
+                  </h4>
+                  <h4 class="text-green font-fourth mt-20 text-center">Sign up for our newsletter.</h4>
+                  <form class="webForm border-btm-form mt-20">
+                     <div class="form-group">
+                        <input class="form-control" type="text" placeholder="NAME">
+                     </div>
+                     <div class="form-group">
+                        <input class="form-control" type="email" placeholder="EMAIL">
+                     </div>
+                     <button type="submit" class="btn-simple peech w-100">SUBSCRIBE</button>
+                     <div class="form-group mt-20 mb-0">
+                        <div class="form-check text-center">
+                           <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                           <label class="form-check-label" for="rememberMe">
+                              Terms & Conditions
+                           </label>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="row">
+                  <div class="col-xs-12 col-md-12 text-center">
+                     <ul class="socials mobile-showing mt-10 mb-30">
+                        <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                        <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                        <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyrights d-flex  align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 mobile-showing mb-30">
+                  <ul class="mb-30">
+                     <li><a href="#.">TERMS </a></li>
+                     <li><a href="#.">PRIVACY POLICY </a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                  <div class="whitecolor">
+                     <p>© 2019 All Rights Reserved <a href="#.">Veriheal Inc </a>. </p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 text-right desktop-showing">
+                  <ul>
+                     <li><a href="#.">TERMS </a></li>
+                     <li><a href="#.">PRIVACY POLICY </a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer End -->
+
+
+   <script src="js/jquery.2.2.3.min.js"></script>
+   <!--Bootstrap Core-->
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/bsnav.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/function.js"></script>
+
+</body>
+
+</html>

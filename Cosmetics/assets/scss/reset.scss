@@ -1,0 +1,324 @@
+@import "fonts.scss";
+@import "var.scss";
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'or', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style-type: none;
+    }
+}
+
+.btn,
+a {
+    box-shadow: none;
+    outline: none !important;
+
+    &:focus {
+        box-shadow: none;
+        outline: none !important;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    font-weight: 700;
+    margin: 0px;
+    font-family: 'rb';
+}
+
+a {
+    text-decoration: none !important;
+}
+
+select,
+input,
+button {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+select {
+    appearance: none;
+    padding: 5px 35px 5px 15px !important;
+    // background-image: url(../images/down-arrow.png);
+    background-position: calc(100% - 15px) center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+
+.form-control {
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ababab;
+    background-color: transparent;
+
+    &:focus {
+        background-color: transparent;
+        border: 1px solid #393c4a;
+    }
+
+    &::placeholder {
+        color: #ccc;
+    }
+}
+
+.common-title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    span {
+        text-transform: uppercase;
+        font-family: rr;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        margin: 3px 0 0;
+        font-size: 32px;
+    }
+}
+
+.scroll-wrapper {
+    height: 100vh;
+}
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1090;
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    background-color: $skin;
+    transition: .12s ease;
+    visibility: hidden;
+    opacity: 0;
+    &.active
+    {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.backToTop {
+    position: fixed;
+    padding: 3px 8px;
+    background-color: #fff;
+    bottom: 60px;
+    right: -10px;
+    color: #000;
+    text-decoration: none;
+    font-family: rb;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .1s linear;
+
+    &:hover {
+        background-color: $red;
+        color: #fff;
+    }
+}
+
+.sbox
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in;
+    @media (max-width:767px)
+    {
+        padding:15px;
+    }
+
+    &.show
+    {
+        opacity: 1;
+        visibility: visible;
+    }
+    .subscribe-form
+    {
+        position: relative;
+        display: flex;
+        max-width: 900px;
+        width: 100%;
+        @media (max-width:767px)
+        {
+            flex-direction: column;
+        }
+        .fa-times
+        {
+            position: absolute;
+            z-index: 1;
+            color: #fff;
+            right: 20px;
+            top: 18px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .12s linear;
+            &:hover
+            {
+                color:$red;
+            }
+        }
+    }
+    .img
+    {
+        width: 50%;
+        height: auto;
+        position: relative;
+        @media (max-width:767px)
+        {
+            width: 100%; 
+            padding-top:200px;   
+        }
+        img
+        {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .form-hold
+    {
+        width: 50%;
+        background-color: #000;
+        text-align: center;
+        padding:80px 50px;
+        color:#fff;
+        @media (max-width:767px)
+        {
+            width: 100%;    
+        }
+        span {
+            text-transform: uppercase;
+            font-family: rr;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            margin: 0px 0 0;
+            font-size: 36px;
+        }
+        p {
+            font-family: or;
+            font-size: 13px;
+            margin:10px 0 20px;
+        }
+        .form-control
+        {
+            border:none;
+            font-size: 14px;
+            color:#fff;
+            border-bottom:1px solid #ddd;
+            padding:10px 0;
+        }
+        a {
+            display: inline-block;
+            position: relative;
+            margin-top: 20px;
+            transition: .1s linear;
+
+            &::before {
+                transition: .15s linear;
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                background-color: #fff;
+                z-index: 1;
+            }
+
+            &::after {
+                transition: .15s linear;
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                border: 1px solid #fff;
+            }
+
+            span {
+                display: inline-block;
+                color: #fff;
+                font-family: ob;
+                padding: 10px 0px;
+                position: relative;
+                transition: .12s linear;
+                padding: 10px 25px;
+                position: relative;
+                z-index: 10;
+                font-size: 12px;
+            }
+
+            &:hover {
+                span {
+                    color: $red;
+                }
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

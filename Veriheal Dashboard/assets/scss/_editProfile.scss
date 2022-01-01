@@ -1,0 +1,48 @@
+.edit-profile {
+	padding: 10px 90px;
+	@media(max-width:1199px)
+	{
+		padding: 40px 80px;
+    }
+	@media(max-width:991px)
+	{
+		padding: 40px 0px;
+    }
+    .form-control
+    {
+        margin:10px 0px 5px 0px !important; 
+        display: inline-block;
+        width: 100%;
+    }
+    p
+    {
+        margin:0px 0px 20px;
+        a
+        {
+            color:$orange;
+            font-family: bold !important;
+            &:hover
+            {
+                color:$green;
+            }
+        }
+    }
+    .upload-box
+    {
+        label
+        {
+            p
+            {
+                margin:5px 0px 20px;
+                font-family: bold !important;
+                color:$orange;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
+
+.uploaded-image img
+{
+    background-color: #fff;;
+}

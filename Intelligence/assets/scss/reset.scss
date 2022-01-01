@@ -1,0 +1,52 @@
+html,
+body {
+    font-family: 'jost', sans-serif;
+    overflow-x : hidden;
+}
+
+body {
+    background-color: #fff;
+}
+
+*
+{
+    font-family: 'jost', sans-serif;
+}
+
+a
+{
+    transition:.1s linear;
+    text-decoration: none !important;
+}
+button, a, input, select
+{
+    outline: none !important;
+}
+
+footer
+{
+    background:#2B2B2B;
+}
+
+@media(max-width:991px) {
+    .hide-after {
+        display: none !important;
+    }
+}
+
+@media(min-width:992px) {
+    .hide-before {
+        display: none !important;
+    }
+}
+
+.gutter-15
+{
+    margin-left:-7px;
+    margin-right:-7px;
+    > div
+    {
+        padding-left:7px;
+        padding-right:7px;
+    }
+}

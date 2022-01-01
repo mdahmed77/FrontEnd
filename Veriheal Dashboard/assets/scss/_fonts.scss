@@ -1,0 +1,41 @@
+@font-face {
+  font-family: regular;
+  src: url("../css/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family:bold;
+  src: url("../css/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: date;
+  src: url("../css/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family:datebold;
+  src: url("../css/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: title;
+  src: url("../css/fonts/MuseoSlab.ttf");
+}
+
+
+.text-normal
+{
+  font-family: 'regular', serif !important;
+}
+.text-bold{
+  
+  font-family: 'bold', serif !important;
+}
+
+.hero-text{
+  font-family: 'title', serif !important;
+}
+
+strong
+{
+  font-family: bold;
+}

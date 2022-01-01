@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard | Veriheal</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/css/datepicker.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+  <!-- Main -->
+  <div class="vh-main">
+    <div class="vh-flex">
+
+      <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/home.png" alt=""> Dashboard <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/book-appointment.png" alt=""> Medical Marijuana Card</a>
+              <ul>
+                <li class="active">
+                  <a href="#">Information <i class="far fa-arrow-right"></i></a>
+                </li>
+                <li>
+                  <a href="#">Book Appintment <i class="far fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Personalized Consult <i
+                  class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> My Appointment <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="far fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+
+      <!-- Right Content Start -->
+
+      <div class="vh-rightpanel">
+
+        <!-- Header Start -->
+        <div class="header">
+          <!-- mobile menu button -->
+          <div class="menu-toggler hide-before">
+            <button class="btn btn-toggle"><i class="fal fa-bars"></i></button>
+          </div>
+          <div class="help hide-after">
+            <p><i class="far fa-question-circle"></i> Need a Help? &nbsp;&nbsp; Call Us Now (1-833-663-7284)</p>
+          </div>
+          <!-- Mobile Logo (Will show only in mobile) -->
+          <div class="brand hide-before">
+            <a href="#">
+              <img src="assets/images/mobile-logo.png" alt="">
+            </a>
+          </div>
+
+          <div class="user">
+            <ul>
+              <!-- Notification -->
+               <li class="notify hide-after">
+                <a href="#">
+                  <span>2</span>
+                  <i class="far fa-bell"></i>
+                </a>
+                <div class="drop-menu">
+                  <ul>
+                    <li><a href="#">Update Your Account</a></li>
+                    <li><a href="#">Account Change Unread</a></li>
+                    <li><a href="#" class="read-already">Read Notification 3</a></li>
+                    <li><a href="#" class="read-already">Read Notification 4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- User Avtive -->
+              <li class="person">
+                <div class="text hide-after">
+                  <p>John Smith</p>
+                  <a href="#">Logout</a>
+                </div>
+                <div class="icon-holder">
+                  <div class="badge hide-before">2</div>
+                  <img src="assets/images/active-user-icon.png" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Header End -->
+
+        <!-- wrapper -->
+        <div class="vh-wrapper">
+          <p class="hide-before help-text">Need a Help? &nbsp; Call Us Now (1-833-663-7284)</p>
+
+          <!-- Steps Head Start -->
+          <div class="steps-header">
+            <a href="#" class="back-link disabled"><i class="far fa-arrow-left"></i> <span>Book Appointment</span></a>
+            <div class="wizard-title">
+              <h1>Payment</h1>
+              <ul>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="active-step">
+                  <div></div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="next-link"><span>Confirmation</span> <i class="far fa-arrow-right"></i></a>
+          </div>
+          <!-- Steps Head End -->
+
+          <!--Active Step  -->
+          <div class="active-wizard">
+
+            <div class="payment">
+              <div class="row">
+                <div class="col-lg-6">
+                  <!-- Choose Payment Method -->
+                  <h6 class="label">Select Your Card Type</h6>
+                  <div class="payment-checks">
+                    <div class="check">
+                      <input type="radio" id="visa" name="payment-method">
+                      <label for="visa">
+                        <img src="assets/images/visa.png" alt="">
+                      </label>
+                    </div>
+                    <div class="check">
+                      <input type="radio" id="master" name="payment-method">
+                      <label for="master">
+                        <img src="assets/images/master.png" alt="">
+                      </label>
+                    </div>
+                    <div class="check">
+                      <input type="radio" id="maestro" name="payment-method">
+                      <label for="maestro">
+                        <img src="assets/images/maestro.png" alt="">
+                      </label>
+                    </div>
+                    <div class="check">
+                      <input type="radio" id="express" name="payment-method">
+                      <label for="express">
+                        <img src="assets/images/express.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+
+                  <h6 class="label">Enter Card Information</h6>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Card Number">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="MM / YY">
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="CCV">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Zip Code">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider">
+                    <hr>
+                  </div>
+                  <div class="inline-field">
+                    <h6 class="label">Apply Coupon Code</h6>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="divider">
+                    <hr>
+                  </div>
+                  <div class="verification">
+                    <img src="assets/images/verfied-tags.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="total-box">
+                    <div class="widget">
+                      <div class="flexed">
+                        <h6 class="label mini">MEDICAL MARIJUANA CONSULTATION</h6>
+                        <span>$199</span>
+                      </div>
+                      <p>Virtual examination with a licensed physician</p>
+                    </div>
+                    <div class="widget">
+                      <div class="flexed">
+                        <h6 class="label mini">DIGITAL RECOMMENDATION LETTER</h6>
+                        <span>INCLUDED</span>
+                      </div>
+                      <p>Once approved by the physician, you will receive a digital copy of your recommendation.</p>
+                    </div>
+                    <div class="widget">
+                      <div class="flexed">
+                        <h6 class="label mini">A BEGINNER'S GUIDE TO MEDICAL MARIJUANA E-BOOK</h6>
+                      </div>
+                      <div class="input-check">
+                        <input type="checkbox" name="upgrade" id="upgrade">
+                        <label for="upgrade">Upgrade my order for $29</label>
+                      </div>
+                      <p>Getting ready to start your journey with cannabis but don't know where to start? Add the
+                        Cannabis Beginner's Guide E-Book to your order and get the introduction you need to cannabis as
+                        a medicine.</p>
+                    </div>
+                    <div class="widget">
+                      <div class="flexed">
+                        <h6 class="label">MEDICAL MARIJUANA CARD</h6>
+                      </div>
+                      <div class="input-check mb-0">
+                        <input type="checkbox" name="idMail" id="id-mail">
+                        <label for="id-mail">For $10, I would like a physical Medical Marijuana ID mailed
+                          to me. Veriheal will assist in the process.</label>
+                      </div>
+                    </div>
+                    <div class="grand-total">
+                      <div class="text">
+                        <h5>Total</h5>
+                        <h3>$199</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-20">
+                    <div class="col-12 text-right center-after">
+                      <a href="#" class="btn btn-default btn-next">Place Order Securely</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Active Step END  -->
+
+        </div>
+
+        <div class="c-right hide-before">
+          <p>&copy; Veriheal.com</p>
+        </div>
+
+      </div>
+
+      <!-- Right Content ENd -->
+
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

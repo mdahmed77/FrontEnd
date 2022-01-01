@@ -1,0 +1,552 @@
+.hero-banner
+{
+    padding-top: calc(60px + 115px);
+}
+
+@media  (max-width:991px)
+{
+    .hero-banner {
+        padding: 120px 0px 0px !important;
+    }
+    .hero-banner .sb-flex{
+        flex-direction: column;
+    }
+    .hero-banner .signup-box
+    {
+        min-width: 0px;
+        width: 100%;
+    }
+    .hero-banner .hero-text
+    {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .hero-banner .hero-text h1
+    {
+        font-size: 26px !important;
+        line-height: 38px !important;
+    }
+    .hero-banner .hero-text h1 span 
+    {
+        font-size: 36px !important;
+    }
+    .hero-banner .hero-text .state-drop {
+        margin: 30px 0px 50px !important;
+    }
+}
+
+
+.hero-banner .hero-text h1
+{
+    font-family: 'Museo_Slab';
+    color:#000032 !important;
+    font-size: 40px;
+    line-height: 50px;
+    
+}
+.hero-banner .hero-text h1 span
+{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    color:#51b6aa;
+    font-family: 'Museo_Slab';
+    font-size: 60px;
+}
+.hero-banner .hero-text p
+{
+    font-size: 18px;
+    color:#79797b;
+    margin: 10px 0px 0px;
+    line-height: 20px;
+}
+.hero-banner .hero-text .state-drop
+{
+    margin:40px 0px 110px;
+}
+.state-drop
+{
+    height: auto;
+    display: inline-block;
+    width: auto;
+    padding:1px 35px;
+    background-image:linear-gradient(to right, #299b8c, #237d5f) ;
+    border-radius: 50px;
+}
+.state-drop select
+{
+    background-color: transparent;
+    color:#fff;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    min-height: 48px;
+    padding:0px 25px 0px 0px;
+}
+
+.state-drop select option:disabled
+{
+    background-color:#ddd;
+    color:#999;
+}
+.state-drop select option{
+    color:#525252;
+}
+
+
+.ease
+{
+    background-color: #f8f8f8;
+    padding:100px 0px 65px;
+}
+.ease h1
+{
+    font-family: 'Museo_Slab';
+    color:#000032;
+    font-size: 40px;
+    text-align: center;
+    margin:0px 0px 60px;
+}
+.ease-card
+{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding:40px 20px 40px 28px;
+    min-height: 210px;
+    display: inline-block;
+    margin-bottom: 35px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+}
+.ease-card::before
+{
+    content:"";
+    position: absolute;
+    z-index: 1;
+    width:8px;
+    height: 100%;
+    top: 10px;
+    left: 0px;
+    height: calc(100% - 20px);
+    border-radius: 15px;
+    background-color: #51b6aa;
+}
+.ease-card h4{
+    color:#51beb0;
+    font-size: 28px;
+    font-family: 'Museo_Slab';
+    margin:0px 0px 25px;
+}
+.ease-card p
+{
+    color:#79797b;
+    font-size: 16px;
+    line-height: 18px;
+    margin:0px;
+}
+.happy-intro .rating h1
+{
+    font-family: 'Museo_Slab';
+    color:#000032;
+    font-size: 40px;
+    text-align: right;
+    margin:0px 0px 45px;
+}
+
+
+
+@media(max-width:576px)
+{
+    .happy-intro .rating .client
+    {
+        margin:0 auto !important;
+    }
+    .happy-intro .rating
+    {
+        padding:40px 15px !important;
+        text-align: center;
+    }
+    .happy-intro .rating h1
+    {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+.happy-intro .rating {
+    display: block;
+    width: auto;
+    margin:0 0 0 auto;
+    padding:120px 65px 120px 0px;
+    background-image: url('../images/happy-customers-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 50;
+}
+.happy-intro .rating .client {
+    width:230px !important;
+    display: block;
+	text-align: center;
+	border-left: none !important;
+    padding: 0px;
+    margin:0 0 0 auto;
+}
+.happy-intro .rating .client a
+{
+    display: inline-block;
+}
+.happy-intro .rating .client ~ .client{
+    margin-top:45px !important;
+}
+.happy-intro .rating .MuseoSlabtext {
+	font-family: "Museo_Slab";
+	font-weight: bold;
+    font-weight: 300;
+	color: #000;
+}
+.happy-intro .rating .star-rating {
+    font-size: 20px;
+}
+
+
+.happy-intro .rating .scolor {
+	color: #ffc107;
+
+}
+
+.happy-intro .rating .slg {
+	color: #ffc107;
+	font-size: 22px;
+}
+
+.happy-intro .rating .slg-gray {
+	font-size: 22px;
+	color: #eaeaea;
+}
+
+.happy-intro {
+    max-height: 760px;
+    overflow: hidden;
+    background-color: #ed916a;
+    position: relative;
+    background-image: url('../images/web-ping.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.happy-intro .orange-box{
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+    padding:230px 5vw 250px 4vw;
+    background-image: url('../images/women-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    background-position: 70% 100%;
+}
+.happy-intro::before
+{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: 1;
+    background-color: #ed916a;
+    opacity: 0.9;
+}
+.happy-intro .orange-box .text,
+.happy-intro .orange-box .img-holder{
+    z-index: 10;
+    position: relative;
+    width: 50%;
+}
+
+
+.happy-intro .orange-box .text{
+    /* transform: translateY(-20%); */
+}
+.happy-intro .orange-box .text h1,
+.happy-intro .orange-box .text p{
+    color:#fff;
+}
+.happy-intro .orange-box .text h1{
+    font-family: 'Museo_Slab';
+    font-size: calc(1.5vw + 1em);
+    margin:0px 0px 25px;
+}
+.happy-intro .orange-box .text p
+{
+    font-size: calc(1vw + .5em);
+}
+.happy-intro .orange-box .img-holder
+{
+    max-width: 340px;
+}
+.happy-intro .orange-box .state-drop
+{
+    margin:40px 0px 0px;
+}
+
+
+@media(max-width:991px)
+{
+    .happy-intro {
+        max-height: initial;
+        overflow: visible !important;
+    }
+    .happy-intro .orange-box
+    {
+        padding:150px 30px !important;
+        background-size: contain;
+    }
+    .happy-intro .orange-box .text
+    {
+        width: 100%;
+    }
+    
+    .happy-intro .orange-box .text h1{
+        font-size: 28px;
+        text-shadow: 1px 1px .9px #000;
+    }
+    .happy-intro .orange-box .text p
+    {
+        font-size: 18px;
+        text-shadow: 1px 1px .9px #000;
+    }
+}
+
+
+@media(max-width:576px)
+{
+    .happy-intro .orange-box
+    {
+        padding:150px 30px !important;
+        background-size: cover;
+    }
+}
+
+.work-info{
+    padding:100px 0px;
+    text-align: center;
+}
+
+.work-info h1
+{
+    font-family: 'Museo_Slab';
+    color:#000032;
+    font-size: 40px;
+    margin:0px 0px 100px;
+}
+
+.work-flex
+{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:991px)
+{
+    .work-flex
+    {
+        flex-direction: column;
+    }   
+    .work-flex .work-box:first-child
+    {
+        margin-right: 0px;
+        margin-bottom: -2px;
+        border-radius: 15px !important;
+    }
+    .work-flex .work-box:last-child
+    {
+        margin-left: 0px;
+        margin-top: -2px;
+        border-radius: 15px !important;
+    }
+    .work-flex .work-box.active-box
+    {
+        border-radius: 15px !important;
+        background-color: #f7f7f7;
+    }
+}
+.work-flex .work-box
+{
+    position: relative;
+    border:2px solid #51b6aa;
+    border-radius: 15px;
+    z-index: 20 !important;
+    padding:75px 20px 60px;
+}
+.work-flex .work-box:first-child
+{
+    border-radius: 15px 0px 0px 15px;
+    margin-right: -2px;
+}
+.work-flex .work-box:last-child
+{
+    border-radius: 0px 15px 15px 0px;
+    margin-left: -2px;
+}
+.work-flex .work-box.active-box
+{
+    padding:100px 20px 80px;
+    background-color: #f7f7f7;
+}
+.work-flex .work-box:first-child
+{
+    border-radius: 10px 0px 0px 10px;
+}
+.work-flex .work-box h4
+{
+    font-family: 'Museo_Slab';
+    color:#000032;
+    font-size: 24px;
+    min-height: 50px;
+    margin:0;
+}
+.work-flex .work-box p
+{
+    font-size: 16px;
+    color:#79797b;
+    margin:15px 0px 0px;
+    line-height: 20px;
+    padding:0px 25px;
+}
+.work-flex .work-box .step-span
+{
+    position: absolute;
+    left:50%;
+    top:0px;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    width: 85px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Museo_Slab';
+    color:#ed916a;
+    border:2px solid #51b6aa;
+    border-radius: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.karma
+{
+    padding:100px 0px;
+}
+.karma h1
+{
+    font-size: 40px;
+    font-family: 'Museo_Slab';
+    margin:0px 0px 10px;
+}
+.karma p
+{
+    font-size: 24px;
+    margin-top:25px;
+}
+
+
+.about-text
+{
+    padding:90px 0px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+.about-text h1{
+    font-size: 40px;
+    color:#000032;
+    margin:0px 0px 10px;
+    font-family: 'Museo_Slab'; 
+    position: relative;
+}
+.about-text p
+{
+    position: relative;
+    font-size: 18px;
+    color:#79797b;
+    margin:30px 0px 0px;
+}
+.about-text .state-drop
+{
+    margin: 50px 0px 0px;   
+}
+
+
+.trust-us
+{
+    padding:100px 0px 110px;
+}
+.trust-us h1
+{
+    font-size:40px;
+    font-family: 'Museo_Slab';
+    color:#fff;
+    margin:0px 0px 50px;
+    text-align: center;
+}
+
+.trust-box
+{
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding:45px 30px;
+    margin-top:30px;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+
+.trust-box h3
+{
+    color:#ed916a;
+    font-size:28px;
+    font-family: 'Museo_Slab';
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.trust-box h3::after{
+    background-color: #999999;
+    bottom:0px;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    content:"";
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 5px;
+}
+.trust-box p
+{
+    color:#999999;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.find-dispensarys
+{
+    margin:0px;
+    background-color: #fff !important;
+}
+.find-dispensarys .thumb-img
+{
+    position: relative;
+    margin-top: -100px;
+}
+
+.s-reviews .owl-carousel.r-carousel .review-box .r-body img
+{
+    margin-top:0px !important;
+    margin-bottom:10px !important;
+    position: relative;
+    top:-20px;
+}

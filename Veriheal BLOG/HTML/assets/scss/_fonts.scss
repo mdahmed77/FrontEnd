@@ -1,0 +1,48 @@
+@font-face {
+  font-family: regular;
+  src: url("../css/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family:link;
+  src: url("../css/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family:bold;
+  src: url("../css/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: title;
+  src: url("../css/fonts/MuseoSlab.ttf");
+}
+@font-face {
+  font-family: avenir;
+  src: url("../css/fonts/Avenir.otf");
+}
+@font-face {
+  font-family: ganache;
+  src: url("../css/fonts/Ganache_Regular.ttf");
+}
+@font-face {
+  font-family: text;
+  src: url("../css/fonts/MyriadPro-Regular.otf");
+}
+
+
+.text-normal
+{
+  font-family: 'regular', serif !important;
+}
+.text-bold{
+  
+  font-family: 'bold', serif !important;
+}
+
+.hero-text{
+  font-family: 'title', serif !important;
+}
+
+strong
+{
+  font-family: bold;
+}

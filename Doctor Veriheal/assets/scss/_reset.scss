@@ -1,0 +1,283 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "regular", serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+*::selection {
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+
+a,
+.link {
+  text-decoration: none !important;
+}
+
+.btn,
+button {
+  i {
+    margin-right: 5px;
+  }
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  margin: 0px;
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.fluid {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+// Margin Y axis Remover from row
+.mx-none {
+  margin: 0px -15px 0px -15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-family: bold;
+  padding: 5px 30px;
+  border-radius: 100px;
+}
+
+.btn-back {
+  border: 2px solid $gray;
+  background: transparent;
+  color: $gray;
+
+  &:hover {
+    color: #fff;
+    background-color: $gray;
+  }
+}
+
+.btn-green {
+  border: 2px solid $green !important;
+  background: $green !important;
+  color: #fff !important;
+
+  &:hover {
+    color: #fff !important;
+    background-color: $orange !important;
+    border-color: $orange !important;
+  }
+}
+
+.btn-orange {
+  border: 2px solid $orange;
+  background: $orange;
+  color: #fff;
+  padding: 10px 30px;
+
+  &:hover {
+    color: #fff;
+    background-color: $green;
+    border-color: $green;
+  }
+}
+
+.btn-default:active {
+  transform: scale(0.97);
+}
+
+.btn-next:focus {
+  background: $green !important;
+  border-color: $green !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+*:focus {
+  outline-color: transparent !important;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+select {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  position: relative;
+  background-image: url(../images/dropdown.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 25px) 50%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+.datepicker--nav-action.-disabled- {
+  pointer-events: none !important;
+  visibility: visible !important;
+}
+
+.datepicker * {
+  font-family: date !important;
+}
+
+.datepicker,
+.datepicker-inline .datepicker {
+  border: none !important;
+  width: 300px;
+}
+
+.datepicker .datepicker--nav {
+  border: none !important;
+}
+
+.datepicker .datepicker--content .datepicker--body .datepicker--cell {
+  height: 41px !important;
+  border-radius: 50px !important;
+  font-family: datebold !important;
+  color: #797e89 !important;
+}
+
+.datepicker .datepicker--content .datepicker--body .datepicker--days-names .datepicker--day-name {
+  font-family: datebold !important;
+  font-size: 14px;
+  color: #444b5c;
+}
+
+.datepicker .datepicker--content .datepicker--body .datepicker--cell-day.-disabled- {
+  opacity: .3 !important;
+
+  &:hover {
+    background: transparent !important;
+    pointer-events: none;
+  }
+}
+
+.datepicker .datepicker--content .datepicker--body .datepicker--cell-day.-weekend-,
+.datepicker .datepicker--content .datepicker--body .datepicker--days-names .datepicker--day-name.-weekend- {
+  color: #fa6351 !important;
+}
+
+.datepicker .datepicker--content .datepicker--body .datepicker--cell.-current- {
+  color: #797e89 !important;
+}
+
+.datepicker .datepicker--content .datepicker--body .datepicker--cell.-selected- {
+  background-color: $orange !important;
+  color: #fff !important;
+  font-size: 15px;
+  line-height: 15px !important;
+}
+
+.datepicker .datepicker--nav-title,
+.datepicker .datepicker--nav-title i {
+  font-family: bold !important;
+  font-size: 20px;
+  color: $gray;
+  // pointer-events: none !important;
+}
+
+.datepicker .datepicker--nav {
+  padding: 30px 25px !important;
+}
+
+
+.nav-pills {
+  margin: 0px;
+  position: relative;
+  top: 0px;
+
+  .nav-item {
+    margin: 0px;
+
+    &~.nav-item {
+      margin-left: 10px;
+      @media (max-width:991px)
+      {
+        margin-left: 5px;
+      }
+    }
+
+    .nav-link {
+      background-color: transparent;
+      border: 2px solid $green;
+      padding: 4px 20px;
+      font-family: regular;
+      font-size: 15px;
+      color: $green;
+      border-radius: 50px;
+      @media (max-width:1366px){
+        padding: 2px 15px;
+        font-size: 13px;
+      }
+      @media (max-width:1199px)
+      {
+        padding:2px 8px;
+        font-size: 12px;
+        border-width:1px;
+      }
+      @media (max-width:480px)
+      {
+        padding:2px 6px;
+        font-size: 10px;
+      }
+      &.active {
+        background-color: $green !important;
+        color: #fff !important;
+      }
+    }
+  }
+}

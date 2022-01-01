@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/select.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/saved.css" />
+    <title>Home | AllRize</title>
+  </head>
+
+  <body>
+    <div class="mobile-menu">
+      <div class="brand">
+        <button class="btn close-btn"><i class="far fa-times"></i></button>
+        <img src="assets/images/logo.png" alt="" />
+      </div>
+      <a href="#">Buy</a>
+      <a href="#">Rent</a>
+      <a href="#">Sell</a>
+      <div class="drop">
+        <button>AllRize Exclusive <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#"> Private Exclusives </a>
+          <a href="#">Coming Soon</a>
+          <a href="#">AllRize Listings</a>
+        </div>
+      </div>
+      <a href="#">New Development</a>
+      <div class="drop">
+        <button>Agents <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#">Find an Agent</a>
+          <a href="#">Join as an Agent</a>
+        </div>
+      </div>
+      <div class="drop">
+        <button>Saved Items <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#">Collection</a>
+          <a href="#">Saved Searches</a>
+          <a href="#">Saved Buildings</a>
+        </div>
+      </div>
+      <div class="drop">
+        <button>Account <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#">Account Settings</a>
+          <a href="#">Email Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <header class="ar-header">
+      <div class="container-fluid p-0">
+        <div class="flex-wrapper">
+          <button class="btn btn-menu"><i class="fal fa-bars"></i></button>
+          <a href="#" class="ar-brand">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <div class="navs">
+            <a href="#">Buy</a>
+            <a href="#">Rent</a>
+            <a href="#">Sell</a>
+            <div class="drop">
+              <button>
+                AllRize Exclusive <i class="far fa-angle-down"></i>
+              </button>
+              <div class="drop-items">
+                <a href="#"> Private Exclusives </a>
+                <a href="#">Coming Soon</a>
+                <a href="#">AllRize Listings</a>
+              </div>
+            </div>
+            <a href="#">New Development</a>
+            <div class="drop">
+              <button>Agents <i class="far fa-angle-down"></i></button>
+              <div class="drop-items">
+                <a href="#">Find an Agent</a>
+                <a href="#">Join as an Agent</a>
+              </div>
+            </div>
+            <div class="userNavs">
+              <div class="drop">
+                <button>Saved Items <i class="far fa-angle-down"></i></button>
+                <div class="drop-items">
+                  <a href="#">Collection</a>
+                  <a href="#">Saved Searches</a>
+                  <a href="#">Saved Buildings</a>
+                </div>
+              </div>
+              <div class="drop">
+                <button><i class="fal fa-user"></i></button>
+                <div class="drop-items open-left">
+                  <a href="#">Account Settings</a>
+                  <a href="#">Email Settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="panel">
+      <div class="title-bar">
+        <h1>
+          <button class="btn btn-sidebar">
+            <i class="fas fa-th-list"></i>
+          </button>
+          My Props
+        </h1>
+        <button class="btn btn-outline"><i class="fas fa-cog"></i></button>
+      </div>
+      <div class="split">
+        <div class="sidebar">
+          <div class="compound">
+            <h6>Saved Searches</h6>
+            <a href="#" class="link">Random Search Name</a>
+            <a href="explore.html" class="action-link">Create New</a>
+          </div>
+          <div class="compound">
+            <h6>Collections</h6>
+            <a href="#" class="link">Random Collection Name</a>
+            <a href="#" class="action-link">Create New</a>
+          </div>
+          <div class="compound">
+            <h6>Saved Building</h6>
+            <a href="#" class="link">User's Saved Buildings</a>
+          </div>
+        </div>
+        <div class="main-display">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#fav"
+                >Favourite</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#ni"
+                >Not interested</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="fav">
+              <div class="filter-bar">
+                <div class="search">
+                  <i class="far fa-search"></i>
+                  <input type="text" />
+                </div>
+                <div class="d-inline-flex ml-auto align-items-center">
+                  <select class="form-control">
+                    <option value="time_added">Sort: Time Added</option>
+                    <option value="status">Sort: Status</option>
+                    <option value="price_low_high">
+                      Sort: Price - Low to High
+                    </option>
+                    <option value="price_high_low">
+                      Sort: Price - High to Low
+                    </option>
+                    <option value="recent_comments">
+                      Sort: Recent Comments
+                    </option>
+                    <option value="most_comments">Sort: Most Comments</option>
+                    <option value="unread_comments">
+                      Sort: Unread Comments
+                    </option>
+                  </select>
+                  <button class="btn btn-outline" id="toggle-map">
+                    <i class="far fa-map"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="boxes">
+                <div class="view-box">
+                  <div class="row">
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/1.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/2.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/4.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/5.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/hero.jpeg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/1.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/2.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/4.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/5.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6 col-12 propGrid">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/hero.jpeg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="map-holder d-none">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24842.390000877258!2d-76.98746929674532!3d38.89428304436249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1618738643516!5m2!1sen!2s"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="ni"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/select.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggle-map").on("click", function () {
+          if ($(".map-holder").hasClass("d-none")) {
+            $(this).addClass("active");
+            $(".map-holder").removeClass("d-none");
+            $(".propGrid").removeClass("col-xl-4 col-sm-6");
+          } else {
+            $(this).removeClass("active");
+            $(".map-holder").addClass("d-none");
+            $(".propGrid").addClass("col-xl-4 col-sm-6");
+          }
+        });
+        $(document).mouseup(function (e) {
+          if ($(window).width() < 767) {
+            var container = $(".sidebar");
+            if (
+              !container.is(e.target) &&
+              container.has(e.target).length === 0
+            ) {
+              $(".sidebar").hide();
+            }
+          }
+        });
+        $(".btn-sidebar").on("click", function () {
+          if ($(this).hasClass("on")) {
+            $(".sidebar").hide();
+            $(this).removeClass("on");
+          } else {
+            $(this).addClass("on");
+            $(".sidebar").show();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.help-slide
+{
+    padding:24px 15px;
+    text-align: center;
+    background-color: $blue;
+    p
+    {
+        color:#fff;
+        margin:0px 0px 15px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
+    .dark-btn
+    {
+        background-color: $atext;
+        color:#fff;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.8571428060531616px;
+        border-radius: 50px;
+        padding:15px 32px;
+        display: inline-block;
+    }
+}
+
+.features
+{
+    padding:15px;
+    background-color: #fff;
+    a
+    {
+        display: inline-block;
+        border:1px solid $blue;
+        color:$atext;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.75px;
+        border-radius: 3px;
+        padding:10px 18px;
+        margin:0px 15px 15px 0px;
+        &:hover
+        {
+            background-color: $blue;
+            color:#fff;
+        }
+    }
+}
+.popular
+{
+    padding:15px 15px 0px;
+    background-color: #fff;
+    a
+    {
+        display: inline-block;
+        background-color: #f7f7f7;
+        color:$blue;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.75px;
+        border-radius: 30px;
+        padding:5px 12px;
+        margin:0px 15px 15px 0px;
+        &:hover
+        {
+            background-color: $blue;
+            color:#fff;
+        }
+    }
+}
+
+.bottom-text
+{
+    padding:28px 30px;
+    background-color: #f9f9f9;
+    p
+    {
+        margin:0px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0px;
+        text-align: center;
+        color:$atext;
+    }
+}

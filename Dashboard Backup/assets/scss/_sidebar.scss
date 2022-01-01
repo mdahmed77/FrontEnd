@@ -1,0 +1,232 @@
+.vh-sidebar {
+    min-width: 250px;
+    position: sticky;
+    top: 0px;
+    background: $silver;
+    height: 100vh;
+
+    @media (max-width:1199px) {
+        position: fixed;
+        left: 0px;
+        z-index: 200;
+        min-width: 375px;
+        left: -580px !important;
+        transition:left .14s linear;
+    }
+
+    @media (max-width:576px) {
+        min-width: 320px;
+        width: 100%;
+        transition:left .3s ease;
+    }
+
+    &.slide-in {
+        left: 0px !important;
+        opacity: 1;
+    }
+
+    .vh-brand {
+        margin-bottom: 20px;
+
+        a {
+            background: $gray;
+            display: inline-block;
+            width: 100%;
+            padding: 30px 15px 35px;
+
+            @media (max-width:1199px) {
+                padding: 30px 0px 35px;
+
+                img {
+                    height: 32px;
+                }
+            }
+        }
+
+        @media (max-width:1199px) {
+            background: $gray;
+            padding: 0px 30px;
+            display: flex;
+            align-items: center;
+            jusify-content: space-between;
+        }
+
+        .btn-close {
+            color: #fff;
+            font-size: 20px;
+            padding: 0px;
+        }
+    }
+
+    .left-navs {
+        padding-bottom: 50px;
+
+        >ul {
+            @media (max-width:767px) {
+                height: calc(100vh - 180px);
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    background-color: $silver;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $green;
+                    border-right: 3px solid $silver;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-right: 3px solid $silver;
+                    background-color: transparent;
+                }
+            }
+
+            position: relative;
+
+            >li {
+                position: relative;
+                padding: 15px 20px;
+                display: block;
+                a
+                {
+                    display: flex;
+                    align-items: center;
+                    i
+                    {
+                        margin-left: auto;
+                        display: none;
+                    }
+                }
+                @media (max-width:1199px) {
+                    padding: 15px 40px;
+                }
+
+                &.opened-nav {
+                    >a {
+                        color: #fff;
+                        > i
+                        {
+                            display: block !important;
+                        }
+                    }
+                }
+
+                &.opened-nav ul {
+                    height: auto;
+                    opacity: 1;
+                    overflow: visible;
+                    margin-bottom: -20px;
+                }
+
+                &.closed-nav {
+                    margin-bottom: 0px;
+                    > a i
+                    {
+                        display: none !important;
+                    }
+                }
+
+                &.closed-nav ul {
+                    height: 0px;
+                    opacity: 0;
+                    overflow: hidden;
+                    margin: 0px !important;
+                }
+
+                >a {
+                    font-size: 16px;
+                    color: $faded;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                ul {
+                    position: relative;
+                    margin: 8px 0px;
+
+                    &::before {
+                        content: "";
+                        height: 100%;
+                        width: 2px;
+                        background-color: $green;
+                        position: absolute;
+                        left: 20px;
+                    }
+
+                    padding-left:20px;
+
+                    li {
+                        padding: 10px 0px;
+                        padding-left: 20px;
+                        position: relative;
+                        display: block;
+
+                        a {
+                            &::before {
+                                content: "";
+                                height: 8px;
+                                width: 8px;
+                                border-radius: 50%;
+                                background-color: $green;
+                                position: absolute;
+                                left: -3px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+                            font-size:14px;
+                            color:#c5c5c5;
+
+                            i {
+                                opacity: 0;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        &.active {
+                            a {
+                                color: #fff !important;
+
+                                i {
+                                    opacity: 1 !important;
+                                    display: block !important;
+                                }
+                            }
+                        }
+
+                        &.inactive {
+                            a {
+                                color: #c5c5c5 !important;
+
+                                i {
+                                    opacity: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    bottom: 0px;
+    padding: 10px 10px 30px;
+    background: #79797b;
+
+    p {
+        margin: 0px;
+        color: #a4a4a4;
+    }
+}

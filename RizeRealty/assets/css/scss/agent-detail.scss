@@ -1,0 +1,219 @@
+@import "var.scss";
+
+.agent-detail {
+  padding: 50px 0;
+}
+.agent-slip {
+  width: 100%;
+  @media (max-width:767px) {
+    text-align: center;
+  }
+  .img-holder {
+    padding-top: 100%;
+    border: none;
+  }
+  .picture-box {
+    margin-bottom: 30px;
+    max-width: 250px;
+    width: 100%;
+    @media (max-width:767px) {
+      display: block;
+      margin: 0 auto 15px;
+    }
+  }
+  .bio {
+    margin-bottom: 30px;
+    p {
+      margin: 10px 0px 20px;
+      @media (max-width:1199px) {
+        font-size: 14px;
+      }
+    }
+    a {
+      display: block;
+      font-family: regular;
+      font-weight: 300;
+      color: #7b7b7b;
+      text-decoration: none;
+      font-size: 16px;
+      @media (max-width:1199px) {
+        font-size: 14px;
+      }
+      &:hover {
+        color: #000;
+      }
+    }
+    .name-display {
+      color: #1d1d1d;
+      font-family: title;
+      font-size: 34px;
+      margin-bottom: 5px;
+      @media (max-width:1199px) {
+        font-size: 24px;
+      }
+    }
+    .btn-default {
+      margin-top: 30px;
+    }
+  }
+  h6 {
+    font-size: 20px;
+    color: #1d1d1d;
+    margin: 0px 0px 10px;
+    @media (max-width:1199px) {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    color: #1d1d1d;
+    font-family: title;
+    margin: 0px 0px 15px;
+    @media (max-width:1199px) {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 16px;
+    margin: 0px 0px 20px;
+    color: #535353;
+    @media (max-width:1199px) {
+      font-size: 14px;
+    }
+  }
+  .social-links {
+    display: inline-flex;
+    margin-bottom: 30px;
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 35px;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      text-decoration: none;
+      transition: 0.12s ease;
+      & ~ a {
+        margin-left: 10px;
+      }
+      &.fb {
+        background-color: rgb(0, 73, 141);
+        &:hover {
+          background-color: rgb(0, 103, 199);
+        }
+      }
+      &.lin {
+        background-color: rgb(0, 99, 138);
+        &:hover {
+          background-color: rgb(0, 117, 184);
+        }
+      }
+    }
+  }
+}
+#testimonials {
+  background-color: #ebf0f4;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  padding:40px 30px;
+  text-align: center;
+  .carousel-item p {
+    color: #717d91;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: regular;
+    max-width: 760px;
+    display: block;
+    margin:0 auto 30px;
+  }
+  .carousel-item h5 {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .carousel-item span {
+    font-size: 13px;
+  }
+  .carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    opacity: .5;
+    margin: 0px;
+    cursor: pointer;
+    border:2px solid #000;
+    background-color: #fff;
+    & ~ li
+    {
+      margin-left:10px;
+    }
+  }
+  .carousel-indicators {
+    position: relative;
+    margin: 25px 0 0;
+  }
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #000;
+  }
+}
+
+.sales
+{
+  .sale-slot
+  {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ebf0f4;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+    transition: .2s ease;
+    margin-bottom: 30px;
+    padding:5px;
+    text-align: left;
+    @media (max-width:991px) {
+      margin-bottom: 15px;
+    }
+    &:hover
+    {
+      background-color: #fff;
+    }
+    .img-holder
+    {
+      width:50%;
+      padding-top:30%;
+      margin-right: 15px;
+      @media (max-width:991px) {
+        padding-top:45%;
+      }
+      @media (max-width:767px) {
+        padding-top:30%;
+      }
+      @media (max-width:480px) {
+        padding-top:40%;
+      }
+      @media (max-width:420px) {
+        padding-top:45%;
+      }
+    }
+    .text
+    {
+      padding:10px 0 0;
+      p
+      {
+        margin:0px;
+        color:#333;
+        font-size: 14px;
+      }
+      span
+      {
+        font-size: 13px;
+        color:#7b7b7b;
+        display: inline-block;
+        & ~ p
+        {
+          margin-top:10px;
+        }
+      }      
+    }
+  }
+}

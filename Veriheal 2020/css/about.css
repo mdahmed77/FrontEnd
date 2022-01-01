@@ -1,0 +1,101 @@
+.vh-about-text {
+    padding: 75px 0px;
+}
+.vh-about-text .vha-titles {
+    margin-bottom: 30px;
+}
+.vh-about-text .vha-titles h1,
+.vh-about-text .vha-titles span {
+    font-family: "Museo_Slab";
+}
+.vh-about-text .vha-titles h1 {
+    color: #000032;
+    font-size: 40px;
+}
+.vh-about-text .vha-titles span {
+    color: #51beb0;
+    font-size: 30px;
+}
+
+.vh-about-text p {
+    color: #79797b;
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    font-family: "Roboto-Regular";
+}
+.vh-about-text img
+{
+    margin-bottom: 30px;
+}
+.vh-about-text .btn-green 
+{
+    margin:20px 0px;
+}
+.btn-green {
+    background-color: #51b6aa;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto-Bold";
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.15s linear;
+    min-width: 200px;
+    display: inline-block;
+}
+.btn-green:hover {
+    background-color: #ed916a;
+    color: #fff;
+}
+
+.vh-about-qoute 
+{
+    padding:125px 0px;
+    background-image: url('../images/about-bg.png');
+}
+.vh-about-qoute p
+{
+    font-family: 'Museo_Slab';
+    color: #fff;
+    font-size: 34px;
+    margin: 0px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+ 
+    .vh-about-text {
+        padding: 30px 0px;
+        margin: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .vh-about-text .vha-titles 
+    {
+        margin-bottom:15px;
+    }
+    .vh-about-text .vha-titles h1 {
+        font-size: 26px;
+    }
+    .vh-about-text .vha-titles span {
+        font-size: 20px;
+    }
+    .vh-about-text p {
+        font-size: 14px;
+        margin: 0px 0px 20px;
+    }
+    .vh-about-text .btn {
+        font-size: 14px;
+        padding: 10px 12px;
+        min-width: 150px;
+    }
+    .vh-about-qoute 
+    {
+        padding:60px 0px;
+    }
+    .vh-about-qoute p
+    {
+        font-size: 18px;
+    }
+}

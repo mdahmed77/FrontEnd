@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard | Veriheal</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/css/datepicker.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
+
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+  <!-- Main -->
+  <div class="vh-main">
+    <div class="vh-flex">
+
+      <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> Open Appointment <i
+                  class="fas fa-arrow-right"></i></a>
+              <ul>
+                <li>
+                  <a href="#">All Appointments</a>
+                </li>
+                <li>
+                  <a href="#">Find By Calender</a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> Closed Appointment <i
+                  class="fas fa-arrow-right"></i></a>
+              <ul>
+                <li>
+                  <a href="#">Approved MMj Cards Patients</a>
+                </li>
+                <li>
+                  <a href="#">Completed PC Patients</a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Scedule <i class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/earning.png" alt=""> Earning <i class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/tutorials.png" alt=""> Tutorials <i
+                  class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="fas fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+
+      <!-- Right Content Start -->
+
+      <div class="vh-rightpanel">
+
+        <!-- Header Start -->
+        <div class="header">
+          <!-- h upper -->
+          <div class="h-flex">
+
+            <!-- mobile menu button -->
+            <div class="menu-toggler hide-before">
+              <button class="btn btn-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <!-- Mobile Logo (Will show only in mobile) -->
+            <div class="brand hide-before">
+              <a href="#">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+            </div>
+
+            <div class="user">
+              <ul>
+                <!-- Notification -->
+                <li class="notify hide-after">
+                  <a href="#">
+                    <span>2</span>
+                    <i class="far fa-bell"></i>
+                  </a>
+                  <div class="drop-menu">
+                    <ul>
+                      <li><a href="#">Update Your Account</a></li>
+                      <li><a href="#">Account Change Unread</a></li>
+                      <li><a href="#" class="read-already">Read Notification 3</a></li>
+                      <li><a href="#" class="read-already">Read Notification 4</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- User Avtive -->
+                <li class="person">
+                  <div class="text hide-after">
+                    <p>mnakmail-doctor</p>
+                    <a href="#">Logout</a>
+                  </div>
+                  <div class="icon-holder">
+                    <div class="badge hide-before">2</div>
+                    <img src="assets/images/active-user-icon.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- filter bar -->
+          <div class="filter-header">
+            <h1 class="squish">Embed Patient Appointment Booking Links Into Your Website.</h1>
+            <div class="export-btn">
+              <a class="btn btn-green" href="#">Export Excel</a>
+            </div>
+          </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- wrapper -->
+        <div class="vh-wrapper">
+          <div class="embeded">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Raw Url</label>
+                  <input type="url" id="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Titled Link (Get a Recommendation)</label>
+                  <textarea id="" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="">Unstyled Button</label>
+                  <div class="btn-holder">
+                    <a class="btn btn-back" href="#">Get A Recommendation</a>
+                  </div>
+                  <textarea id="" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="">Styled Button</label>
+                  <div class="btn-holder">
+                    <a class="btn btn-green" href="#">Get A Recommendation</a>
+                  </div>
+                  <textarea id="" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="">Iframe Embed Code (See example on the right)</label>
+                  <textarea id="" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="">Iframe Example</label>
+                <div class="iframe-holder">
+                  <iframe src="http://verihealdev.isoft-tech.pk/embedded/?Disp=4653"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-right">
+          <p><a href="#">Privacy Policy</a><span>|</span> &copy; Copyright 2020 <span>|</span> All Right Reserved Veriheal</p>
+        </div>
+
+      </div>
+
+      <!-- Right Content ENd -->
+
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard | Veriheal</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/datepicker.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+  
+  </head>
+  <body>
+
+    <div class="overlay"></div>
+    <!-- Main -->
+    <div class="vh-main">      
+      <div class="vh-flex">
+        
+        <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/home.png" alt=""> Dashboard <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/book-appointment.png" alt=""> Medical Marijuana Card</a>
+              <ul>
+                <li class="active">
+                  <a href="#">Information <i class="far fa-arrow-right"></i></a>
+                </li>
+                <li>
+                  <a href="#">Book Appintment <i class="far fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Personalized Consult <i
+                  class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> My Appointment <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="far fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+        
+        <!-- Right Content Start -->
+
+        <div class="vh-rightpanel">
+
+          <!-- Header Start -->
+          <div class="header">
+            <!-- mobile menu button -->
+            <div class="menu-toggler hide-before">
+              <button class="btn btn-toggle"><i class="fal fa-bars"></i></button>
+            </div>
+            <div class="help hide-after">
+              <p><i class="far fa-question-circle"></i> Need a Help? &nbsp;&nbsp; Call Us Now (1-833-663-7284)</p>
+            </div>
+            <!-- Mobile Logo (Will show only in mobile) -->
+            <div class="brand hide-before">
+              <a href="#">
+                <img src="assets/images/mobile-logo.png" alt="">
+              </a>
+            </div>
+
+            <div class="user">
+              <ul>
+                <!-- Notification -->
+                 <li class="notify hide-after">
+                <a href="#">
+                  <span>2</span>
+                  <i class="far fa-bell"></i>
+                </a>
+                <div class="drop-menu">
+                  <ul>
+                    <li><a href="#">Update Your Account</a></li>
+                    <li><a href="#">Account Change Unread</a></li>
+                    <li><a href="#" class="read-already">Read Notification 3</a></li>
+                    <li><a href="#" class="read-already">Read Notification 4</a></li>
+                  </ul>
+                </div>
+              </li>
+                <!-- User Avtive -->
+                <li class="person">
+                  <div class="text hide-after">
+                    <p>John Smith</p>
+                    <a href="#">Logout</a>
+                  </div>
+                  <div class="icon-holder">
+                    <div class="badge hide-before">2</div>
+                    <img src="assets/images/active-user-icon.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- Header End -->
+				 
+					<!-- wrapper -->
+					<div class="vh-wrapper">
+            <p class="hide-before help-text">Need a Help? &nbsp; Call Us Now (1-833-663-7284)</p>
+
+						<!-- Steps Head Start -->
+						<div class="steps-header">
+							<a href="#" class="back-link disabled"><i class="far fa-arrow-left"></i> <span>Medical History</span></a>
+							<div class="wizard-title">
+								<h1>Documentation</h1>
+								<ul>
+									<li class="completed-step">
+										<div></div>
+									</li>
+									<li class="completed-step">
+										<div></div>
+									</li>
+									<li class="active-step">
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="next-link"><span>Summary</span> <i class="far fa-arrow-right"></i></a>
+						</div>
+						<!-- Steps Head End -->
+						
+						<!--Active Step  -->
+						<div class="active-wizard">
+              
+              <div class="row">
+                <div class="col-12">
+                  <div class="upload-docs">
+                    <h5>Upload a clear photo of your face and docment</h5>
+                    <p>(You must show your full face in this photo and not have on a hat or glasses. Please make sure your photo is not taken at an angle)</p>
+                    <div class="upload-holders">
+                      <!-- Profile Uploader Start -->
+                      <div class="upload-box">
+                        <input type="file" accept="image/*" name="image" id="profile-upload" onchange="profileUploader(event)" style="display: none;">
+                        <label for="profile-upload">
+                          <div class="holder">
+                            <button class="remove-btn remove-profile"><i class="far fa-times"></i></button>
+                            <img src="assets/images/upload-avatar.png" alt="">
+                            <div class="uploaded-image">
+                              <img id="profile-img" src="" alt="">
+                            </div>
+                          </div>
+                          <p>Upload Photo</p>
+                        </label>
+                      </div>     
+                      <!-- Profile Uploader END -->
+
+                      <!-- ID Uploader Start -->
+                      <div class="upload-box">
+                        <input type="file" accept="image/*" name="image" id="id-upload" onchange="idCardUploader(event)" style="display: none;">
+                        <label for="id-upload">
+                          <div class="holder id-holder">
+                            <button class="remove-btn remove-idCard"><i class="far fa-times"></i></button>
+                            <img src="assets/images/id.png" alt="">
+                            <div class="uploaded-image">
+                              <img id="idCard-img" src="" alt="">
+                            </div>
+                          </div>
+                          <p>Upload National ID</p>
+                        </label>
+                      </div>                      
+                    <!-- ID Uploader END -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-20">
+                <div class="col-6 text-left">
+                  <a href="#" class="btn btn-default btn-back">Back</a>
+                </div>
+                <div class="col-6 text-right">
+                  <a href="#" class="btn btn-default btn-next">Next</a>
+                </div>
+              </div>
+						</div>
+						<!--Active Step END  -->
+
+					</div>
+
+          <div class="c-right hide-before">
+            <p>&copy; Veriheal.com</p>
+          </div>
+        </div>
+
+        <!-- Right Content ENd -->
+
+      </div>
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/progress.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

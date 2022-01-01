@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard | Veriheal</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/css/datepicker.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
+
+
+</head>
+
+<body>
+
+
+  <div class="overlay"></div>
+
+  <!-- Main -->
+  <div class="vh-main">
+    <div class="vh-flex">
+
+      <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/home.png" alt=""> Dashboard <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/book-appointment.png" alt=""> Medical Marijuana Card</a>
+              <ul>
+                <li class="active">
+                  <a href="#">Information <i class="far fa-arrow-right"></i></a>
+                </li>
+                <li>
+                  <a href="#">Book Appintment <i class="far fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Personalized Consult <i
+                  class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> My Appointment <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="far fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+
+      <!-- Right Content Start -->
+
+      <div class="vh-rightpanel">
+
+        <!-- Header Start -->
+        <div class="header">
+          <!-- mobile menu button -->
+          <div class="menu-toggler hide-before">
+            <button class="btn btn-toggle"><i class="fal fa-bars"></i></button>
+          </div>
+          <div class="help hide-after">
+            <p><i class="far fa-question-circle"></i> Need a Help? &nbsp;&nbsp; Call Us Now (1-833-663-7284)</p>
+          </div>
+          <!-- Mobile Logo (Will show only in mobile) -->
+          <div class="brand hide-before">
+            <a href="#">
+              <img src="assets/images/mobile-logo.png" alt="">
+            </a>
+          </div>
+
+          <div class="user">
+            <ul>
+              <!-- Notification -->
+              <li class="notify hide-after">
+                <a href="#">
+                  <span>2</span>
+                  <i class="far fa-bell"></i>
+                </a>
+                <div class="drop-menu">
+                  <ul>
+                    <li><a href="#">Update Your Account</a></li>
+                    <li><a href="#">Account Change Unread</a></li>
+                    <li><a href="#" class="read-already">Read Notification 3</a></li>
+                    <li><a href="#" class="read-already">Read Notification 4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- User Avtive -->
+              <li class="person">
+                <div class="text hide-after">
+                  <p>John Smith</p>
+                  <a href="#">Logout</a>
+                </div>
+                <div class="icon-holder">
+                  <div class="badge hide-before">2</div>
+                  <img src="assets/images/active-user-icon.png" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Header End -->
+
+        <!-- wrapper -->
+        <div class="vh-wrapper">
+          <p class="hide-before help-text">Need a Help? &nbsp; Call Us Now (1-833-663-7284)</p>
+
+          <!-- Steps Head Start -->
+          <div class="steps-header">
+            <a href="#" class="back-link disabled"><i class="far fa-arrow-left"></i> <span>Summary</span></a>
+            <div class="wizard-title">
+              <h1>Book Appointment</h1>
+              <ul>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="completed-step">
+                  <div></div>
+                </li>
+                <li class="active-step">
+                  <div></div>
+                </li>
+                <li>
+                  <div></div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="next-link"><span>Payment</span> <i class="far fa-arrow-right"></i></a>
+          </div>
+          <!-- Steps Head End -->
+
+          <!--Active Step  -->
+          <div class="active-wizard">
+            <div class="book-appointment">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="form-group">
+                    <h6 class="label">What state are you looking to get your Medical
+                      Marijuana Card for?</h6>
+                    <select name="state" id="state" class="form-control">
+                      <option value="default" selected disabled>-- Select State --</option>
+                      <option value="1">State 1</option>
+                      <option value="2">State 2</option>
+                      <option value="3">State 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <h6 class="label">Select your appintment type</h6>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="input-check">
+                          <input type="radio" id="mc" name="appointment_type" />
+                          <label for="mc"> Marijuana Card</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="input-check">
+                          <input type="radio" id="pc" name="appointment_type" />
+                          <label for="pc"> Personalized Consult</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h6 class="label">Choose your consultation method</h6>
+                    <!-- Consultation Radio Checks -->
+                    <div class="toggle-checks">
+                      <div class="check-box">
+                        <input type="radio" name="gender-check" id="video-meeting" checked />
+                        <label for="video-meeting">
+                          <img src="assets/images/video-call.png" alt="">
+                          <p>Video Consultation</p>
+                        </label>
+                      </div>
+                      <div class="check-box">
+                        <input type="radio" name="gender-check" id="personal-meeting" />
+                        <label for="personal-meeting">
+                          <img src="assets/images/personaly.png" alt="">
+                          <p>In-Person Consultation</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h6 class="label">Select your desired City</h6>
+                    <select name="state" id="state" class="form-control">
+                      <option value="default" selected disabled>-- Select --</option>
+                      <option value="1">City 1</option>
+                      <option value="2">City 2</option>
+                      <option value="3">City 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="date-picker">
+                    <div id="select-date"></div>
+                  </div>
+                  <div class="form-group">
+                    <h6 class="label">Select appointment Time</h6>
+                    <select name="state" id="state" class="form-control">
+                      <option value="default" selected disabled>05:45 AM (EST)</option>
+                      <option value="1">06:00 AM (EST)</option>
+                      <option value="2">06:15 AM (EST)</option>
+                      <option value="3">06:30 AM (EST)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-20">
+              <div class="col-6 text-left">
+                <a href="#" class="btn btn-default btn-back">Back</a>
+              </div>
+              <div class="col-6 text-right">
+                <a href="#" class="btn btn-default btn-next">Next</a>
+              </div>
+            </div>
+          </div>
+          <!--Active Step END  -->
+
+        </div>
+        <div class="c-right hide-before">
+          <p>&copy; Veriheal.com</p>
+        </div>
+
+      </div>
+
+      <!-- Right Content ENd -->
+
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

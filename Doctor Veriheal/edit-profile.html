@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard | Veriheal</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/css/datepicker.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
+
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+  <!-- Main -->
+  <div class="vh-main">
+    <div class="vh-flex">
+
+      <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> Open Appointment <i
+                  class="fas fa-arrow-right"></i></a>
+              <ul>
+                <li>
+                  <a href="#">All Appointments</a>
+                </li>
+                <li>
+                  <a href="#">Find By Calender</a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> Closed Appointment <i
+                  class="fas fa-arrow-right"></i></a>
+              <ul>
+                <li>
+                  <a href="#">Approved MMj Cards Patients</a>
+                </li>
+                <li>
+                  <a href="#">Completed PC Patients</a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Scedule <i class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/earning.png" alt=""> Earning <i class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/tutorials.png" alt=""> Tutorials <i
+                  class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="fas fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+
+      <!-- Right Content Start -->
+
+      <div class="vh-rightpanel">
+
+        <!-- Header Start -->
+        <div class="header">
+          <!-- h upper -->
+          <div class="h-flex">
+
+            <!-- mobile menu button -->
+            <div class="menu-toggler hide-before">
+              <button class="btn btn-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <!-- Mobile Logo (Will show only in mobile) -->
+            <div class="brand hide-before">
+              <a href="#">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+            </div>
+
+            <div class="user">
+              <ul>
+                <!-- Notification -->
+                <li class="notify hide-after">
+                  <a href="#">
+                    <span>2</span>
+                    <i class="far fa-bell"></i>
+                  </a>
+                  <div class="drop-menu">
+                    <ul>
+                      <li><a href="#">Update Your Account</a></li>
+                      <li><a href="#">Account Change Unread</a></li>
+                      <li><a href="#" class="read-already">Read Notification 3</a></li>
+                      <li><a href="#" class="read-already">Read Notification 4</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- User Avtive -->
+                <li class="person">
+                  <div class="text hide-after">
+                    <p>mnakmail-doctor</p>
+                    <a href="#">Logout</a>
+                  </div>
+                  <div class="icon-holder">
+                    <div class="badge hide-before">2</div>
+                    <img src="assets/images/active-user-icon.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- filter bar -->
+          <div class="filter-header">
+            <h1>Edit Profile</h1>
+          </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- wrapper -->
+        <div class="vh-wrapper">
+          <div class="doc-edit-profile">
+            <div class="row">
+              <div class="col-12">
+                <h4>Personal Information</h4>
+              </div>
+              <div class="col-12">
+                <div class="pi-border-box">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="identity">
+                        <label for="">Clinic Logo</label>
+                        <div class="img-holder">
+                          <img src="assets/images/doctor.png" alt="">
+                        </div>
+                        <p class="text-center">
+                          <a href="#">Remove Photo</a>
+                          <span>|</span>
+                          <a href="#">Change Photo</a>
+                        </p>
+                      </div>
+                      <div class="identity">
+                        <label for="">Clinic Logo</label>
+                        <div class="img-holder">
+                          <img src="assets/images/doctor.png" alt="">
+                        </div>
+                        <p class="text-center">
+                          <a href="#">Remove Logo</a>
+                          <span>|</span>
+                          <a href="#">Change Logo</a>
+                        </p>
+                      </div>
+                      <div class="fee-info">
+                        <h4>Personalized Consult <br><small>Fee (10 Mins)</small></h4>
+                        <h3>$30</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="dname">Full Name</label>
+                        <input type="text" id="dname" class="form-control">
+                      </div>
+                      <div class="form-group ta-height">
+                        <label for="demail">Email</label>
+                        <input type="email" id="demail" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="dcname">Clinic Name</label>
+                        <input type="text" id="dcname" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="dtzone">Time Zone</label>
+                        <select id="dtzone" class="form-control">
+                          <option value="est">EST</option>
+                          <option value="gmt">GMT</option>
+                        </select>
+                      </div>
+                      <div class="fee-info">
+                        <h4>Personalized Consult <br><small>Fee (20 Mins)</small></h4>
+                        <h3>$50</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="dphone">Phone Number</label>
+                        <input type="email" id="dphone" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="daddress">Address</label>
+                        <textarea id="daddress" class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="dpaypal">Paypal ID</label>
+                        <input type="text" id="dpaypal" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="dsign">Signature</label>
+                        <textarea id="dsign" class="form-control"></textarea>
+                        <p class="sign-action">
+                          <a href="#">Clear</a>
+                          <span>|</span>
+                          <a href="#">Save</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="state-details">
+                  <h4>Choose State</h4>
+                  <p class="h-p">Upload license" or "proof" for physician registration in each state which you select</p>
+                </div>
+                <div class="pi-border-box">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="dstate">State <span class="required">*</span></label>
+                        <select class="form-control" name="dstate" id="dstate">
+                          <option value="default" selected disabled>-- Select --</option>
+                          <option value="state">State Name</option>
+                          <option value="state">State Name</option>
+                          <option value="state">State Name</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="dCity">City <span class="required">*</span></label>
+                        <select class="form-control" name="dCity" id="dCity">
+                          <option value="default" selected disabled>-- Select --</option>
+                          <option value="City">City Name</option>
+                          <option value="City">City Name</option>
+                          <option value="City">City Name</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="saddress">Address <span class="required">*</span></label>
+                        <input type="text" id="saddress" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="sln">State License Number</label>
+                        <input type="text" id="sln" class="form-control">
+                      </div>
+                    </div>
+
+                    <!-- doc Uploader -->
+                    <div class="col-12">
+                      <div class="doc-uploader">
+                        <input id="st_doc_uploader" type="file">
+                        <a class="st-trigger">Upload Document</a>
+                        <span class="st-filename"><strong>Document: </strong> <div class="text">dfile</div></span>
+                      </div>
+                    </div>
+
+                    <!-- doc Uploader END -->
+
+                    <div class="col-12">
+                      <button class="btn btn-green">Add</button>
+                    </div>
+                    <div class="col-12">
+                      <div class="saved-states">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="state-box">
+                              <p class="home-town">Pennsylvania > Allentown</p>
+                              <h6 class="home-address">23 West Colony, Mt Street Allentown PA 12456</h6>
+                              <p class="lnum">License No: <span>345-54355</span></p>
+                              <a href="#">Remove</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="degree-fields">
+                  <h4>Degree</h4>
+                  <div class="pi-border-box">
+                    <div class="form-group">
+                      <label for="uni">University</label>
+                      <input type="text" id="uni" class="form-control" placeholder="University Name">  
+                    </div>
+                    <div class="form-group">
+                      <label for="degree">Degree</label>
+                      <input type="text" id="degree" class="form-control" placeholder="Degree Name">  
+                    </div>
+                    <div class="form-group">
+                      <label for="end">End Year</label>
+                      <input type="text" id="end" class="form-control" placeholder="End Year">  
+                    </div>
+
+                    <!-- doc Uploader -->
+                    
+                    <div class="doc-uploader">
+                      <input id="dg_doc_uploader" type="file">
+                      <a class="dg-trigger">Upload Document</a>
+                      <span class="dg-filename"><strong>Document: </strong> <div class="text">dfile</div></span>
+                    </div>
+
+                    <!-- doc Uploader END -->
+
+
+                    <!-- add buttonn -->
+                    <button class="btn btn-green">Add</button>
+  
+                    <!-- Added Degrees -->
+                    <div class="degrees-list">
+
+                      <div class="degree-box">
+                        <div class="text">
+                          <p class="year">Completed in (2005)</p>
+                          <p class="uni-name">Doctor University</p>
+                          <p class="deg-name">Doctor Degree Name</p>
+                        </div>
+                        <a href="#">Remove</a>
+                      </div>
+                      <div class="degree-box">
+                        <div class="text">
+                          <p class="year">Completed in (2005)</p>
+                          <p class="uni-name">Doctor University</p>
+                          <p class="deg-name">Doctor Degree Name</p>
+                        </div>
+                        <a href="#">Remove</a>
+                      </div>
+                      <div class="degree-box">
+                        <div class="text">
+                          <p class="year">Completed in (2005)</p>
+                          <p class="uni-name">Doctor University</p>
+                          <p class="deg-name">Doctor Degree Name</p>
+                        </div>
+                        <a href="#">Remove</a>
+                      </div>
+                      <div class="degree-box">
+                        <div class="text">
+                          <p class="year">Completed in (2005)</p>
+                          <p class="uni-name">Doctor University</p>
+                          <p class="deg-name">Doctor Degree Name</p>
+                        </div>
+                        <a href="#">Remove</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        <div class="c-right">
+          <p><a href="#">Privacy Policy</a><span>|</span> &copy; Copyright 2020 <span>|</span> All Right Reserved Veriheal</p>
+        </div>
+
+      </div>
+
+      <!-- Right Content ENd -->
+
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+      $('.st-trigger').on('click', function() {
+        $('#st_doc_uploader').click();
+      });
+      $('.dg-trigger').on('click', function() {
+        $('#dg_doc_uploader').click();
+      });
+      
+      $('#st_doc_uploader').change(function(e){
+        $('.st-trigger').hide();
+        var sfile = e.target.files[0].name;
+        $('.st-filename .text').text(sfile);    
+        $('.st-filename').show();
+      });
+      $('#dg_doc_uploader').change(function(e){
+        $('.dg-trigger').hide();
+        var dfile = e.target.files[0].name;
+        $('.dg-filename .text').text(dfile);
+        $('.dg-filename').show();
+      });
+      
+    });
+
+  </script>
+
+</body>
+
+</html>

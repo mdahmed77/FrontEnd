@@ -1,0 +1,394 @@
+$green: #51beb0;
+$orange: #ed8f66;
+
+@font-face{
+    font-family: 'regular';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: 'bold';
+    src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: 'title';
+    src: url('fonts/MuseoSlab.ttf');
+}
+
+html
+{
+    overflow-x: hidden;
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Regular';
+    background-color: #fff;
+    margin:0px;
+    padding:0px;
+}
+
+a
+{
+    outline:none !important;
+}
+.vh-footer .row > div
+{
+    margin-bottom:30px;
+}
+.vh-footer
+{
+    background-color:#f5f5f5;
+    padding:100px 0px 30px;
+    @media (max-width:991px) {
+        padding:45px 15px 15px;
+    }
+    .f-info
+    {
+        display: flex;
+        flex-direction: column;
+        .f-brand
+        {
+            display: inline-block;    
+            margin-bottom:30px;    
+            img
+            {
+                height:48px;
+                width:auto;
+                @media(max-width:767px)
+                {
+                    height:32px;
+                }
+            }
+        }
+        .cf-link ~ .cf-link
+        {
+            margin-top:12px;
+        }
+        .cf-link
+        {
+            color:#959595;
+            text-decoration: none;
+            font-size:16px;
+            @media(max-width:767px)
+            {
+                font-size:12px;
+            }
+            i
+            {
+                margin-right: 10px;
+            }
+            &:hover
+            {
+                color:$green;
+            }
+        }
+        .verified-images
+        {
+            margin-top:30px;
+            img ~ img{
+                margin-left:15px;
+            }
+            @media(max-width:767px)
+            {
+                margin-top:15px;
+                &.d-flex
+                {
+                    flex-wrap:wrap;
+                }
+                img ~ img{
+                    margin-left:0px;
+                    margin-top:15px;
+                }
+            }
+        }
+    }
+    .quick-links
+    {
+        h5
+        {
+            color:$green;
+            font-family: 'title';
+            margin-bottom:25px;
+            font-size:20px;
+            text-transform: uppercase;
+            @media(max-width:767px)
+            {
+                font-size:16px;
+                margin-bottom:18px;
+                &.mt-xs-20
+                {
+                    margin-top:10px !important;
+                }
+            }
+        }
+        a
+        {
+            color:#959595;
+            font-size: 16px;
+            display: inline-block;
+            width: 100%;
+            text-decoration: none !important;
+            font-family: 'regular';
+            position: relative;
+            transition: color .15s linear;
+            @media(max-width:767px)
+            {
+                font-size:13px;
+            }
+            &::after
+            {
+                content:"";
+                height: 2px;
+                width: 0px;
+                background-color:$green;
+                transition: .15s linear;
+                position: absolute;
+                bottom:-2px;
+                left:0px;
+            }
+            & ~ a
+            {
+                margin-top:15px;
+                @media(max-width:767px)
+                {
+                    margin-top:10px;
+                }
+            }
+            &:hover
+            {
+                color:$green;
+                &::after
+                {
+                    width: 35px;
+                }
+            }
+        }
+    }
+}
+
+.quick-links
+{
+    @media(min-width:1200px)
+    {
+        padding-left:100px;
+    }
+}
+
+.vh-subscription
+{
+    padding:50px 0px;
+    background-color:#fff;
+    h6
+    {
+        font-size: 20px;
+        color:#343434;
+        margin:0px;
+        font-family: 'title';
+    }
+    p
+    {
+        font-size: 18px;
+        color:#959595;
+        margin:0px 0px 10px;
+    }
+    .form-control{
+        background-color:#f1f1f1;
+        border:none !important;
+        box-shadow: none !important;
+        outline:none !important;
+        border-radius:10px;
+        padding:5px 20px;
+        min-height: 50px;
+        color:#1d1d1d;
+        &::placeholder
+        {
+            color: #979797;
+        }
+    }
+    .btn-green{
+        background-color:$green;
+        color:#fff;
+        font-family: bold;
+        padding:10px 35px;
+        border-radius: 50px;
+        margin:10px 0px 0px;
+        min-width: 0px;
+        font-size: 16px;
+        display: inline-block;
+        &:hover
+        {
+            background-color:$orange;
+            color:#fff;
+        }
+    }
+    select.form-control
+    {
+        color: #979797;
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url('../images/caret.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 15px) center;
+        option
+        {
+            &:first-child
+            {
+                color:#979797;
+            }
+            color:#1d1d1d;
+            &:hover
+            {
+                color:#fff;
+            }
+        }
+    }
+    /*------ Social Icons ------*/
+    ul 
+    {
+        display:inline-block;
+        width:100%;
+        padding:0px;
+        text-align: center;
+        margin:0px;
+        li
+        {
+            display: inline-block;
+            list-style-type: none;
+        }
+    }
+    ul.socials 
+    {
+        margin:30px 0px !important;
+    }
+    ul.socials li a {
+        font-size: 12px;
+        margin: 0 1px;
+        text-align: center;
+        display: block;
+        color: #fff;
+        width: 34px;
+        height: 32px;
+        border-radius: 4px;
+        line-height: 32px;
+    }
+    
+    ul.socials li:last-child a {
+        margin-right: 0;
+    }
+    
+    ul.socials li:first-child a {
+        margin-left: 0;
+    }
+    
+    
+    ul.socials.simples li a {
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    ul.socials.simples.darkcolor li a {
+        color: #495158;
+    }
+    
+    .social-facebook {
+        background-color: #3a5898;
+        border-color: #3a5898;
+    }
+    
+    .social-insta {
+        background-color: #262626;
+        border-color: #262626;
+    }
+    
+    .social-twitter {
+        background-color: #28a0d2;
+        border-color: #28a0d2;
+    }
+    
+    .social-youtube {
+        background-color: #c4302b;
+        border-color: #c4302b;
+    }
+    
+    .social-linkedin {
+        background-color: #0071a8;
+        border-color: #0071a8;
+    }
+    
+    .social-google {
+        background-color: #be342b;
+        border-color: #be342b;
+    }
+    
+    .social-whatsapp {
+        background-color: #25D366;
+        border-color: #25D366;
+    }
+    
+    ul.socials li a:hover,
+    ul.socials li a:focus {
+        color: #50c1b0;
+        -webkit-box-shadow: 0px 0 18px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0 18px 0px rgba(0, 0, 0, 0.2);
+    }
+    /*------ Social Icons ends ------*/
+    @media (max-width:991px) {
+        text-align: center;
+    }
+}
+
+.vh-copyright
+{
+    background-color:#f5f5f5;
+    padding:20px 0px;
+    p
+    {
+        margin:0px;
+        font-size: 18px;
+        color:#808080;
+    }
+    .terms-policy-links
+    {
+        a
+        {
+            color:#808080;
+            text-decoration: none !important;
+            & ~ a
+            {
+                margin-left:15px;
+            }
+            &:hover
+            {
+                color:$green;
+            }
+        }
+    }
+    @media(max-width:767px)
+    {
+        .d-flex
+        {
+            flex-direction: column;
+        }
+        p
+        {
+            margin-bottom: 6px !important;
+            font-size: 14px !important;
+        }
+        .terms-policy-links a
+        {
+            font-size: 14px !important;
+        }
+    }
+}
+@media (max-width: 420px)
+{
+.vh-footer .f-info .f-brand img {
+    height: 25px;
+}
+#nav_menu-4 .quick-links {
+    margin-top: 8px!important;
+}
+}

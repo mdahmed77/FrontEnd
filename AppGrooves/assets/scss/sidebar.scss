@@ -1,0 +1,44 @@
+.sidebar
+{
+    height: 100%;
+    padding-top:20px;
+    background: #fff;
+    border:1px solid #eee;
+    @media (max-width:991px) {
+        position:absolute;
+        left:6px;
+        width:260px;
+        top:0px;
+        z-index:1050;
+        padding-top:0px;
+        display: none;
+    }
+    a
+    {
+        border-bottom:1px solid #eee;
+        display: inline-block;
+        width: 100%;
+        padding:0px 10px 0px 20px;
+        color:$atext;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 44px;
+        letter-spacing: 0.3px;
+        @media (max-width:991px) {
+            border-right: 1px solid #ddd;
+            background-color: #fff;
+        }
+        &:hover
+        {
+            color:$blue;
+        }
+        i
+        {
+            margin-right: 10px;
+            font-size: 14px;
+            min-width: 20px;
+        }
+    }
+}

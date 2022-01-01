@@ -1,0 +1,33 @@
+// Colors Used
+@import "variables";
+
+// Fonts Used 
+@import "fonts";
+
+// Reset styles for theme
+@import "reset";
+
+// Login and Forget Password
+@import "login";
+
+@import "sidebar";
+
+@import "header";
+
+@import "rightpanel";
+
+
+
+.vh-flex
+{
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+// Side Bar Styles
+@import "wizard";
+
+@import "editProfile";

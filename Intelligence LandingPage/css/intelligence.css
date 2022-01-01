@@ -1,0 +1,567 @@
+@font-face {
+    font-family: gibson;
+    src: url("../fonts/Gibson-Regular.ttf");
+}
+@font-face {
+    font-family: igibson;
+    src: url("../fonts/Gibson-Italic.ttf");
+}
+@font-face {
+    font-family: sgibson;
+    src: url("../fonts/Gibson-SemiBold.ttf");
+}
+@font-face {
+    font-family: bgibson;
+    src: url("../fonts/Gibson-Bold.ttf");
+}
+
+body {
+    font-family: gibson;
+}
+
+.vh-intelBanner {
+    background-image: url(../images/intelligenceBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    color: #fff;
+    margin-bottom: 180px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.vh-intelBanner .content {
+    margin-bottom: 50px;
+}
+.vh-intelBanner .content h1 {
+    font-size: 64px;
+    font-family: bgibson;
+}
+.vh-intelBanner .content p {
+    font-size: 32px;
+}
+.vh-intelBanner .content p span {
+    color: #4ec0b0;
+}
+
+.vh-intelBanner img {
+    margin-bottom: -78px;
+}
+
+.vh-intelNewsletter {
+    padding: 100px 0px 150px;
+}
+.vh-intelNewsletter .img {
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+.vh-intelNewsletter h2 {
+    color: #171717;
+    font-size: 58px;
+    font-family: bgibson;
+    margin: 0px 0px -25px;
+}
+.vh-intelNewsletter h2 span {
+    color: #4ec0b0;
+}
+.vh-intelNewsletter h2 small {
+    display: block;
+    font-family: sgibson;
+    color: #171717;
+    margin: 0px;
+    font-size: 32px;
+}
+.vh-intelNewsletter .display-1 {
+    margin-bottom: 100px;
+}
+.vh-intelNewsletter .display-1 em {
+    font-family: igibson;
+    color: #171717;
+    padding-left: 100px;
+    text-transform: uppercase;
+}
+
+.vh-intelNewsletter .text h3 {
+    font-family: sgibson;
+    color: #171717;
+    margin: 0px;
+    font-size: 22px;
+}
+.vh-intelNewsletter .text p {
+    color: #b71111;
+    margin-bottom: 30px;
+    font-size: 20px;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -20px;
+}
+.vh-intelNewsletter .text .description {
+    color: #7b7b7b;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.vh-intelNewsletter .text ul {
+    margin: 0px;
+    padding: 0px;
+}
+.vh-intelNewsletter .text ul li {
+    display: block;
+    margin: 0px;
+    color: #1d1d1d;
+    font-size: 18px;
+    padding-left: 25px;
+    position: relative;
+}
+.vh-intelNewsletter .text ul li ~ li {
+    margin-top: 10px;
+}
+.vh-intelNewsletter .text ul li::before {
+    top: 6px;
+    left: 0px;
+    content: "";
+    background-color: #50c0b0 !important;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.vh-intelNewsletter .loading {
+    text-align: right;
+}
+.vh-intelNewsletter .loading img {
+    display: block;
+    max-height: 32px;
+    width: auto;
+    margin: 25px 0 0 auto;
+}
+.vh-intelNewsletter .loading span {
+    color: #b71111;
+    margin: 10px 0px 30px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.vh-intel-form .btn {
+    display: inline-flex;
+    align-items: center;
+    outline: none !important;
+    box-shadow: none;
+    padding: 0px;
+}
+.vh-intel-form .btn i {
+    background: linear-gradient(to right, #4ec0b0, #267047);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 24px;
+    position: relative;
+    top: -10px;
+}
+.vh-intel-form .btn span {
+    background: linear-gradient(to right, #4ec0b0, #267047);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 28px;
+    font-family: bgibson;
+}
+.vh-intel-form {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.vh-intel-form .form-control {
+    border: none;
+    box-shadow: none;
+    color: #171717;
+    outline: none !important;
+    font-size: 25px;
+    padding: 0px;
+    background: transparent;
+}
+.vh-intel-form .form-control::placeholder {
+    color: #d3d3d3;
+}
+
+.vh-intelNews {
+    margin-bottom: 100px;
+}
+.vh-intelNews h2 {
+    color: #171717;
+    font-size: 58px;
+    font-family: bgibson;
+    margin: 0px 0px -25px;
+    text-align: center;
+}
+.vh-intelNews h2 span {
+    color: #4ec0b0;
+}
+.vh-intelNews .display-1 {
+    margin-bottom: 60px;
+    text-align: right;
+}
+.vh-intelNews .display-1 em {
+    font-family: igibson;
+    color: #171717;
+    padding-left: 75px;
+    text-transform: uppercase;
+}
+
+.vh-intelNews .icard-holder {
+    position: relative;
+    padding: 2px;
+}
+.vh-intelNews .text-right .icard-holder {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vh-intelNews .icard-holder img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1500px) {
+    .vh-intelNews .icard-holder img {
+        width: 100% !important;
+    }
+    .vh-intelBanner .content h1 {
+        font-size: 54px;
+    }
+    .vh-intelBanner .content p {
+        font-size: 28px;
+    }
+    .vh-intelBanner .content button {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+    .vh-intelBanner img {
+        margin-bottom: -60px;
+    }
+    .vh-intelBanner {
+        margin-bottom: 60px;
+    }
+    .vh-intelNewsletter {
+        padding: 75px 0px 110px;
+    }
+    .vh-intelNews h2,
+    .vh-intelNewsletter h2 {
+        font-size: 48px;
+        margin-bottom: -10px;
+    }
+    .vh-intelNews .display-1,
+    .vh-intelNewsletter .display-1 {
+        font-size: 60px;
+    }
+    .vh-intelNewsletter .text h3 {
+        font-size: 20px;
+    }
+    .vh-intelNewsletter .text p {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    .vh-intel-form .btn i {
+        font-size: 20px;
+        top: -10px;
+    }
+    .vh-intel-form .btn span {
+        font-size: 24px;
+    }
+    .vh-intel-form .form-control {
+        font-size: 20px;
+    }
+    .vh-intel-form {
+        padding: 16px 0px;
+    }
+    .vh-intelNews h2 {
+        padding-left: 35vw;
+        position: relative;
+    }
+    /* .vh-intelNews .icard-holder.fadeup-a img
+    {
+        
+    }
+    .vh-intelNews .icard-holder.fadeup-c img
+    {
+
+    }
+    .vh-intelNews .icard-holder.fadeup-d img
+    {
+
+    }
+    .vh-intelNews .icard-holder.leftin img
+    {
+        
+    }
+    .vh-intelNews .icard-holder.fadeup-b img{
+
+    } */
+}
+@media (max-width: 1199px) {
+    .vh-intelBanner .content h1 {
+        font-size: 45px;
+    }
+    .vh-intelBanner .content p {
+        font-size: 24px;
+    }
+    .vh-intelBanner .content button {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+    .vh-intelBanner img {
+        margin-bottom: -50px;
+    }
+    .vh-intelBanner {
+        margin-bottom: 70px;
+    }
+    .vh-intelNews h2,
+    .vh-intelNewsletter h2 {
+        font-size: 38px;
+        margin-bottom: -10px;
+    }
+    .vh-intelNews .display-1,
+    .vh-intelNewsletter .display-1 {
+        font-size: 48px;
+    }
+    .vh-intelNewsletter {
+        padding: 60px 0px 90px;
+    }
+    .vh-intelNewsletter .text h3 {
+        font-size: 18px;
+    }
+    .vh-intelNewsletter .text p {
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    .vh-intel-form .btn i {
+        font-size: 18px;
+        top: -8px;
+    }
+    .vh-intel-form .btn span {
+        font-size: 20px;
+    }
+    .vh-intel-form .form-control {
+        font-size: 18px;
+    }
+    .vh-intel-form {
+        padding: 12px 0px;
+    }
+    .vh-intelNewsletter h2 small {
+        font-size: 24px;
+    }
+    .vh-intelNewsletter .text .description,
+    .vh-intelNewsletter .text ul li
+    {
+        font-size:16px;
+    }
+}
+@media (min-width: 992px) {
+    .vh-intelNewsletter h2 {
+        padding-left: 50px;
+    }
+    .vh-intelNewsletter h2 small {
+        position: relative;
+        left: -50px;
+    }
+}
+@media (max-width: 991px) {
+    .vh-intelBanner .content {
+        margin-bottom: 20px;
+    }
+    .vh-intelBanner .content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .vh-intelBanner .content p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .vh-intelBanner img {
+        max-width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vh-intelBanner img {
+        margin-bottom: -40px;
+    }
+    .vh-intelBanner {
+        margin-bottom: 60px;
+    }
+    .vh-intelNews h2,
+    .vh-intelNewsletter h2 {
+        font-size: 28px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    .vh-intelNews .display-1,
+    .vh-intelNewsletter .display-1 {
+        text-align: center;
+        font-size: 38px;
+    }
+    .vh-intelNews .display-1 em,
+    .vh-intelNewsletter .display-1 em {
+        padding-left: 0px;
+    }
+    .vh-intelNewsletter {
+        padding: 40px 0px 65px;
+    }
+    .vh-intelNewsletter .text h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .vh-intelNewsletter .text p {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .vh-intel-form .btn i {
+        font-size: 16px;
+        top: -5px;
+    }
+    .vh-intel-form .btn span {
+        font-size: 18px;
+    }
+    .vh-intel-form .form-control {
+        font-size: 16px;
+    }
+    .vh-intel-form {
+        padding: 10px 0px;
+    }
+    .vh-intelNewsletter .loading {
+        text-align: center !important;
+    }
+    .vh-intelNewsletter .loading img {
+        max-height: 30px !important;
+        margin: 15px auto 0;
+    }
+    .vh-intelNewsletter .loading span {
+        font-size: 14px;
+    }
+    .vh-intelNews h2 {
+        padding-left: 0vw;
+        position: relative;
+    }
+    .vh-intelNewsletter .img {
+        max-width: 300px;
+        display: block;
+        margin: -40px auto 30px;
+    }
+    .vh-intelNewsletter h2 small {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+}
+@media (max-width: 767px) {
+    /* .vh-intelBanner .content h1 {
+        font-size: 32px;
+    }
+    .vh-intelBanner .content p {
+        font-size: 18px;
+    } */
+    .vh-intelBanner img {
+        max-width: 400px;
+    }
+    .vh-intelBanner img {
+        margin-bottom: -30px;
+    }
+    .vh-intelBanner {
+        margin-bottom: 55px;
+    }
+    /* .vh-intelNews h2,
+    .vh-intelNewsletter h2 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .vh-intelNews .display-1,
+    .vh-intelNewsletter .display-1 {
+        font-size: 32px;
+    } */
+    .vh-intelNewsletter {
+        padding: 30px 0px 45px;
+    }
+    .vh-intelNewsletter .text h3 {
+        font-size: 14px;
+    }
+    .vh-intelNewsletter .text p {
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+    .vh-intel-form .btn i {
+        font-size: 14px;
+        top: -5px;
+    }
+    .vh-intel-form .btn span {
+        font-size: 16px;
+    }
+    .vh-intel-form .form-control {
+        font-size: 14px;
+    }
+    .vh-intel-form {
+        padding: 10px 0px;
+    }
+    .vh-intelNewsletter .loading img {
+        max-height: 48px;
+    }
+    /* .vh-intelNewsletter h2 small
+    {
+        font-size: 18px;
+    } */
+    .vh-intelNewsletter .loading img {
+        max-height: 22px !important;
+    }
+    .vh-intelNewsletter .loading span {
+        font-size: 12px;
+    }
+}
+@media (max-width: 575px) {
+    .vh-intelBanner .ibar {
+        padding: 12px 0px;
+    }
+    .vh-intelBanner .ibar p {
+        font-size: 12px;
+    }
+    .vh-intelBanner .ibar .fa-ellipsis-v {
+        font-size: 14px;
+    }
+    /* .vh-intelBanner .content h1 {
+        font-size: 28px;
+    }
+    .vh-intelBanner .content p {
+        font-size: 16px;
+    } */
+    .vh-intelBanner img {
+        max-width: 350px;
+        margin-bottom: -20px;
+    }
+    .vh-intelBanner {
+        margin-bottom: 50px;
+    }
+    /* .vh-intelNews h2,
+    .vh-intelNewsletter h2 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .vh-intelNews .display-1,
+    .vh-intelNewsletter .display-1 {
+        font-size: 28px;
+    }
+    .vh-intelNewsletter h2 small
+    {
+        font-size: 16px;
+    } */
+}
+
+.masnory {
+    column-count: 2;
+    column-gap: 2px;
+}
+.masnory .icard-holder img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,719 @@
+@font-face {
+    font-family: "ms";
+    src: url("../fonts/MuseoSlab500.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "msi";
+    src: url("../fonts/MuseoSlab500i.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "msbold";
+    src: url("../fonts/MuseoSlab700.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "msboldi";
+    src: url("../fonts/MuseoSlab700i.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "msblack";
+    src: url("../fonts/MuseoSlab900.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "msblacki";
+    src: url("../fonts/MuseoSlab900i.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "r";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "rbold";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "rboldi";
+    src: url("../fonts/Roboto700i.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "rblack";
+    src: url("../fonts/Roboto900.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.ms500 {
+    font-family: "ms";
+}
+
+.ms500i {
+    font-family: "msi";
+}
+
+.ms700 {
+    font-family: "msbold";
+}
+
+.ms700i {
+    font-family: "msboldi";
+}
+
+.ms900i {
+    font-family: "msblacki";
+}
+
+.ms900 {
+    font-family: "msblack";
+    font-weight: 900;
+}
+
+.r500 {
+    font-family: "r";
+}
+
+.r700 {
+    font-family: "rbold";
+}
+
+.r700i {
+    font-family: "rboldi";
+}
+.r900 {
+    font-family: "rblack";
+}
+
+img {
+    height: auto;
+    width: auto;
+}
+strong
+{
+    font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1c1c49;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span 
+{
+    color: #51beb0;
+}
+
+#inner_header {
+    padding: 100px 0px 10px;
+}
+#inner_header h2 {
+    color: #fff;
+}
+
+.v-title {
+    font-size: 50px;
+    margin: 0px 0px 70px;
+}
+.v-title small {
+    font-size: 60%;
+}
+.little {
+    font-size: 80%;
+}
+.bigger {
+    font-size: 120%;
+}
+.v-title span {
+    color: #51beb0;
+}
+
+.impact {
+    padding: 100px 0px 0px;
+}
+
+p {
+    color: #79797b;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+p .big
+{
+    font-size: 22px;
+}
+p .green
+{
+    color:#51beb0;
+}
+blockquote {
+    padding-left: 40px;
+    margin: 0px;
+    font-size: 20px !important;
+    position: relative;
+    color: #51beb0;
+    margin-bottom: 40px;
+}
+
+blockquote img {
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+blockquote .qstart {
+    position: absolute;
+    left: 0px;
+    top: -5px;
+}
+
+blockquote .qend {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.collabs {
+    padding: 60px 0px 70px;
+}
+
+.collabs h2 {
+    font-size: 32px;
+    margin: 0px 0px 35px;
+}
+
+.collabs .flex-images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.collabs .flex-images img {
+    margin-bottom: 20px;
+    height: 50px;
+}
+.collabs .flex-images img ~ img {
+    margin-left: 40px;
+}
+.collabs .extended .extended-img
+{
+    position: absolute;
+    height: auto;
+    width: 43%;
+    right: 0px;
+    bottom: 50%;
+    transform: translateY(70%);
+}
+
+.counter-slot
+{
+    /* width: 250px; */
+    width: auto;
+    display: inline-block;
+    padding:45px 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+.counter-slot .counter ~ .counter
+{
+    margin-top:30px;
+}
+.counter-slot .counter .num
+{
+    font-size: 120px;
+    line-height: 110px;
+    color:#51beb0;
+}
+.counter-slot .counter .num sup
+{
+    font-size: 30%;
+    position: relative;
+    top: -54px;
+}
+.counter-slot .counter h4
+{
+    font-size: 32px;
+    margin:0px 0px 5px;
+}
+.counter-slot .counter p
+{
+    margin:0px;
+    color:#1c1c49;
+}
+.adoption 
+{
+    padding:0 0 100px;
+}
+.adoption .flex-box
+{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom:75px;
+}
+
+.adoption .text
+{
+    flex-grow: 1;
+    padding-right: 30px;
+}
+.adoption .text  .text-danger
+{
+    font-size: 18px;
+}
+.adoption .text p
+{
+    margin-bottom:20px;
+}
+
+.adoption .text h6
+{
+    color:#1c1c49;
+    font-size: 25px;
+}
+.adoption h3
+{
+    font-size: 28px;
+    margin:0 0 30px;
+}
+.adoption h1 .lift-right
+{
+    position: relative;
+    left:200px;
+}
+.adoption h1.graph-title
+{
+    line-height: 30px;
+    font-size: 40px;
+    margin:15px 0;
+}
+.adoption .pieChart
+{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.boxed-text{
+    padding:35px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+    margin:50px 0px 0px;
+}
+.boxed-text h4
+{
+    font-size: 28px;
+}
+.boxed-text p{
+    margin:0px;
+    font-size: 18px;
+}
+
+.age-group
+{
+    padding:100px 0px 30px;
+}
+.cases
+{
+    padding:100px 0px 50px;
+}
+
+.gender-distribution .transform-ve
+{
+    margin-top:-150px;
+}
+.v-title.mt-200
+{
+    margin-top:200px;
+    line-height: 30px;
+}
+.v-title.mt-200 .d-block
+{
+    line-height: 60px !important;
+}
+
+.map-holder
+{
+    margin:100px 0px;
+}
+
+.credits 
+{
+    padding:100px 0px;;
+}
+.credits h3
+{
+    font-size:30px;
+    margin-bottom:30px;
+}
+.credits p
+{
+    font-size: 20px;
+    margin-bottom:20px;
+}
+.credits p a
+{
+    color:#51beb0;
+}
+.credits p a:hover
+{
+    color:#ec8d65;
+}
+
+.arrow-img
+{
+    position: absolute;
+    bottom: 130px;
+    left: 40%;
+    transform: translateX(-49%);
+}
+.arrow-img img
+{
+    width: 130px;
+}
+
+
+@media(max-width:1199px)
+{
+    .v-title {
+        font-size: 42px;
+        margin: 0px 0px 50px;
+    }
+    .collabs .flex-images img
+    {
+        height: 45px;
+    }
+    .counter-slot .counter .num {
+        font-size: 100px;
+        line-height: 90px;
+    }
+    
+    p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    p .big
+    {
+        font-size: 20px;
+    }
+    .collabs .flex-images img ~ img {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .counter-slot .counter h4
+    {
+        font-size: 28px;
+    }
+    
+    .adoption h1 .lift-right
+    {
+        left:100px;
+    }
+    #inner_header h2
+    {
+        font-size: 36px;
+    }
+    .impact
+    {
+        padding:80px 0 0 ;
+    }
+    .collabs h2 {
+        font-size: 28px;
+    }
+    .collabs {
+        padding: 40px 0px 60px;
+    }
+    .adoption h1.graph-title {
+        line-height: 28px;
+        font-size: 32px;
+    }
+    .adoption {
+        padding: 0 0 80px;
+    }
+    .age-group {
+        padding: 80px 0px 25px;
+    }
+    .v-title.mt-200 {
+        margin-top: 150px;
+    }
+    .v-title.mt-200 .d-block {
+        line-height: 50px !important;
+    }
+    .map-holder {
+        margin: 80px 0px;
+    }
+    .credits 
+    {
+        padding:75px 0 50px;
+    }
+    .credits h3 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+}
+@media(max-width:991px)
+{
+    .v-title {
+        margin: 0px 0px 35px;
+        font-size: 36px;
+    }
+    .impact .col-12 > img
+    {
+        display: block;
+        margin:0 auto 30px;
+    }
+    .collabs .flex-images img
+    {
+        height: 36px;
+    }
+    .collabs .extended .extended-img
+    {
+        position: relative;
+        right: 0;
+        width: 100%;
+        bottom:0px;
+        transform: translateY(0);
+    }
+    .counter-slot .counter .num {
+        font-size: 80px;
+        line-height: 70px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    p .big
+    {
+        font-size: 18px;
+    }
+    .collabs .flex-images img ~ img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .counter-slot .counter h4
+    {
+        font-size: 24px;
+    }
+    .adoption h1 .lift-right
+    {
+        left:80px;
+    }
+    #inner_header h2
+    {
+        font-size: 28px;
+        margin-bottom:0px;
+    }
+    .impact
+    {
+        padding:60px 0 0 ;
+    }
+    .collabs {
+        padding: 30px 0px 45px;
+    }
+    .adoption h1.graph-title {
+        line-height: 20px;
+        font-size: 28px;
+    }
+    .adoption {
+        padding: 0 0 60px;
+    }
+    .age-group {
+        padding: 60px 0px 20px;
+    }
+    .v-title.mt-200 {
+        margin-top: 100px;
+    }
+    .gender-distribution .transform-ve {
+        margin-top: 0px;
+    }
+    .v-title.mt-200 .d-block {
+        line-height: 40px !important;
+    }
+    .map-holder {
+        margin: 60px 0px;
+    }
+    .credits 
+    {
+        padding:45px 0 50px;
+    }
+    .credits h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .arrow-img
+    {
+        display: none;
+    }
+}
+@media(max-width:767px)
+{
+    .v-title {
+        font-size: 28px;
+        margin: 0px 0px 25px;
+    }
+    .collabs .flex-images img
+    {
+        height: 30px;
+    }
+    .adoption .flex-box
+    {
+        flex-direction: column;
+    }
+    .counter-slot
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 1;
+        padding:20px 15px;
+    }
+    .counter-slot .counter 
+    {
+        margin-top:0px !important;
+    }
+    .counter-slot .counter .num {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .counter-slot .counter .num sup 
+    {
+        top: -30px;
+    }
+    p {
+        font-size: 14px !important;
+        margin-bottom: 20px;
+    }
+    p .big
+    {
+        font-size: 16px;
+    }
+    .counter-slot .counter h4
+    {
+        font-size: 20px;
+    }
+    .adoption h1 .lift-right
+    {
+        left:60px;
+    }
+    #inner_header h2
+    {
+        font-size: 24px;
+    }
+    .impact
+    {
+        padding:40px 0 0 ;
+    }
+    .collabs h2 {
+        font-size: 24px;
+    }
+    .collabs {
+        padding: 20px 0px 35px;
+    }
+    .adoption h1.graph-title {
+        line-height: 15px;
+        font-size: 24px;
+    }
+    .adoption {
+        padding: 0 0 40px;
+    }
+    .age-group {
+        padding: 40px 0px 15px;
+    }
+    .v-title.mt-200 {
+        margin-top: 75px;
+    }
+    .v-title.mt-200 .d-block {
+        line-height: 35px !important;
+    }
+    .map-holder {
+        margin: 40px 0px;
+    }
+    .credits 
+    {
+        padding:30px 0 50px;
+    }
+    .credits h3 {
+        font-size: 20px;
+    }
+}
+@media(max-width:576px)
+{
+    .v-title {
+        font-size: 24px;
+    }
+    .counter-slot .counter .num {
+        font-size: 32px;
+        line-height: 25px;
+    }
+    .counter-slot .counter .num sup 
+    {
+        top: -20px;
+    }
+    .counter-slot .counter h4
+    {
+        font-size: 16px;
+    }
+    .collabs h2 {
+        font-size: 20px;
+    }
+    .adoption h1 .lift-right
+    {
+        left:0px;
+    }
+    .adoption {
+        padding: 0 0 25px;
+    }
+    .age-group {
+        padding: 30px 0px 10px;
+    }
+    .v-title.mt-200 {
+        margin-top: 45px;
+    }
+    .v-title.mt-200 .d-block {
+        line-height: 28px !important;
+    }
+    .map-holder {
+        margin: 30px 0px;
+    }
+}

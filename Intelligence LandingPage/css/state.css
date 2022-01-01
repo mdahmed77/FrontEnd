@@ -1,0 +1,644 @@
+.state-banner .sb-flex
+
+{
+    padding:0px 0px 35px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media  (max-width:991px)
+{
+    .state-banner .sb-flex{
+        flex-direction: column;
+    }
+    .state-banner .sb-flex .signup-box
+    {
+        max-width: 440px;
+        min-width: 0px;
+        width: 100%;
+    }
+    .state-banner .sb-flex .text
+    {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .state-banner .sb-flex .text h1
+    {
+        font-size: 26px !important;
+        line-height: 38px !important;
+    }
+    .state-banner .sb-flex .text h1 span 
+    {
+        font-size: 36px !important;
+    }
+}
+
+.state-banner .sb-flex .text
+{
+    max-width: 500px;
+}
+.state-banner .sb-flex .text h1
+{
+    font-family: 'Museo_Slab';
+    color:#000032 !important;
+    font-size: 40px;
+    line-height: 50px;
+    
+}
+.state-banner .sb-flex .text h1 span
+{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    color:#51b6aa;
+    font-family: 'Museo_Slab';
+    font-size: 60px;
+}
+.state-banner .sb-flex .text p
+{
+    font-size: 18px;
+    color:#79797b;
+    margin: 10px 0px 0px;
+    line-height: 20px;
+}
+.state-banner .sb-flex .signup-box
+{
+    background-color:#dee3e7;
+    padding:20px;
+    border-radius: 5px;
+    max-width: 440px;
+    min-width: 440px;
+    min-height: 490px;
+}
+.state-banner .sb-flex .signup-box .nav-pills 
+{
+    background-color:#fff;
+    border-radius: 50px;
+    margin:0px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.state-banner .sb-flex .signup-box .nav-pills li .nav-link
+{
+    padding:15px 30px;
+    margin:0px;
+    font-family: 'Roboto-Bold';
+}
+.state-banner .sb-flex .signup-box .nav-pills li .active
+{
+    background-color:#4e565c;
+    border-radius: 50px;
+}
+.state-banner .sb-flex .signup-box .tab-pane{
+    padding:30px 20px 20px;
+}
+.state-banner .sb-flex .signup-box .tab-pane h4
+{
+    font-family: 'Museo_Slab';
+    text-transform: uppercase;
+    color:#000032;
+    margin:0px 0px 25px;
+    text-align: center;
+}
+.state-banner .sb-flex .signup-box .tab-pane .form-group
+{
+    margin-bottom: 20px;
+}
+.state-banner .sb-flex .signup-box .tab-pane .form-control
+{
+    min-height: 50px;
+    border-radius: 10px;
+    font-size:18px;
+    box-shadow: none;
+    color:#4e565c;
+}
+.state-banner .sb-flex .signup-box .tab-pane .form-control::placeholder
+{
+    color:#4e565c;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check label
+{
+    position: relative;
+    color:#4e565c;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 45px;
+    display:inline-flex;
+    margin-bottom: 0px;
+    align-items: center;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check input
+{
+    display: none;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check label::before
+{   
+    content:"";
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;   
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:0px;
+    border:1px solid #fff;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check label::after
+{
+    content:"✓";
+    position: absolute;
+    left:4px;
+    padding-top: 1px;
+    transform: rotate(10deg);
+    font-size: 26px;
+    font-weight: bold;
+    color:#fff;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check input:checked ~ label::before
+{
+    border:1px solid #51b6aa;
+}
+.state-banner .sb-flex .signup-box .tab-pane .terms-check input:checked ~ label::after
+{
+    color:#51b6aa;
+}
+.btn-green
+{
+    background-color: #51b6aa;
+    color:#fff;
+    font-size: 18px;
+    font-family: 'Roboto-Bold';
+    padding:10px 20px;
+    border-radius: 50px;
+    display: block;
+    margin:0 auto;
+    transition: .15s linear;
+    min-width: 250px;
+}
+.btn-green:hover
+{
+    background-color: #ed916a;
+    color:#fff;
+}
+
+
+.get-card 
+{
+    background-color: #f8f8f8;
+    padding:100px 0px;
+}
+.get-card h1
+{
+    color:#000032;
+    font-family: 'Museo_Slab';
+    margin:0px auto 40px;
+    font-size:40px;
+    text-align: center;
+    display: block;
+    max-width: 750px;
+}
+.get-card .gc-step .row 
+{
+    align-items: center;
+}
+.get-card .gc-step .text h2
+{
+    position: relative;
+    font-family: 'Museo_Slab';
+    color:#000032;
+    padding:35px 0px 0px;
+    z-index: 5;
+    margin:0px 0px 25px;
+    font-size: 28px;
+}
+.get-card .gc-step .text h2 span
+{
+    position: absolute;
+    top:-20px;
+    left:0px;
+    opacity: .2;
+    font-size: 100px;
+    z-index: -1;
+}
+.get-card .gc-step .text p:last-child
+{
+    margin-bottom: 0px !important;
+}
+.get-card .gc-step .text p
+{
+    color:#79797b;
+    font-size:16px;
+    margin-bottom: 30px;
+}
+.get-card .gc-step
+{
+    margin-bottom: 30px;
+}
+.get-card .gc-step img
+{
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 310px;
+    margin:0px auto;
+}
+
+.benefits
+{
+    padding:85px 0px 20px;
+    background-image: url('../images/green-slide.png');
+}
+
+.benefits h1
+{
+    color:#fff;
+    font-family: 'Museo_Slab';
+    margin:0px auto 40px;
+    font-size:40px;
+    text-align: center;
+    display: block;
+    max-width: 700px;
+}
+
+.benefits .fb-row {
+	display: inline-flex;
+}
+@media(max-width:767px)
+{
+    .benefits .fb-row {
+        flex-direction: column-reverse;
+
+    }
+    .benefits .flex-box 
+    {
+        justify-content: center;
+    }
+}
+.benefits .fb-row>.flex-box:first-child {
+	max-width: 300px !important;
+	min-width: 300px !important;
+}
+
+.benefits .flex-box {
+	margin-bottom: 60px;
+	max-width: 970px;
+	align-items: flex-start;
+}
+
+.benefits .flex-box .icon-holder {
+	background-color: #fff;
+	max-width: 60px;
+	min-width: 60px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+.benefits .flex-box .icon-holder img {
+	width: 32px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.benefits .fb-row .flex-box .text {
+	max-width: 485px;
+}
+
+.benefits .flex-box .text {
+	padding-top: 10px;
+}
+
+.benefits .flex-box h6 {
+	color: #fff;
+	font-family: 'Museo_Slab';
+	font-size: 18px;
+}
+
+.benefits .flex-box p {
+    color: #50c0b0;
+	line-height: 18px;
+}
+.benefits h4
+{
+    color:#fff;
+    font-family: 'Museo_Slab';
+    margin:0px 0px 30px;
+}
+.benefits ul li
+{
+    color:#fff;
+    font-size:16px;
+    padding-left:30px;
+    position: relative;
+}
+.benefits ul li::before
+{
+    position: absolute;
+    content:"";
+    top:3px;
+    left:0px;
+    border-radius: 100%;
+    height:15px;
+    width:15px;
+    background-color: #fff;
+
+}
+.benefits ul li ~ li
+{
+    margin-top:20px;
+}
+
+
+.s-reviews
+{
+    background-color: #f8f8f8;
+    padding:85px 0px;
+}
+.s-reviews h1
+{    
+    color:#000032;
+    font-family: 'Museo_Slab';
+    margin:0px auto 30px;
+    font-size:40px;
+    text-align: center;
+    display: block;
+}
+.s-reviews .review-box
+{
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top:30px;
+}
+.s-reviews .review-box .r-body
+{
+    padding:0px 20px 40px;
+}
+.s-reviews .review-box .r-body p
+{
+    margin: 0px;
+    color:#79797b;
+    font-size: 18px;
+    line-height: 24px;
+}
+.s-reviews .review-box .r-body img
+{
+    width: 70px;
+    height: auto;
+    margin:-15px 0px 25px;
+}
+.s-reviews .review-box .r-footer
+{
+    padding:20px;
+    width: 100%;
+    border-top:1px solid #f1f1f1;
+}
+.s-reviews .review-box .r-footer .name-flex
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+.s-reviews .rates
+{
+    color:#ffc107;
+    font-size: 18px;
+    display: inline-block;
+}
+.s-reviews .review-box .r-footer .name-flex h5
+{
+    font-family: 'Museo_Slab';
+    color:#000032;
+    font-size: 20px;
+    margin:0px;
+}
+.s-reviews .review-box .r-footer span
+{
+    color:#79797b;
+    font-size:16px;
+}
+.s-reviews .r-description{
+    text-align: center;
+    margin-top: 30px;
+}
+.s-reviews .r-description p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size:20px;
+    columns: #797979;
+    text-align: center;
+}
+@media(max-width:767px){
+    .s-reviews .r-description p
+    {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+}
+.s-reviews .r-description .btn-green
+{
+    margin:10px auto;
+}
+.s-reviews .r-description span
+{
+    display: inline-block;
+    margin:0px 10px;
+    font-size:20px;
+}
+.s-reviews .r-description a
+{
+    columns: #555555;
+    font-size:16px;
+}
+.s-reviews .r-description a:hover
+{
+    color:#ed916a;
+}
+
+
+.video-review .video-banner 
+{
+    background: url(../images/web-ping.png) no-repeat;
+    background-size: cover !important;
+    background-position: center center !important;
+    width: 100%;
+    position: relative;
+    border-radius: 0px 0px 15px 15px;
+    padding-top:75px;
+}
+.video-review .video-banner::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:#ed916ade;
+    z-index: 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.video-review .video-banner h1,
+.video-review .video-banner p,
+.video-review .video-banner .video-holder
+{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.video-review .video-banner h1,
+.video-review .video-banner p
+{
+    color:#fff;
+}
+.video-review .video-banner h1
+{
+    font-family: 'Museo_Slab';
+    font-size: 40px;
+
+}
+.video-review .video-banner p
+{
+    margin-bottom:45px;
+}
+.video-review .video-banner .video-holder
+{
+    width:575px;
+    position: relative;
+    display: block;
+    margin: -100px auto 0;
+    top:100px;
+}
+@media(max-width:767px)
+{
+    .video-review .video-banner .video-holder
+    {
+        width:100%;
+    }
+    .video-review .video-banner 
+    {
+        padding:30px 15px 0px;
+    }
+    .video-review .video-banner p
+    {
+        margin-bottom:20px;
+    }
+}
+.video-review .video-banner .video-holder .contain
+{
+    position: relative;
+    padding-top:56%;
+}
+.video-review .video-banner .video-holder iframe
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+}
+
+.video-review h1
+{
+    color:#000032;
+    font-family: 'Museo_Slab';
+    font-size:40px;
+    display: block;
+    margin:30px 0px;
+}
+.video-review h5
+{
+    color:#000032;
+    font-family: 'Roboto-Bold';
+    font-size:20px;
+    display: block;
+    margin:0px 0px 15px;
+}
+.video-review P
+{
+    font-size:16px;
+    color:#7b7b7b;
+    margin:0px 0px 30px;
+}
+.video-review  ul 
+{
+    margin-bottom: 20px;
+}
+.video-review  ul li
+{
+    font-size:16px;
+    color:#7b7b7b;
+    margin:0px 0px 5px;
+    display: block;
+}
+.placetaker
+{
+    padding:65px 0px;
+}
+.faqz .card
+{
+    border:none;
+    margin:0px 0px 10px;
+}
+.faqz .card-header
+{
+    border:none;
+    font-size:22px;
+    font-family: 'Museo_Slab';
+    padding:15px 25px;
+    border-radius: 10px;
+    background-color: #4e565c;
+    color:#fff;
+    position: relative;
+    z-index: 10;
+}
+.faqz .card-header.collapsed
+{
+    background-color:#e6e6e6;
+    color:#4e565c;
+}
+.faqz .card-body
+{
+    background-color: #fbfbfb;
+    padding:30px 30px 20px;
+    margin-top:-15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.faqz .card-body ul li
+{
+    color:#7b7b7b;
+    font-size:16px;
+    padding-left:25px;
+    position: relative;
+}
+.faqz .card-body ul li::before
+{
+    position: absolute;
+    content:"";
+    top:5px;
+    left:0px;
+    border-radius: 100%;
+    height:12px;
+    width:12px;
+    background-color: #50c0b0;
+
+}

@@ -1,0 +1,130 @@
+.login-wrap
+{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/login-bg.jpg');
+    padding:0px 100px;
+    @media (max-width:1366px) {
+        padding:0px 30px;
+    }
+    @media (max-width:1199px) {
+        padding:0px 0px;
+    }
+    @media (max-width:767px) {
+        background-image: url('../images/login-mobile.jpg');
+        background-position: 0px 100% !important;
+    }
+    .flex-row
+    {
+        display: flex;
+        align-items: center;
+        min-height: calc(100vh - 45px);
+        padding: 60px 0px;
+        @media (max-width:767px) {
+            align-items: flex-end;
+            padding: 60px 0px 30px;
+        }
+        .left-text
+        {
+            padding:0px 5vw;
+            width:60%;
+            @media (max-width:767px) {
+                display:none !important;
+            }
+            .text
+            {
+                padding-right: 8vw;
+                img
+                {
+                    margin:0px 0px 45px;
+                }
+                p
+                {
+                    color: #eaeaea;
+                    margin:0px;
+                }
+            }
+        }
+        .right-fields
+        {
+            text-align: center;
+            padding:0px 5vw;
+            width:40%;
+            @media (max-width:767px) {
+                width: 100%;
+            }
+            .content
+            {
+                display: block;
+                margin: 0 auto;
+                img
+                {
+                    margin-bottom: 15px;
+                }
+                h1
+                {
+                    font-family: title;
+                    margin:0px 0px 50px;
+                    font-size: 36px;
+                    color:#eaeaea;
+                }
+                p
+                {
+                    color:#eaeaea;
+                    margin:-35px 0px 40px;
+                }
+                .form-control
+                {
+                    border:none !important;
+                    padding: 5px 25px;
+                }
+                .btn-default
+                {
+                    font-size: 18px;
+                }
+                .divider
+                {
+                    margin:38px 0px 20px;
+                    padding:0px;
+                    height: 1px;
+                    background-color: #4c7871;
+                }
+                a
+                {
+                    display: inline-block;
+                    color:$orange;
+                    &:hover
+                    {
+                        color:$green;
+                    }
+                }
+            }
+        }
+    }
+    .copy
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+       
+        .text{
+            text-align: center;
+            width:40%;
+            display: block;
+            @media (max-width:767px) {
+                width:100%;
+            }
+            span
+            {
+                color:#a4a4a4;
+                font-size: 20px;
+                @media (max-width:767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

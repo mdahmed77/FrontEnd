@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-fluid p-0">
+      <div class="h-wrapper d-flex justify-content-between align-items-center">
+        <div class="brand">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+        </div>
+        <button class="btn toggler">
+          <i class="far fa-ellipsis-v"></i>
+        </button>
+        <div class="h-right">
+          <h4>Welcome Oliver!</h4>
+          <div class="h-dock"><img src="assets/images/avatar.jpg" alt="">wb</div>
+          <div class="user-drop">
+            <img src="assets/images/caret-up.png" class="caret" alt="">
+            <div class="person">
+              <img class="user-icon" src="assets/images/avatar.jpg" alt=""> <span>overcreative1</span> <a href="#"><img
+                  src="assets/images/logout-red.png" alt=""></a>
+            </div>
+            <div class="links">
+              <a href="#">
+                <i class="fal fa-user-circle"></i> My Profile
+              </a>
+              <a href="#">
+                <i class="fal fa-cog"></i> Account Settings
+              </a>
+              <a href="#">
+                <i class="fal fa-comments"></i> Help & Support
+              </a>
+              <button class="btn btn-upgrade">Upgrade Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex-box">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <img src="assets/images/dashboard.png" alt=""> <span>Dashboard</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="drop-item">
+          <a href="#">
+            <img src="assets/images/sent.png" alt=""> <span>Orders</span>
+          </a>
+          <i class="far fa-chevron-right"></i>
+          <div class="drop-menu">
+            <a href="#">Confirmed Orders</a>
+            <a href="#">Pending Orders</a>
+            <a href="#">Cancelled Orders</a>
+            <a href="#">Orders Another Link</a>
+          </div>
+        </li>
+        <li class="drop-item">
+          <a href="#">
+            <img src="assets/images/shipping.png" alt=""> <span>Products</span>
+          </a>
+          <i class="far fa-chevron-right"></i>
+          <div class="drop-menu">
+            <a href="#">All Products</a>
+            <a href="#">Products on Sale</a>
+            <a href="#">View Products</a>
+            <a href="#">Product Another Link</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/chat.png" alt=""> <span>Messages</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="assets/images/pie-chart.png" alt=""> <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/template.png" alt=""> <span>Templates</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/store.png" alt=""> <span>Platforms</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/settings.png" alt=""> <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/plan.png" alt=""> <span>Account Plan</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/help.png" alt=""> <span>Support</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/invoices.png" alt=""> <span>Invoices</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-panel">
+      <div class="cards">
+        <h2>Products </h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="single-card vertical-card card-green">
+              <div class="card-text">
+                Total Products
+              </div>
+              <div class="card-counter">
+                56
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-card vertical-card card-red">
+              <div class="card-text">
+                Value of Stock
+              </div>
+              <div class="card-counter">
+                £1,544
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-card vertical-card">
+              <div class="card-text">
+                Top Seller
+              </div>
+              <div class="card-body">
+                <small>Jean Paul Gualtier Le Male 100ml EDT</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="list-filter">
+          <div class="radio">
+            <input type="radio" name="listFilter" id="1" checked>
+            <label for="1">All Products <span>(399)</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="listFilter" id="2">
+            <label for="2">Live Products <span>(399)</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="listFilter" id="3">
+            <label for="3">Idle Products <span>(399)</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="listFilter" id="4" >
+            <label for="4">Ended Products <span>(399)</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="listFilter" id="5" >
+            <label for="5">Drafts Products <span>(399)</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="listing-table">
+        <div class="table-filter">
+          <select name="" id="" class="form-control">
+            <option value="">Action</option>
+          </select>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="far fa-search"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search for a product...">
+          </div>
+          <button class="btn btn-outline">Filter <i class="far fa-filter"></i></button>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  <div class="checkbox">
+                    <input id="markAll" type="checkbox">
+                    <label for="markAll">&nbsp;</label>
+                  </div>
+                </th>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Live Platforms</th>
+                <th class="pl-5">Stock</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="action-cell">
+                    <div class="checkbox">
+                      <input id="mark1" type="checkbox">
+                      <label for="mark1">&nbsp;</label>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="image-cell">
+                    <div class="img-holder">
+                      <img src="assets/images/bottle.png" alt="">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-title">
+                    <p>Calvin Klein CK On Holiday 2019 Collectors Edition 100ml EDT</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="live-platforms">
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text pl-5">
+                    4
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text">
+                    £29.99
+                  </div>
+                </td>
+                <td>
+                  <div class="text text-green">
+                    Live
+                  </div>
+                </td>
+                <td>
+                  <div class="text">
+                    <a href="#">View</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="action-cell">
+                    <div class="checkbox">
+                      <input id="mark1" type="checkbox">
+                      <label for="mark1">&nbsp;</label>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="image-cell">
+                    <div class="img-holder">
+                      <img src="assets/images/bottle.png" alt="">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-title">
+                    <p>Calvin Klein CK On Holiday 2019 Collectors Edition 100ml EDT</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="live-platforms">
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text pl-5">
+                    4
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text">
+                    £29.99
+                  </div>
+                </td>
+                <td>
+                  <div class="text text-green">
+                    Live
+                  </div>
+                </td>
+                <td>
+                  <div class="text">
+                    <a href="#">View</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="action-cell">
+                    <div class="checkbox">
+                      <input id="mark1" type="checkbox">
+                      <label for="mark1">&nbsp;</label>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="image-cell">
+                    <div class="img-holder">
+                      <img src="assets/images/bottle.png" alt="">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-title">
+                    <p>Calvin Klein CK On Holiday 2019 Collectors Edition 100ml EDT</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="live-platforms">
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text pl-5">
+                    4
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text">
+                    £29.99
+                  </div>
+                </td>
+                <td>
+                  <div class="text text-green">
+                    Live
+                  </div>
+                </td>
+                <td>
+                  <div class="text">
+                    <a href="#">View</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="action-cell">
+                    <div class="checkbox">
+                      <input id="mark1" type="checkbox">
+                      <label for="mark1">&nbsp;</label>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="image-cell">
+                    <div class="img-holder">
+                      <img src="assets/images/bottle.png" alt="">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="product-title">
+                    <p>Calvin Klein CK On Holiday 2019 Collectors Edition 100ml EDT</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="live-platforms">
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/shopify-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> 11Scent</span>
+                    </div>
+                    <div class="entity">
+                      <img src="assets/images/ebay-platform.png" alt="">
+                      <span><strong>Store:</strong> The Fragrance Wearhouse</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text pl-5">
+                    4
+                  </div>
+                </td>
+                <td>
+                  <div class="numeric-text">
+                    £29.99
+                  </div>
+                </td>
+                <td>
+                  <div class="text text-green">
+                    Live
+                  </div>
+                </td>
+                <td>
+                  <div class="text">
+                    <a href="#">View</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

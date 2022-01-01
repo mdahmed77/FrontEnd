@@ -1,0 +1,117 @@
+.vh-partners {
+    padding: 75px 0px;
+}
+.vh-partners .vhp-titles {
+    margin-bottom: 75px;
+}
+.vh-partners .vhp-titles h1,
+.vh-partners .vhp-titles span {
+    font-family: "Museo_Slab";
+}
+.vh-partners .vhp-titles h1 {
+    color: #000032;
+    font-size: 40px;
+}
+.vh-partners .vhp-titles span {
+    color: #51beb0;
+    font-size: 30px;
+}
+
+.vh-partners .container > .row > .col-12 ~ .col-12 {
+    margin-top: 100px;
+}
+
+.img-col {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+.img-col img {
+    width: 100%;
+    position: absolute;
+}
+
+.vhp-slide .text {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 5%);
+    padding: 40px 50px 50px 140px;
+    position: relative;
+    margin-top: 50px;
+}
+.vhp-slide .text h3 {
+    font-family: "Museo_Slab";
+    color: #51b6aa;
+    margin: 0px 0px 30px;
+    font-size: 30px;
+}
+.vhp-slide .text p {
+    color: #79797b;
+    margin: 0px 0px 30px;
+    font-size: 18px;
+    font-family: "Roboto-Regular";
+}
+.vhp-slide .text .icon {
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+}
+.vhp-slide .text .icon img {
+    width: auto;
+}
+.btn-green {
+    background-color: #51b6aa;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto-Bold";
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.15s linear;
+    min-width: 200px;
+    display: inline-block;
+}
+.btn-green:hover {
+    background-color: #ed916a;
+    color: #fff;
+}
+@media (max-width: 991px) {
+    .vh-partners .container > .row > .col-12 ~ .col-12 {
+        margin-top: 50px;
+    }
+
+    .img-col {
+        position: relative;
+    }
+    .img-col img {
+        position: relative;
+    }
+
+    .vhp-slide .text {
+        padding: 65px 30px 40px;
+        margin: 0px;
+        margin-top: -30px;
+    }
+    .vhp-slide .text h3 {
+        font-size: 24px;
+        margin: 0px 0px 15px;
+    }
+    .vhp-slide .text p {
+        font-size: 14px;
+        margin: 0px 0px 20px;
+    }
+    .vhp-slide .text .btn {
+        font-size: 14px;
+        padding: 10px 12px;
+        min-width: 150px;
+    }
+    .vhp-slide .text .icon {
+        bottom: -10px;
+        right: 30px;
+    }
+    .vhp-slide .text .icon img {
+        width: 80px;
+        height: auto;
+    }
+}

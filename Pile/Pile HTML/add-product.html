@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-fluid p-0">
+      <div class="h-wrapper d-flex justify-content-between align-items-center">
+        <div class="brand">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+        </div>
+        <button class="btn toggler">
+          <i class="far fa-ellipsis-v"></i>
+        </button>
+        <div class="h-right">
+          <h4>Welcome Oliver!</h4>
+          <div class="h-dock"><img src="assets/images/avatar.jpg" alt="">wb</div>
+          <div class="user-drop">
+            <img src="assets/images/caret-up.png" class="caret" alt="">
+            <div class="person">
+              <img class="user-icon" src="assets/images/avatar.jpg" alt=""> <span>overcreative1</span> <a href="#"><img
+                  src="assets/images/logout-red.png" alt=""></a>
+            </div>
+            <div class="links">
+              <a href="#">
+                <i class="fal fa-user-circle"></i> My Profile
+              </a>
+              <a href="#">
+                <i class="fal fa-cog"></i> Account Settings
+              </a>
+              <a href="#">
+                <i class="fal fa-comments"></i> Help & Support
+              </a>
+              <button class="btn btn-upgrade">Upgrade Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex-box">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <img src="assets/images/dashboard.png" alt=""> <span>Dashboard</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="drop-item">
+          <a href="#">
+            <img src="assets/images/sent.png" alt=""> <span>Orders</span>
+          </a>
+          <i class="far fa-chevron-right"></i>
+          <div class="drop-menu">
+            <a href="#">Confirmed Orders</a>
+            <a href="#">Pending Orders</a>
+            <a href="#">Cancelled Orders</a>
+            <a href="#">Orders Another Link</a>
+          </div>
+        </li>
+        <li class="drop-item">
+          <a href="#">
+            <img src="assets/images/shipping.png" alt=""> <span>Products</span>
+          </a>
+          <i class="far fa-chevron-right"></i>
+          <div class="drop-menu">
+            <a href="#">All Products</a>
+            <a href="#">Products on Sale</a>
+            <a href="#">View Products</a>
+            <a href="#">Product Another Link</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/chat.png" alt=""> <span>Messages</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="assets/images/pie-chart.png" alt=""> <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/template.png" alt=""> <span>Templates</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/store.png" alt=""> <span>Platforms</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/settings.png" alt=""> <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/plan.png" alt=""> <span>Account Plan</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/help.png" alt=""> <span>Support</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/invoices.png" alt=""> <span>Invoices</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-panel">
+      <div class="addProductForm">
+        <h2>Add Product</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-xl-4 col-lg-6">
+                <div class="pimg-container display-img">
+                  <img src="" alt="">
+                  <a href="#">
+                    <i class="fal fa-plus-circle"></i> <span> Add Image</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6">
+                <div class="pimg-container">
+                  <a href="#">
+                    <i class="fal fa-plus-circle"></i>
+                  </a>
+                </div>
+                <div class="pimg-container">
+                  <a href="#">
+                    <i class="fal fa-plus-circle"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-6">
+                <div class="pimg-container">
+                  <a href="#">
+                    <i class="fal fa-plus-circle"></i>
+                  </a>
+                </div>
+                <div class="pimg-container">
+                  <a href="#">
+                    <i class="fal fa-plus-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="ptitle">Title</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="editor">Description</label>
+              <textarea name="editor1" class="ckeditor"></textarea>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="">RRR Price (Opional)</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="">Price</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="">Stock</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="">EAN / UPC Number</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="">EAN / UPC Number</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panels-wrapper">
+        <div id="accordion">
+
+          <div class="ppanel">
+            <a class="ppheader" data-toggle="collapse" href="#panel1">
+              <div class="pbrand">
+                <img src="assets/images/Shopify-Logo.png" alt="">
+              </div>
+              <p>The Perfume Warehouse</p>
+              <div class="status">Idle</div>
+              <div class="caret">
+                <i class="far fa-angle-right"></i>
+              </div>
+            </a>
+            <div id="panel1" class="collapse show" data-parent="#accordion">
+              <div class="ppbody">
+                <div class="addProductForm">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                          <div class="pimg-container display-img">
+                            <img src="" alt="">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i> <span> Add Image</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-6">
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-6">
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="">Category</label>
+                        <select class="form-control" name="" id="">
+                          <option value="default" selected disabled>Enter Category</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="">Condition</label>
+                        <select class="form-control" name="" id="">
+                          <option value="default" selected disabled>...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="ptitle">Title</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="editor">Description</label>
+                        <textarea name="editor2" class="ckeditor"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">RRR Price (Opional)</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">Price</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">Stock</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">EAN / UPC Number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">EAN / UPC Number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="actionBtns">
+                        <div class="d-flex justify-content-between">
+                          <button class="btn btn-reset">Reset</button>
+                          <button class="btn btn-default">Save</button>
+                          <button class="btn btn-publish">Save and Publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ppanel">
+            <a class="ppheader collapsed" data-toggle="collapse" href="#panel2">
+              <div class="pbrand">
+                <img src="assets/images/ebay-platform.png" alt="">
+              </div>
+              <p>11Scent Store</p>
+              <div class="status">Idle</div>
+              <div class="caret">
+                <i class="far fa-angle-right"></i>
+              </div>
+            </a>
+            <div id="panel2" class="collapse" data-parent="#accordion">
+              <div class="ppbody">
+                <div class="addProductForm">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                          <div class="pimg-container display-img">
+                            <img src="" alt="">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i> <span> Add Image</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-6">
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-6">
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                          <div class="pimg-container">
+                            <a href="#">
+                              <i class="fal fa-plus-circle"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="">Category</label>
+                        <select class="form-control" name="" id="">
+                          <option value="default" selected disabled>Enter Category</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="">Condition</label>
+                        <select class="form-control" name="" id="">
+                          <option value="default" selected disabled>...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="ptitle">Title</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="editor">Description</label>
+                        <textarea name="editor2" class="ckeditor"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">RRR Price (Opional)</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">Price</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">Stock</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">EAN / UPC Number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="">EAN / UPC Number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="actionBtns">
+                        <div class="d-flex justify-content-between">
+                          <button class="btn btn-reset">Reset</button>
+                          <button class="btn btn-default">Save</button>
+                          <button class="btn btn-publish">Save and Publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/ckeditor/ckeditor.js"></script>
+
+  <script type="text/javascript">
+    CKEDITOR.replace('editor1');
+    CKEDITOR.replace('editor2');
+    CKEDITOR.replace('editor3');
+  </script>
+</body>
+
+</html>

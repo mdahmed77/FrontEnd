@@ -1,0 +1,27 @@
+// Colors Used
+@import "variables.scss";
+
+// Fonts Used 
+@import "fonts.scss";
+
+// Reset styles for theme
+@import "reset.scss";
+
+// Side Bar Styles
+@import "sidebar.scss";
+
+// Side Bar Styles
+@import "header.scss";
+
+// Side Bar Styles
+@import "rightpanel.scss";
+
+
+.vh-flex
+{
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;}
+@font-face {
+    font-family: 'Museo_Slab';
+    src: url('../fonts/Museo_Slab.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;}
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;}
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;}
+@font-face {
+    font-family: 'Wingdings';
+    src: url('../fonts/Wingdings.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}
+@font-face {
+    font-family: 'Ganache_Regular';
+    src: url('../fonts/Ganache_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}
+@font-face {
+    font-family: 'boli';
+    src: url('../fonts/mvboli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}

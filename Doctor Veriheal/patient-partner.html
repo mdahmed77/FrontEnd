@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard | Veriheal</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/css/datepicker.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
+
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+  <!-- Main -->
+  <div class="vh-main">
+    <div class="vh-flex">
+
+      <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> Open Appointment <i
+                  class="fas fa-arrow-right"></i></a>
+              <ul>
+                <li>
+                  <a href="#">All Appointments</a>
+                </li>
+                <li>
+                  <a href="#">Find By Calender</a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> Closed Appointment <i
+                  class="fas fa-arrow-right"></i></a>
+              <ul>
+                <li>
+                  <a href="#">Approved MMj Cards Patients</a>
+                </li>
+                <li>
+                  <a href="#">Completed PC Patients</a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Scedule <i class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/earning.png" alt=""> Earning <i class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/tutorials.png" alt=""> Tutorials <i
+                  class="fas fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="fas fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+
+      <!-- Right Content Start -->
+
+      <div class="vh-rightpanel">
+
+        <!-- Header Start -->
+        <div class="header">
+          <!-- h upper -->
+          <div class="h-flex">
+
+            <!-- mobile menu button -->
+            <div class="menu-toggler hide-before">
+              <button class="btn btn-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <!-- Mobile Logo (Will show only in mobile) -->
+            <div class="brand hide-before">
+              <a href="#">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+            </div>
+
+            <div class="user">
+              <ul>
+                <!-- Notification -->
+                <li class="notify hide-after">
+                  <a href="#">
+                    <span>2</span>
+                    <i class="far fa-bell"></i>
+                  </a>
+                  <div class="drop-menu">
+                    <ul>
+                      <li><a href="#">Update Your Account</a></li>
+                      <li><a href="#">Account Change Unread</a></li>
+                      <li><a href="#" class="read-already">Read Notification 3</a></li>
+                      <li><a href="#" class="read-already">Read Notification 4</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- User Avtive -->
+                <li class="person">
+                  <div class="text hide-after">
+                    <p>mnakmail-doctor</p>
+                    <a href="#">Logout</a>
+                  </div>
+                  <div class="icon-holder">
+                    <div class="badge hide-before">2</div>
+                    <img src="assets/images/active-user-icon.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- filter bar -->
+          <div class="filter-header">
+            <h1 class="squish">Leads (Advanced)</h1>
+            <div class="export-btn">
+              <a class="btn btn-green" href="#">Export Excel</a>
+            </div>
+          </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- wrapper -->
+        <div class="vh-wrapper">
+          <div class="p-partner">
+
+            <div class="all_record">
+
+
+
+
+
+              <div class="searchNdate">
+
+                <div class="input-group patient-search">
+                  <input type="text" class="form-control" placeholder="Search by Patient Name">
+                </div>
+
+
+
+                <div class="dates">
+                  <div class="dates data_filter_inr from_to_date">
+
+                    <input id="datepickers1" autocomplete="off" class="datepicker" data-date-format="M dd ,yyyy"
+                      placeholder="From Date" type="text" name="start_date" value="">
+
+
+
+                    <input id="datepickers2" autocomplete="off" class="datepicker" data-date-format="M dd ,yyyy"
+                      placeholder="To Date" type="text" name="end_date" value="">
+
+                  </div>
+
+                  <select class="form-control" name="statesel">
+
+                    <option value="">All States&nbsp;</option>
+
+
+                    <option value="26">Alaska</option>
+
+
+                    <option value="12">Arizona</option>
+
+
+                    <option value="21">Arkansas</option>
+
+
+                    <option value="18">California</option>
+
+
+                    <option value="27">Colorado</option>
+
+
+                    <option value="9">Delaware</option>
+
+
+                    <option value="13">Florida</option>
+
+
+                    <option value="30">Hawaii</option>
+
+
+                    <option value="10">Illinois</option>
+
+
+                    <option value="20">Iowa</option>
+
+
+                    <option value="22">Louisiana</option>
+
+
+                    <option value="6">Maine</option>
+
+
+                    <option value="4">Maryland</option>
+
+
+                    <option value="7">Massachusetts</option>
+
+
+                    <option value="16">Michigan</option>
+
+
+                    <option value="24">Missouri</option>
+
+
+                    <option value="5">Montana</option>
+
+
+                    <option value="11">New Jersey</option>
+
+
+                    <option value="14">New Mexico</option>
+
+
+                    <option value="3">New York</option>
+
+
+                    <option value="19">Ohio</option>
+
+
+                    <option value="15">Oklahoma</option>
+
+
+                    <option value="1">Pennsylvania</option>
+
+
+                    <option value="8">Rhode Island</option>
+
+
+                    <option value="48">Vermont</option>
+
+
+                    <option value="23">Virginia</option>
+
+
+                    <option value="2">Washington DC</option>
+
+
+                    <option value="51">Wyoming</option>
+
+
+
+                  </select>
+
+
+
+
+                  <select class="form-control" name="productsel" id="productsel">
+
+                    <option value="">All Products</option>
+
+
+                    <option value="107">Flower</option>
+
+
+                    <option value="108">Oils</option>
+
+
+                    <option value="109">Capsules</option>
+
+
+                    <option value="110">Vaporizer</option>
+
+
+                    <option value="111">Tinctures</option>
+
+
+                    <option value="112">Edibles</option>
+
+
+                    <option value="113">Topicals</option>
+
+
+                    <option value="114">CBD</option>
+
+
+
+                  </select>
+
+
+
+
+                  <select class="form-control" name="sortby">
+
+                    <option value="1">Recent First</option>
+
+                    <option value="2">Oldest First</option>
+
+                  </select>
+
+
+
+                  <select class="form-control" name="contactedby">
+
+                    <option value="">Contacted</option>
+
+                    <option value="yes">Yes</option>
+
+                    <option value="no">No</option>
+
+                  </select>
+
+
+
+                  <div class="input-group-append submit-search">
+
+                    <button type="submit" class="field-btn" name="filter"><img
+                        src="https://vhstaging.veriheal.com/assets/assets-disp/images/search-icon.png" alt=""></button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- Filter End -->
+
+
+              <table class="table p-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantiy</th>
+                    <th>Rate</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Total MMJ Card</th>
+                    <td>31</td>
+                    <td>$10</td>
+                    <td>$310</td>
+                  </tr>
+                  <tr>
+                    <th>Total Personalized Consult (10 Mins)</th>
+                    <td>01</td>
+                    <td>$03</td>
+                    <td>$3</td>
+                  </tr>
+                  <tr>
+                    <th>Total Personalized Consult (20 Mins)</th>
+                    <td>3</td>
+                    <td>$03</td>
+                    <td>$15</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Total</th>
+                    <th>35</th>
+                    <th>&nbsp;</th>
+                    <th>$328</th>
+                  </tr>
+                </tfoot>
+              </table>
+
+
+              <div class="appoints-box">
+                <div class="appointment-slip">
+
+                  <div class="bio-text">
+
+                    <h6>Jesse Jamison</h6>
+
+                    <p>301-848-1093</p>
+
+
+                    <p>jessezz@yahoo.com</p>
+
+                  </div>
+
+                  <div class="zip-address">
+
+                    <p><strong>Appointment Type</strong></p>
+                    <p>MMJ Card</p>
+
+
+                  </div>
+
+                  <!-- <div class="pl-interest">
+
+                    <p><strong>Lead Interests:</strong></p>
+
+                    <p>Capsules, Edibles</p>
+
+                  </div> -->
+
+                  <div class="s-date">
+
+                    <p><strong>Date Created:</strong></p>
+
+                    <p>2020-05-1</p>
+
+                  </div>
+                  <div class="s-date">
+
+                    <p><strong>Date Approved:</strong></p>
+
+                    <p>2020-05-1</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="pagination">
+            <li><a class="prev disabled" href="#"><img src="assets/images/page-prev.png" alt=""></a></li>
+            <li><a class="active-page" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li>...</li>
+            <li><a href="#">10</a></li>
+            <li><a class="next" href="#"><img src="assets/images/page-next.png" alt=""></a></li>
+          </ul>
+        </div>
+
+        <div class="c-right">
+          <p><a href="#">Privacy Policy</a><span>|</span> &copy; Copyright 2020 <span>|</span> All Right Reserved
+            Veriheal</p>
+        </div>
+
+      </div>
+
+      <!-- Right Content ENd -->
+
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

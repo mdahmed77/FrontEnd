@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/select.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/explore.css" />
+    <title>Home | AllRize</title>
+  </head>
+
+  <body>
+    <div class="mobile-menu">
+      <div class="brand">
+        <button class="btn close-btn"><i class="far fa-times"></i></button>
+        <img src="assets/images/logo.png" alt="">
+      </div>
+      <a href="#">Buy</a>
+      <a href="#">Rent</a>
+      <a href="#">Sell</a>
+      <div class="drop">
+        <button>AllRize Exclusive <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#"> Private Exclusives </a>
+          <a href="#">Coming Soon</a>
+          <a href="#">AllRize Listings</a>
+        </div>
+      </div>
+      <a href="#">New Development</a>
+      <div class="drop">
+        <button>Agents <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#">Find an Agent</a>
+          <a href="#">Join as an Agent</a>
+        </div>
+      </div>
+      <div class="drop">
+        <button>Saved Items <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#">Collection</a>
+          <a href="#">Saved Searches</a>
+          <a href="#">Saved Buildings</a>
+        </div>
+      </div>
+      <div class="drop">
+        <button>Account <i class="far fa-angle-down"></i></button>
+        <div class="drop-items">
+          <a href="#">Account Settings</a>
+          <a href="#">Email Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <header class="ar-header">
+      <div class="container-fluid p-0">
+        <div class="flex-wrapper">
+          <button class="btn btn-menu"><i class="fal fa-bars"></i></button>
+          <a href="#" class="ar-brand">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <div class="navs">
+            <a href="#">Buy</a>
+            <a href="#">Rent</a>
+            <a href="#">Sell</a>
+            <div class="drop">
+              <button>
+                AllRize Exclusive <i class="far fa-angle-down"></i>
+              </button>
+              <div class="drop-items">
+                <a href="#"> Private Exclusives </a>
+                <a href="#">Coming Soon</a>
+                <a href="#">AllRize Listings</a>
+              </div>
+            </div>
+            <a href="#">New Development</a>
+            <div class="drop">
+              <button>Agents <i class="far fa-angle-down"></i></button>
+              <div class="drop-items">
+                <a href="#">Find an Agent</a>
+                <a href="#">Join as an Agent</a>
+              </div>
+            </div>
+            <div class="userNavs">
+              <div class="drop">
+                <button>Saved Items <i class="far fa-angle-down"></i></button>
+                <div class="drop-items">
+                  <a href="#">Collection</a>
+                  <a href="#">Saved Searches</a>
+                  <a href="#">Saved Buildings</a>
+                </div>
+              </div>
+              <div class="drop">
+                <button><i class="fal fa-user"></i></button>
+                <div class="drop-items open-left">
+                  <a href="#">Account Settings</a>
+                  <a href="#">Email Settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="explore">
+      <div class="container-fluid p-0">
+        <div class="flex-wrapper">
+          <div class="scrollable-container">
+            
+              <!-- Filters Pallet START -->
+              <div class="filters-pallet">
+                <div class="filter-header px-3">
+                  <div class="form-group">
+                    <select class="select-field">
+                      <option value="no">No Min Price</option>
+                      <option value="$">$100k</option>
+                      <option value="$">$200k</option>
+                      <option value="$">$300k</option>
+                      <option value="$">$400k</option>
+                      <option value="$">$500k</option>
+                      <option value="$">$600k</option>
+                      <option value="$">$700k</option>
+                      <option value="$">$800k</option>
+                      <option value="$">$900k</option>
+                    </select>
+                  </div>
+                  <span class="spacer">-</span>
+                  <div class="form-group">
+                    <select class="select-field">
+                      <option value="no">No Max Price</option>
+                      <option value="$">$100k</option>
+                      <option value="$">$200k</option>
+                      <option value="$">$300k</option>
+                      <option value="$">$400k</option>
+                      <option value="$">$500k</option>
+                      <option value="$">$600k</option>
+                      <option value="$">$700k</option>
+                      <option value="$">$800k</option>
+                      <option value="$">$900k</option>
+                    </select>
+                  </div>
+                  <button class="btn btn-outline ml-xl-3 ml-2" id="filterCloser">Close Filters</button>
+                </div>
+                <div class="px-3">
+                  <div class="row">
+                    <div class="col-xl-6 col-12">
+                      <div class="form-group">
+                        <label for="">Beds</label>
+                        <div class="d-flex align-items-center">
+                          <select name="beds" id="bedMin" class="select-field">
+                            <option value="no">No Min</option>
+                            <option value="1">Studio</option>
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                          </select>
+                          <span class="spacer">-</span>
+                          <select name="bedsv" id="bedMaxv" class="select-field">
+                            <option value="no">No Max</option>
+                            <option value="1">Studio</option>
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                      <div class="form-group">
+                        <label for="">Baths</label>
+                        <select name="baths" id="baths" class="select-field w-100">
+                          <option value="no">No Min</option>
+                          <option value="1">1+</option>
+                          <option value="1">2+</option>
+                          <option value="1">3+</option>
+                          <option value="1">4+</option>
+                          <option value="1">5+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <h6>Property Type</h6>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house" checked/>
+                        <label for="house">House</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house1"/>
+                        <label for="house1">Multi-Family</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house2"/>
+                        <label for="house2">Condo</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house3"/>
+                        <label for="house3">Land</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house4"/>
+                        <label for="house4">Townhouse</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house5"/>
+                        <label for="house5">Other Types</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house5"/>
+                        <label for="house5">Co-op</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 col-12">
+                      <div class="form-group">
+                        <label for="">Beds</label>
+                        <div class="d-flex align-items-center">
+                          <select name="bedsx" id="bedMina" class="select-field">
+                            <option value="no">No Min</option>
+                            <option value="1">Studio</option>
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                          </select>
+                          <span class="spacer">-</span>
+                          <select name="bedsc" id="bedMaxc" class="select-field">
+                            <option value="no">No Max</option>
+                            <option value="1">Studio</option>
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                      <div class="form-group">
+                        <label for="">Baths</label>
+                        <select name="bathsd" id="bathsd" class="select-field w-100">
+                          <option value="no">No Min</option>
+                          <option value="1">1+</option>
+                          <option value="1">2+</option>
+                          <option value="1">3+</option>
+                          <option value="1">4+</option>
+                          <option value="1">5+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <h6>Property Type</h6>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house" checked/>
+                        <label for="house">House</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house1"/>
+                        <label for="house1">Multi-Family</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house2"/>
+                        <label for="house2">Condo</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house3"/>
+                        <label for="house3">Land</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house4"/>
+                        <label for="house4">Townhouse</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house5"/>
+                        <label for="house5">Other Types</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house5"/>
+                        <label for="house5">Co-op</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-6 col-12">
+                      <div class="form-group">
+                        <label for="">Beds</label>
+                        <div class="d-flex align-items-center">
+                          <select name="bedsd" id="bedMind" class="select-field">
+                            <option value="no">No Min</option>
+                            <option value="1">Studio</option>
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                          </select>
+                          <span class="spacer">-</span>
+                          <select name="bedsc" id="bedMax" class="select-field">
+                            <option value="no">No Max</option>
+                            <option value="1">Studio</option>
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                      <div class="form-group">
+                        <label for="">Baths</label>
+                        <select name="bathsa" id="bathsa" class="select-field w-100">
+                          <option value="no">No Min</option>
+                          <option value="1">1+</option>
+                          <option value="1">2+</option>
+                          <option value="1">3+</option>
+                          <option value="1">4+</option>
+                          <option value="1">5+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <h6>Property Type</h6>
+                  <div class="row">
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house" checked/>
+                        <label for="house">House</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house1"/>
+                        <label for="house1">Multi-Family</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house2"/>
+                        <label for="house2">Condo</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house3"/>
+                        <label for="house3">Land</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house4"/>
+                        <label for="house4">Townhouse</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house5"/>
+                        <label for="house5">Other Types</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="ar-checkbox">
+                        <input type="checkbox" id="house5"/>
+                        <label for="house5">Co-op</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filters Pallet END -->
+
+            <div class="listing">
+              <div class="h-flex">
+                <h2>Explore This Neighborhood</h2>
+                <button class="btn btn-default">Save Search</button>
+              </div>
+              <!-- Filter Bar Start -->
+              <div class="filters">
+                <div class="filter-header">
+                  <div class="form-group">
+                    <select class="select-field">
+                      <option value="no">No Min Price</option>
+                      <option value="$">$100k</option>
+                      <option value="$">$200k</option>
+                      <option value="$">$300k</option>
+                      <option value="$">$400k</option>
+                      <option value="$">$500k</option>
+                      <option value="$">$600k</option>
+                      <option value="$">$700k</option>
+                      <option value="$">$800k</option>
+                      <option value="$">$900k</option>
+                    </select>
+                  </div>
+                  <span class="spacer">-</span>
+                  <div class="form-group">
+                    <select class="select-field">
+                      <option value="no">No Max Price</option>
+                      <option value="$">$100k</option>
+                      <option value="$">$200k</option>
+                      <option value="$">$300k</option>
+                      <option value="$">$400k</option>
+                      <option value="$">$500k</option>
+                      <option value="$">$600k</option>
+                      <option value="$">$700k</option>
+                      <option value="$">$800k</option>
+                      <option value="$">$900k</option>
+                    </select>
+                  </div>
+                  <button class="btn btn-outline ml-3" id="filterOpener">Filters</button>
+                </div>
+              </div>
+              <!-- Filter Bar END -->
+
+              <div class="sort-controls">
+                <p><b>21</b> of <b>8,120</b> Homes</p>
+                <button class="btn btn-drop">Sort by Recomended <i class="far fa-angle-down"></i>
+              </div>
+              <div class="prop-list">
+                <div class="row no-gutters">
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/1.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/2.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/4.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/5.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/hero.jpeg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/1.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/2.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/4.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/5.jpg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
+                    <div class="pad">
+                      <div class="property-holder">
+                        <a href="#">
+                          <div class="overTag">ALLRIZE COMMING SOON</div>
+                          <div class="img-holder">
+                            <img src="assets/images/hero.jpeg" alt="" />
+                          </div>
+                          <div class="mask">
+                            <div
+                              class="
+                                d-flex
+                                justify-content-between
+                                align-items-end
+                              "
+                            >
+                              <div class="w-50">
+                                <h5>$2,499,000</h5>
+                                <p>2 Avery Street, Unit 30D Boston, MA 02111</p>
+                              </div>
+                              <ul>
+                                <li><span class="d-block">2</span> Beds</li>
+                                <li><span class="d-block">3</span> Baths</li>
+                                <li>
+                                  <span class="d-block">1,596</span> Sq. Ft.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <footer class="ar-footer py-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="finfo mb-4">
+                      <a href="#" class="f-logo">
+                        <img src="assets/images/logo.png" alt="" />
+                      </a>
+                      <p>
+                        Lorem ipsum doler siet dummy text using for the dummy
+                        content here you can use any text later for here.
+                      </p>
+                      <div class="social my-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-medium-m"></i></a>
+                      </div>
+                      <div class="copy">
+                        &copy; Copyright 2021 - 2022 All Rights Reserved.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Company</h4>
+                        <div class="quick-links">
+                          <a href="#"> About Us </a>
+                          <a href="#"> Team </a>
+                          <a href="#"> Investors </a>
+                          <a href="#"> Careers </a>
+                          <a href="#"> Contact Us </a>
+                          <a href="#"> Offices </a>
+                          <a href="#"> Agent Experience </a>
+                          <a href="#"> Newsroom </a>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <h4>Explore</h4>
+                        <div class="quick-links">
+                          <a href="#">Concierge</a>
+                          <a href="#">Bridge Loan Services</a>
+                          <a href="#">Private Exclusives</a>
+                          <a href="#">Alirez Coming Soon</a>
+                          <a href="#">Find an Agent</a>
+                          <a href="#">Mortgage Calculator</a>
+                          <a href="#">Neighborhood Guides</a>
+                          <a href="#">Collections</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="newsletter widget mt-3">
+                      <h4>Newsletter</h4>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter your email"
+                        />
+                        <button class="btn btn-default mt-3">Submit</button>
+                      </div>
+                    </div>
+                    <div class="apps widget mt-4">
+                      <h4>Mobile Apps</h4>
+                      <div class="d-flex">
+                        <a href="#">
+                          <img src="assets/images/playstore.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <img src="assets/images/appstore.png" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </footer>
+          </div>
+          <div class="map-holder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24842.390000877258!2d-76.98746929674532!3d38.89428304436249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1618738643516!5m2!1sen!2s"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <button class="btn switch-btn" id="viewMap"><i class="fas fa-map"></i> Map</button>
+        <button class="btn switch-btn d-none" id="viewList"><i class="fas fa-th-large"></i> List</button>
+      </div>
+    </section>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/select.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select-field").select2();
+
+        $('#filterOpener').on('click', function(){
+          $('.scrollable-container').addClass('freez');
+          $('.filters-pallet').addClass('visible');
+          $('.listing').addClass('d-none');
+          $('.ar-footer').addClass('d-none');
+        });
+        $('#filterCloser').on('click', function(){
+          $('.scrollable-container').removeClass('freez');
+          $('.filters-pallet').removeClass('visible');
+          $('.listing').removeClass('d-none');
+          $('.ar-footer').removeClass('d-none');
+        });
+        $('#viewList').on('click', function(){
+          $('#viewMap').removeClass('d-none');
+          $('#viewList').addClass('d-none');
+          $('.scrollable-container').removeClass('d-none');
+        });
+        $('#viewMap').on('click', function(){
+          $('#viewList').removeClass('d-none');
+          $('#viewMap').addClass('d-none');
+          $('.scrollable-container').addClass('d-none');
+        });
+      });
+    </script>
+  </body>
+</html>

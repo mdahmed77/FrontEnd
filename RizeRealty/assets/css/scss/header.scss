@@ -1,0 +1,248 @@
+.ar-header {
+  background-color: $light;
+  position: relative;
+  z-index: 1040;
+  &.home-header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1040;
+  }
+  .btn-menu {
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 19px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    z-index: 10;
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  .ar-brand {
+    display: inline-block;
+    padding: 0px 15px;
+    text-decoration: none;
+    @media (max-width: 1199px) {
+      margin-left: 28px;
+    }
+    img {
+      height: 32px;
+      width: auto;
+      @media (max-width: 1199px) {
+        height: 24px;
+      }
+    }
+    h1 {
+      font-family: title;
+      color: #fff;
+      margin: 0px;
+      text-transform: uppercase;
+      font-size: 28px;
+      line-height: 20px;
+      letter-spacing: -3px;
+    }
+  }
+  .navs {
+    display: inline-flex;
+    align-items: center;
+    a {
+      font-size: 16px;
+      font-family: bold;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 10px 13px;
+      display: inline-block;
+      transition: 0.12s linear;
+      @media (max-width: 420px) {
+        font-size: 13px;
+        font-family: "regular";
+        font-weight: 400;
+      }
+      &:hover {
+        background-color: #fff;
+        color: #1d1d1d;
+      }
+    }
+    .drop {
+      position: relative;
+      button {
+        @extend a;
+        background-color: transparent;
+        border: none;
+        i {
+          position: relative;
+          top: 1px;
+        }
+      }
+      .drop-items {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 150px;
+        max-width: 100%;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        left: 0;
+        right: auto;
+        top: 100%;
+        &.open-left {
+          left: auto;
+          right: 0;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          background-color: #fff;
+          color: #1d1d1d;
+          font-family: "regular";
+          font-weight: 300;
+          &:hover {
+            color: $light;
+            background-color: #f3f9ff;
+          }
+        }
+      }
+      button.active {
+        background-color: #fff;
+        color: #1d1d1d;
+        & ~ .drop-items {
+          display: block;
+        }
+      }
+    }
+    @media (max-width: 1199px) {
+      & > a,
+      & > .drop {
+        display: none !important;
+      }
+    }
+    .userNavs {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 20px;
+      @media (max-width: 1199px) {
+        margin-left: 0px;
+      }
+      position: relative;
+      &::before {
+        @media (max-width: 1199px) {
+          display: none;
+        }
+        content: "";
+        position: relative;
+        top: 50%;
+        left: -10px;
+        height: 16px;
+        border-left: 1px solid #fff;
+        opacity: 0.1;
+      }
+    }
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: #000;
+  z-index: 1070;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.15s linear;
+  &.solid {
+    opacity: 0.5;
+    visibility: visible;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  background: #fff;
+  z-index: 1080;
+  width: 280px;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: 0.15s linear;
+  &.menuView {
+    transform: translateX(0%);
+  }
+  .brand {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 0;
+    img {
+      height: 26px;
+      width: auto;
+      filter: invert(10);
+    }
+  }
+  a {
+    font-size: 14px;
+    font-family: regular;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px 13px;
+    display: inline-block;
+    transition: 0.12s linear;
+    text-align: left;
+    &:hover {
+      background-color: $light;
+      color: #fff;
+    }
+  }
+  .drop {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    button {
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+      align-items: center;
+      border: none;
+      @extend a;
+      i {
+        position: relative;
+        top: 1px;
+      }
+    }
+    .drop-items {
+      display: none;
+      background-color: #fff;
+      min-width: 150px;
+      max-width: 100%;
+      position: relative;
+      a {
+        display: inline-block;
+        width: 100%;
+        background-color: antiquewhite;
+        color: rgb(85, 48, 0);
+        font-family: "regular";
+        font-weight: 300;
+        padding: 8px 25px;
+        &:hover {
+          color: $dark;
+          background-color: aliceblue;
+        }
+      }
+    }
+    button:focus {
+      background-color: #fff;
+      color: #1d1d1d;
+      &:focus ~ .drop-items {
+        display: block;
+      }
+    }
+  }
+}

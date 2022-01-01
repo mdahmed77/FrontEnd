@@ -1,0 +1,36 @@
+.right-content
+{
+    box-shadow: 0px 2px 3px 0px #00000030;
+    .webinfo-text
+    {
+        P
+        {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 54px;
+            padding:0px 15px;
+            letter-spacing: 0.2625px;
+            color: $atext;
+            margin:0px;
+            background: #f9f9f9;
+            position: relative;
+            z-index: 5;
+            a
+            {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    @import 'blog-post.scss';
+    
+    @import 'app-data.scss';
+    
+    @import 'comments.scss';
+    
+    @import 'jobsuccess.scss';
+    
+    @import 'help-slide.scss';
+}

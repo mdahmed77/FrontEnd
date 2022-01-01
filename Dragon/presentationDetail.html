@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/fontawesome.css" rel="stylesheet" />
+  <link id="styles" href="assets/css/theme.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <a href="present.html" class="backLink"><i class="fal fa-arrow-left"></i> <span>Back</span></a>
+
+  <div class="presentationDetail">
+    <div class="pHeader">
+      <img src="assets/images/logo.png" alt="">
+    </div>
+    <div class="pBanner">
+      <div class="text">
+        <h3>Amsterdam Presentation</h3>
+        <p>Pellentesque vel quam nisi. Etiam ex ante, vehicula ac venenatis non, hendrerit at ligula. Vivamus vestibulum
+          justo vitae volutpat mollis. Phasellus ac scelerisque est, nec blandit neque. In hac habitasse platea
+          dictumst. Aenean non hendrerit urna. Sed tincidunt congue purus, vitae lacinia nibh gravida ut. Vivamus in
+          mauris at nisi semper finibus. Fusce blandit orci nisi, non bibendum diam ultrices at. Vestibulum dapibus
+          purus a nisi dignissim suscipit. Aenean sollicitudin nibh eget facilisis venenatis. Integer pulvinar tortor
+          ipsum, a cursus massa vulputate a. Donec tincidunt tellus nec auctor lacinia. Vivamus orci erat, euismod eu
+          leo eu, consequat faucibus elit. In lacinia sodales leo id volutpat.</p>
+      </div>
+    </div>
+    <div class="pAttachs">
+      <div class="row">
+        <div class="col-xl-4 col-md-6 col-12 mb-3">
+          <a href="" class="attachBox">
+            <img src="assets/images/home.jpg" alt="">
+            <div class="actions">
+              <button class="btn btn-primary btn-sm"><i class="far fa-edit"></i></button>
+              <button class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
+            </div>
+            <div class="text">
+              <h5>Attachment Title</h5>
+              <p>Lorem ipsum doler seit dummy text </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 mb-3">
+          <a href="" class="attachBox newAttach" data-bs-toggle="modal" data-bs-target="#attachNew">
+            <i class="fal fa-plus-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal" id="attachNew" tabindex="-1" aria-labelledby="appoint" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">New Attachment</h5>
+          <button type="button" class="btn-close dark-text" data-bs-dismiss="modal" aria-label="Close"><i
+              class="far fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="form">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label for="">Add Image</label>
+                  <div class="imgForm">
+                    <input type="file" class="iuploader d-none">
+                    <div class="iviewer">
+                      <img src="" alt="">
+                    </div>
+                    <i class="far fa-times d-none"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label for="">File Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Text</label>
+                  <textarea name="" id="" rows="6" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label for="">Upload Document</label>
+                  <input type="file" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label for="">Url</label>
+                  <input type="url" class="form-control">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="btns d-flex">
+            <button type="button" class="btn btn-prime dark-text me-2" data-bs-dismiss="modal"><i
+                class="far fa-times"></i> Close</button>
+            <button type="button" class="btn btn-prime dark-text" data-bs-dismiss="modal"><i class="far fa-save"></i>
+              Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.imgForm .iviewer').on('click', function () {
+        $('.imgForm .iuploader').click();
+      });
+      $('.imgForm .iuploader').change(function (e) {
+        var fileName = e.target.files[0].name;
+        $('.imgForm .fa-times').removeClass('d-none');
+        if (this.files && this.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $('.iviewer img').attr('src', e.target.result).css('opacity', '1');
+          }
+          reader.readAsDataURL(this.files[0]);
+        }
+      });
+      $('.imgForm .fa-times').on('click', function () {
+        $('.imgForm .fa-times').addClass('d-none');
+        $('.iviewer img').attr('src', '').css('opacity', '0');
+      });
+    });
+  </script>
+</body>
+
+</html>

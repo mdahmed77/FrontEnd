@@ -1,0 +1,778 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Veriheal | alcoholism</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <style>
+        .vh-partner {
+            padding-top: 70px;
+        }
+
+        .vh-partner .clips .clip-box .img-holder {
+            border: none !important;
+            box-shadow: 0px 0px 20px 10px #d0d0d0;
+            position: relative;
+            padding-top: 100%;
+            width: 100%;
+        }
+
+        .vh-partner .clips .clip-box .img-holder img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .vh-partner .clips .clip-box .news-brand img {
+            max-height: 35px;
+            width: auto;
+        }
+
+        .vh-partner .clips .clip-box .news-brand {
+            padding: 35px 0px 20px;
+        }
+
+        .vh-partner .clips .clip-box h5 {
+            margin-bottom: 15px;
+        }
+
+        .vh-partner .clips .clip-box {
+            margin-bottom: 80px;
+        }
+
+        .vh-partner .run-a-story {
+            border-bottom: none !important;
+            padding-bottom: 0px !important;
+        }
+
+        .counters {
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px 10px #f4f4f4;
+            margin-bottom: 100px;
+        }
+
+        .counters .counter-box.mid-box {
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px 10px #f4f4f4;
+        }
+
+        .counters .counter-box {
+            padding: 60px 30px;
+            text-align: center;
+        }
+
+        .counters .counter-box h3 {
+            position: relative;
+            font-size: 68px;
+            font-family: 'Museo_Slab';
+            color: #1c1c49;
+            margin-bottom: 50px;
+        }
+
+        .counters .counter-box.mid-box h3::after {
+            background-color: #63c8b8;
+        }
+
+        .counters .counter-box h3::after {
+            content: "";
+            width: 120px;
+            height: 12px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #eb8e66;
+        }
+
+        .counters .counter-box p {
+            font-size: 20px;
+            color: #79797b;
+            margin: 0px;
+        }
+
+        .partner-content .style-head {
+            font-size: 2.125rem;
+            color: #51beb0;
+        }
+
+        .partner-content .para-main {
+            font-size: 22px;
+            color: #79797b;
+        }
+
+
+        .about-content .style-head,
+        .partner-tabs .tab-content h3 {
+            color: #51beb0;
+        }
+
+        .about-content .style-head {
+            font-size: 2.125rem;
+        }
+
+        .about-content .para-main,
+        .partner-tabs .tab-content p {
+            font-size: 18px;
+            color: #79797b;
+        }
+
+        .about-content .para-main {
+            margin: 30px 0 50px 0;
+        }
+
+        .partner-tabs .nav-tabs {
+            border: none;
+            -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+            -moz-box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+            box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+            padding: 10px;
+            margin-bottom: 15px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+        }
+
+        .partner-tabs .nav-tabs .nav-link {
+            margin: 0;
+            font-size: 20px;
+            color: #1c1c49;
+            font-family: 'Roboto-Bold';
+            outline: none;
+            border: none;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: .85rem 1.5rem;
+        }
+
+        .partner-tabs .nav-tabs .nav-link.active {
+            background: #1c1c49;
+            color: #fff;
+        }
+
+        .partner-tabs .tab-content .tab-thumb,
+        .partner-tabs .tab-content .tab-thumb>img {
+            width: 100%;
+        }
+
+        .partner-tabs .tab-content h3 {
+            margin: 0 0 20px 0;
+        }
+
+        .partner-tabs .tab-content p+p {
+            margin-top: 20px;
+        }
+
+        .partner-form {
+            padding: 50px 20px;
+            margin-top: 110px;
+            -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+            -moz-box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+            box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .partner-form h3 {
+            font-size: 26px;
+            text-align: center;
+            color: #51beb0;
+        }
+
+        .partner-form h3:nth-child(2) {
+            color: #1c1c49;
+            margin-bottom: 40px;
+        }
+
+        .partner-form .form-control {
+            background: #f8f8f8;
+            border: none;
+            height: 60px;
+            font-size: 18px;
+            font-family: 'Roboto-Regular';
+        }
+
+        .partner-form .form-control,
+        .partner-form .form-control:focus,
+        .partner-form .form-control::placeholder {
+            color: #4e565c;
+        }
+
+        .partner-form textarea.form-control {
+            resize: vertical;
+            min-height: 160px;
+        }
+
+        .partner-form .about-submit {
+            background: #51beb0;
+            border: none;
+            color: #fff;
+            line-height: 45px;
+            font-family: 'Roboto-Bold';
+            width: 100%;
+            margin-top: 20px;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+            border-radius: 40px;
+        }
+
+        .partner-form .about-submit:hover,
+        .partner-form .about-submit:focus {
+            background: #1c1c49;
+        }
+
+        @media (max-width:991px) {
+            .partner-tabs .tab-content .tab-thumb {
+                box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%) !important;
+                border-radius: 15px !important;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="topbar d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="socials simples">
+                            <li><a href="#."> <i class="fab fa-facebook-f"></i> </a></li>
+                            <li><a href="#."> <i class="fab fa-instagram"></i> </a></li>
+                            <li><a href="#."> <i class="fab fa-twitter"></i> </a></li>
+                            <li><a href="#."> <i class="fab fa-youtube"></i> </a></li>
+                            <li><a href="#."> <i class="fab fa-linkedin-in"></i> </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                        <div class="top-right-link">
+                            <a href="#">Contact</a>
+                            <div class="btn-group drop-drown desktop-showing">
+                                <button type="button" class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Login
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Patient Login</a>
+                                    <a class="dropdown-item" href="#">Doctor Login</a>
+                                    <a class="dropdown-item" href="#">Dispensary Login</a>
+                                    <a class="dropdown-item" href="#">Partner Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="site brand"></a>
+
+                <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse justify-content-md-end">
+                    <ul class="navbar-nav navbar-mobile mr-0">
+                        <li class="nav-item mobile-showing"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item mobile-showing border-mobile"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">MMJ Doctors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dispensaries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cannabis Central</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Personalized Consult</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item mobile-showing border-mobile">&nbsp;</li>
+                        <li class="nav-item mobile-showing">
+                            <ul class="socials mb-30">
+                                <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                                <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                                <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                                <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="btn-group drop-drown mobile-showing">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="far fa-user"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Patient Login</a>
+                        <a class="dropdown-item" href="#">Doctor Login</a>
+                        <a class="dropdown-item" href="#">Dispensary Login</a>
+                        <a class="dropdown-item" href="#">Partner Login</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bsnav-mobile">
+            <div class="bsnav-mobile-overlay"></div>
+            <div class="navbar"></div>
+        </div>
+
+    </header>
+    <!-- Header Ends -->
+    <!--Content Conditions-->
+    <section id="inner_header" class="content-area bg-web parallax-green">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="heading-style mb-30" style="text-decoration: none;">Partner With Us</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content Conditions ends -->
+
+    <section class="vh-partner">
+        <div class="container">
+            <!-- <div class="run-a-story">
+                <h2 class="h-title">Interested in running a story on Veriheal?</h2>
+                <div class="act-btn">
+                    <img src="images/c-click.jpg" alt="">
+                    <button class="btn btn-orange">Contact our Media Department</button>
+                </div>
+            </div> -->
+            <div class="partner-content mb-5 text-center text-md-left">
+                <h2 class="style-head muesoFont mb-3">Partnering with Veriheal means becoming part of the family.</h2>
+                <p class="para-main rbotoFont">As a leading cannatech platform in the industry that supports millions of
+                    cannabis users every single year, Veriheal has been able to</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="partner-tabs">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab"
+                                    aria-controls="one" aria-selected="true">
+                                    Dispensaries
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab"
+                                    aria-controls="two" aria-selected="false">
+                                    Brands
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab"
+                                    aria-controls="four" aria-selected="false">
+                                    Affiliates
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab"
+                                    aria-controls="three" aria-selected="false">
+                                    Doctors
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content text-center text-md-left" id="myTabContent">
+                        <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                            <div class="row">
+                                <div class="col-lg-8 mb-5">
+                                    <div class="tab-thumb">
+                                        <img alt="" src="images/about-tab.jpg">
+                                    </div>
+                                    <h3 class="muesoFont">DISPENSARIES</h3>
+                                    <p>Gain access to thousands of medical cannabis users right in your direct area and
+                                        increase your customer loyalty pool. Many of the patients that leverage the
+                                        Veriheal
+                                        platform are actively looking for advice on what products to buy, where to shop,
+                                        and
+                                        how to best meet their medical needs. If you are a dispensary, we invite you to
+                                        start a conversation with us. You will no longer need to refer patients by word
+                                        of
+                                        mouth or risky digital campaigns. Marketing for a dispensary can be as easy as
+                                        pulling the Veriheal lever.</p>
+                                    <p>Whether it be opportunities to list your location on our Dispensary finder,
+                                        sending a
+                                        targetted email to our audience right in your area, or closer identifying how
+                                        the
+                                        demand for medical cannabis products is changing in your state, we have
+                                        something
+                                        for you.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="partner-form">
+                                        <h3 class="muesoFont">Interested in working with us?</h3>
+                                        <h3 class="muesoFont">Let's Chat</h3>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Name" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Company" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Subject" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea placeholder="Message" class="form-control"></textarea>
+                                        </div>
+                                        <button type="button" class="about-submit"> Submit </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                            <div class="row">
+                                <div class="col-lg-8 mb-5">
+                                    <div class="tab-thumb">
+                                        <img alt="" src="images/about-tab.jpg">
+                                    </div>
+                                    <h3 class="muesoFont">Brands</h3>
+                                    <p>Have a new product that you'd love to spread awareness about to the hottest
+                                        audience
+                                        in the market? We've got just the thing.</p>
+                                    <p>Depending on the level of partnership you will be able to gain access to
+                                        thousands of
+                                        medical cannabis users to which you can promote your brand and initiatives.</p>
+                                    <p>Something else in mind? Drop us a line. Our collaboration does not stop at media.
+                                        Whether it's getting out into the community, helping spread medical cannabis
+                                        awareness, we're all ears.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="partner-form">
+                                        <h3 class="muesoFont">Interested in working with us?</h3>
+                                        <h3 class="muesoFont">Let's Chat</h3>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Name" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Company" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Subject" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea placeholder="Message" class="form-control"></textarea>
+                                        </div>
+                                        <button type="button" class="about-submit"> Submit </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                            <div class="row">
+                                <div class="col-lg-8 mb-5">
+                                    <div class="tab-thumb">
+                                        <img alt="" src="images/about-tab.jpg">
+                                    </div>
+                                    <h3 class="muesoFont">Affiliates</h3>
+                                    <p>Do you have patients that you would like to refer to us? Contact us today to find
+                                        out
+                                        about our affiliate program.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="partner-form">
+                                        <h3 class="muesoFont">Interested in working with us?</h3>
+                                        <h3 class="muesoFont">Let's Chat</h3>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Name" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Company" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Subject" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea placeholder="Message" class="form-control"></textarea>
+                                        </div>
+                                        <button type="button" class="about-submit"> Submit </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                            <div class="row">
+                                <div class="col-lg-8 mb-5">
+                                    <div class="tab-thumb">
+                                        <img alt="" src="images/about-tab.jpg">
+                                    </div>
+                                    <h3 class="muesoFont">Doctors</h3>
+                                    <p>Veriheal is helping thousands of new medical cannabis patients get their medical
+                                        recommendations every single week. The demand for qualified doctors who care
+                                        truly
+                                        care about patients is increasing, and we are helping to align the need. The
+                                        Veriheal platform is available for doctors or medical clinics looking to provide
+                                        medical marijuana consultations. Work from the comfort of your office or home,
+                                        and
+                                        provide convenient and efficient care to patients while making additional
+                                        income.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="partner-form">
+                                        <h3 class="muesoFont">Interested in working with us?</h3>
+                                        <h3 class="muesoFont">Let's Chat</h3>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Name" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Company" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Subject" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea placeholder="Message" class="form-control"></textarea>
+                                        </div>
+                                        <button type="button" class="about-submit"> Submit </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="counters mt-5">
+                <div class="row no-gutters">
+                    <div class="col-lg-4">
+
+                        <div class="counter-box">
+                            <h3>01</h3>
+                            <p>The Veriheal Platform supports over 1 million medical cannabis users every year.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="counter-box mid-box">
+                            <h3>100,000</h3>
+                            <p>Veriheal has helped register over 100,000 patients for their respective medical cannabis
+                                programs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="counter-box">
+                            <h3>4,000%</h3>
+                            <p>Veriheal has grown over 4,000% since 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p class="last-update">Data Last Updated 20/20/2020</p>
+
+    <!-- Footer Start -->
+    <footer class="site-footer bg-dark-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-20">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                            <h4 class="text-green font-fourth muesoFont">RESOURCES</h4>
+                            <ul class="footer-links mt-20">
+                                <li><a href="#." class="whitecolor">MMJ Doctors</a></li>
+                                <li><a href="#." class="whitecolor"> Personalized Consult </a></li>
+                                <li><a href="#." class="whitecolor"> Dispensaries </a></li>
+                                <li><a href="#." class="whitecolor"> Cannabis Central </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                            <h4 class="text-green font-fourth muesoFont">EDUCATION</h4>
+                            <ul class="footer-links mt-20">
+                                <li><a href="#." class="whitecolor"> Cannabis 101 </a></li>
+                                <li><a href="#." class="whitecolor"> Conditions Treated </a></li>
+                                <li><a href="#." class="whitecolor"> Patient FAQ </a></li>
+                                <li><a href="#." class="whitecolor"> Doctor FAQ </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                            <h4 class="text-green font-fourth muesoFont">INVOLVEMENT</h4>
+                            <ul class="footer-links mt-20">
+                                <li><a href="#." class="whitecolor"> Contact </a></li>
+                                <li><a href="#." class="whitecolor"> Careers </a></li>
+                                <li><a href="#." class="whitecolor"> Partnerships </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+                            <h4 class="text-green font-fourth muesoFont">CONTACT</h4>
+                            <ul class="footer-links mt-20">
+                                <li>
+                                    <a href="#." class="whitecolor">
+                                        <i class="fas fa-phone"></i> 1-833-663-7284
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#." class="whitecolor">
+                                        <i class="fas fa-blender-phone"></i> 1-844-287-3486
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#." class="whitecolor">
+                                        <i class="far fa-envelope"></i> info@veriheal.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 mt-50">
+                            <div class="mobile-center">
+                                <h4 class="text-green text-uppercase">Search by state</h4>
+                                <form class="webForm mt-10  d-inline-block">
+                                    <select class="custom-select rbotoFont state-select">
+                                        <option selected>ALABAMA</option>
+                                        <option value="1">HTML5</option>
+                                        <option value="2">CSS3</option>
+                                        <option value="3">SCSS</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-6 col-6 mt-50 d-flex justify-content-end desktop-showing ">
+                            <ul class="socials mb-30">
+                                <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                                <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                                <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                                <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 offset-lg-1 col-md-4 mt-20">
+                    <div class="contact-box mb-30">
+                        <h4 class="text-green font-fourth text-uppercase muesoFont text-center">
+                            It’s time to clear the smoke.
+                        </h4>
+                        <h4 class="text-green font-fourth mt-20 text-center">Sign up for our newsletter.</h4>
+                        <form class="webForm border-btm-form mt-20">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="NAME">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="EMAIL">
+                            </div>
+                            <button type="submit" class="btn-simple peech w-100">SUBSCRIBE</button>
+                            <div class="form-group mt-20 mb-0">
+                                <div class="form-check text-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">
+                                        Terms & Conditions
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 text-center">
+                            <ul class="socials mobile-showing mt-10 mb-30">
+                                <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                                <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                                <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                                <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights d-flex  align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 mobile-showing mb-30">
+                        <ul class="mb-30">
+                            <li><a href="#.">TERMS </a></li>
+                            <li><a href="#.">PRIVACY POLICY </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                        <div class="whitecolor">
+                            <p>© 2019 All Rights Reserved <a href="#.">Veriheal Inc </a>. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 text-right desktop-showing">
+                        <ul>
+                            <li><a href="#.">TERMS </a></li>
+                            <li><a href="#.">PRIVACY POLICY </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <script src="js/jquery.2.2.3.min.js"></script>
+    <!--Bootstrap Core-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bsnav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/function.js"></script>
+
+
+
+</body>
+
+</html>

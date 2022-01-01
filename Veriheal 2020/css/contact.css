@@ -1,0 +1,269 @@
+.vh-contact
+{
+    padding:80px 0px;
+}
+.vh-contact .c-heads
+{
+    margin-bottom: 45px;
+    text-align: center;
+}
+.vh-contact .c-heads h2
+{
+    font-size: 40px;
+    line-height: 40px;
+    color:#1c1c49;
+    font-family: 'Museo_Slab';
+    margin:0px 0px 15px;
+}
+.vh-contact .c-heads h3
+{
+    font-size: 30px;
+    line-height: 30px;
+    color:#51b9ab;
+    font-family: 'Museo_Slab';
+    margin:0px;
+}
+.vh-contact .flex-row
+{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    padding:0px 40px;
+}   
+.vh-contact .left-text
+{
+    padding-top:20px;
+}
+@media(min-width:992px)
+{
+    .vh-contact .left-text
+    {
+        padding-top:60px;
+    }
+}
+.vh-contact .left-text .cf-block
+{
+    display: flex;
+    align-items: center;
+}
+.vh-contact .left-text .cf-block ~ .cf-block
+{
+    margin-top: 80px;
+}
+.vh-contact .left-text .cf-block span
+{
+    font-size: 24px;
+    line-height: 24px;
+    color:#acacac;
+    font-family: 'Museo_Slab';
+}
+.vh-contact .left-text .cf-block p
+{
+    font-size: 40px;
+    line-height: 40px;
+    color:#1c1c49;
+    font-family: 'Museo_Slab';
+    margin:0px;
+}
+.vh-contact .left-text .cf-block .icon
+{
+    border:2px solid #51b9ab;
+    height: 100px;
+    width: 100px;
+    color:#1c1c49;
+    font-size: 54px;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 30px;
+}
+@media(max-width:1199px)
+{
+    .vh-contact .left-text .cf-block ~ .cf-block
+    {
+        margin-top: 60px;
+    }
+    .vh-contact .left-text .cf-block .icon
+    {
+        height: 75px;
+        width: 75px;
+        font-size: 42px;
+        margin-right: 20px !important;
+    }
+    .vh-contact .left-text .cf-block span
+    {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .vh-contact .left-text .cf-block p
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .vh-contact .c-heads h2
+    {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .vh-contact .c-heads h3
+    {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+@media(max-width:991px)
+{
+    .vh-contact .c-heads h2
+    {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .vh-contact .c-heads h3
+    {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .vh-contact .flex-row
+    {
+        padding:0px 00px;
+    } 
+    .vh-contact .left-text .cf-block ~ .cf-block
+    {
+        margin-top: 30px;
+    }
+    .vh-contact .left-text .cf-block .icon
+    {
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+        margin-right: 14px !important;
+        border-width: 1px;
+    }
+    .vh-contact .left-text .cf-block span
+    {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .vh-contact .left-text .cf-block p
+    {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+.vh-contact .form 
+{
+    min-width: 465px;
+    width: 465px;
+    background-color: #fff;
+    padding:35px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 50px 10px #e1e1e2;
+}
+.vh-contact .form .form-group
+{
+    margin:0px 0px 10px;
+}
+.vh-contact .form .form-control
+{
+    background-color:#f2f3f5;
+    border-radius: 8px;
+    outline: none;
+    border:none;
+    min-height: 60px;
+    font-size: 18px;
+    color:#1c1c49;
+    padding:5px 25px;
+}
+.vh-contact .form .form-control::placeholder
+{
+    color:#4e565c;
+    font-size: 18px;
+}
+.vh-contact .form textarea.form-control
+{
+    min-height: 140px;
+    padding:15px 25px;
+}
+.vh-contact .form .btn-green
+{
+    background-color: #51b6aa;
+    color:#fff;
+    font-size: 18px;
+    font-family: 'Roboto-Bold';
+    padding:10px 20px;
+    border-radius: 50px;
+    display: block;
+    margin:15px auto 0px;
+    transition: .15s linear;
+    min-width: 250px;
+}
+.vh-contact .form .btn-green:hover
+{
+    background-color: #ed916a;
+    color:#fff;
+}
+.vh-contact .share-icons {
+    text-align: center;
+    margin-top:30px;
+}
+.vh-contact .share-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    font-size: 28px;
+}
+.vh-contact .share-icons a ~ a {
+    margin-left: 5px;
+}
+.vh-contact .share-icons .fb {
+    background-color: #38579b;
+}
+.vh-contact .share-icons .yt {
+    background-color: #c4302b;
+}
+.vh-contact .share-icons .pint {
+    background-color: #cd1c20;
+}
+.vh-contact .share-icons .twt {
+    background-color: #14a6e2;
+}
+.vh-contact .share-icons .lin {
+    background-color: #0079b8;
+}
+
+
+@media(max-width:767px)
+{
+    .vh-contact .right-form
+    {
+        width: 100%;
+        margin-top:50px;
+    } 
+    .vh-contact .form 
+    {
+        min-width: 320px ;
+        width: 100% !important;
+    }
+    .vh-contact .flex-row
+    {
+        flex-direction: column !important;
+        padding:0px 0px;
+    } 
+    .vh-contact .form  
+    {
+        padding:20px;
+    }
+    .vh-contact .form .form-control
+    {
+        min-height: 45px;
+        font-size: 16px;
+        padding:5px 15px;
+    } 
+
+}

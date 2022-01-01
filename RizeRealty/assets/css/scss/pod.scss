@@ -1,0 +1,115 @@
+.property-holder {
+  position: relative;
+  margin-bottom: 30px;
+
+  a {
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .img-holder {
+    position: relative;
+    padding-top: 60%;
+    img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1);
+      transition: transform 0.2s ease-out;
+    }
+  }
+
+  &:hover {
+    .img-holder {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .overTag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 8px 1px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-family: bold;
+    z-index: 2;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .mask {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    color: #fff;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.849) 100%
+    );
+    padding: 50px 10px 10px;
+
+    h5 {
+      font-family: title;
+      font-size: 18px;
+      margin: 0px;
+
+      &:hover {
+        color: $light;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      margin: 0px;
+      font-family: regular;
+      font-weight: 300;
+    }
+    ul {
+      display: inline-flex;
+      align-items: center;
+      li {
+        font-family: regular;
+        font-weight: 300;
+        font-size: 13px;
+        text-align: center;
+        padding: 0px 10px;
+        position: relative;
+        &::before {
+          content: "";
+          height: 75%;
+          width: 0px;
+          border-left: 1px solid #fff;
+          opacity: 0.5;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &:first-child {
+          padding-left: 0;
+          &::before {
+            display: none;
+          }
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

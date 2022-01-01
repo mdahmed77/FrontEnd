@@ -1,0 +1,115 @@
+
+.blog-post
+{
+    background: #fff;
+    padding:24px 15px 15px;
+    box-shadow: 0px 2px 3px 0px #00000030;
+    position: relative;
+    z-index: 10;
+    h4
+    {
+        a
+        {
+            color:$atext;
+            font-family: Roboto;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+    p
+    {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.30000001192092896px;
+        text-align: left;
+    }
+}  
+.bperson
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    & ~ .bperson
+    {
+        margin-left:10px;
+    }
+    img
+    {
+        margin-right:10px;
+    }
+}
+
+strong.gray-text
+{
+    font-weight: 500;
+}
+.gray-text
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:$btext;
+    position: relative;
+    display: inline-block;
+    & ~ span
+    {
+        margin-left:16px;
+        &::before
+        {
+            content:"";
+            height: 3px;
+            width: 3px;
+            border-radius: 100%;
+            position:absolute;
+            left: -9px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $btext;
+        }
+    }
+}
+
+small
+{
+    position: relative;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.8333333134651184px;
+    text-align: left;
+
+    color:#B2B2B2;
+    & ~ small
+    {
+        margin-left:16px;
+        &::before
+        {
+            content:"";
+            height: 3px;
+            width: 3px;
+            border-radius: 100%;
+            position:absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #B2B2B2;
+        }
+    }
+}

@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blog | Veriheal</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
+
+  <style>
+    .blog-detail .r-description {
+      text-align: center;
+      margin-top: 30px;
+      padding: 30px 15px;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .1);
+      margin-bottom: 30px;
+    }
+
+    .blog-detail .r-description p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      font-size: 20px;
+      columns: #797979;
+      text-align: center;
+    }
+
+    @media(max-width:767px) {
+      .blog-detail .r-description p {
+        flex-direction: column;
+        margin-bottom: 15px;
+      }
+    }
+
+    .blog-detail .r-description .btn-green {
+      margin: 10px auto;
+    }
+
+    .blog-detail .r-description span {
+      display: inline-block;
+      margin: 0px 10px;
+      font-size: 20px;
+    }
+
+    .blog-detail .r-description a {
+      columns: #555555;
+      font-size: 16px;
+    }
+
+    .blog-detail .r-description a:hover {
+      color: #ed916a;
+    }
+
+    .blog-detail .r-description .fa-star {
+      color: #ffc800;
+      font-size: 18px;
+    }
+
+
+    /* STAR RATING CSS */
+
+    .choose-star {
+      direction: rtl;
+      width: auto;
+      display: inline-block;
+    }
+
+    .choose-star span {
+      position: relative;
+    }
+
+    .choose-star span input {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: 0;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+    }
+
+    .choose-star i {
+      color: #ddd;
+    }
+
+    .choose-star span:hover~span i,
+    .choose-star span:hover i,
+    .choose-star span.checked i,
+    .choose-star span.checked~span i {
+      color: #ffc800 !important;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <ul>
+      <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <hr>
+      <li>
+        <form class="d-inline-block cst-adj7">
+          <select class="category">
+            <option value=""> Browse by Category</option>
+            <option value="#">Cannabis Central Home</option>
+            <option value="#">News</option>
+            <option value="#">Lifestyle</option>
+            <option value="#">Treatment</option>
+            <option value="#">Research</option>
+            <option value="#">Dispensaries and Collectives</option>
+            <option value="#">Products and Services</option>
+            <option value="#">Cooking</option>
+          </select>
+        </form>
+
+      </li>
+      <hr>
+      <li class="nav-item"><a class="nav-link" href="#">MMJ Doctors</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Dispensaries</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Cannabis Central</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Personalized Consult</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+      <hr>
+      <li class="nav-item">
+        <ul class="socials">
+          <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+          <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+          <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+          <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+          <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="topbar d-none d-lg-block">
+      <div class="container">
+        <div class="flex-row">
+          <div class="social-reviews">
+            <ul class="socials simples">
+              <li><a href="#."> <i class="fab fa-facebook-f"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-instagram"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-twitter"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-youtube"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-linkedin-in"></i> </a></li>
+            </ul>
+            <p><a href="tel:18336337284">1-833-663-7284</a> (Customer Support Available 24/7)</p>
+            <p class="r-link"><a href="tel:18336337284"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Veriheal Reviews</a>
+            </p>
+          </div>
+          <div class="t-links">
+            <a href="#">Contact</a>
+            <div class="btn-group drop-drown">
+              <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Login
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Patient Login</a>
+                <a class="dropdown-item" href="#">Doctor Login</a>
+                <a class="dropdown-item" href="#">Dispensary Login</a>
+                <a class="dropdown-item" href="#">Partner Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler hide-before"><i class="fas fa-bars"></i></button>
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="site brand"></a>
+        <button class="search-toggler hide-before"><i class="fas fa-search"></i></button>
+        <div class="search-field">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+              <button class="btn btn-green" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav hide-after">
+          <li class="nav-item"><a class="nav-link" href="#">MMJ Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dispensaries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cannabis Central</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Personalized Consult</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+  <!-- Header Ends -->
+
+
+  <!-- second navigation Start-->
+
+
+  <div class="secondary-nav">
+    <div class="container">
+      <div class="flex-row">
+        <ul>
+          <li>
+            <a href="#" class="active">News</a>
+          </li>
+          <li>
+            <a href="#">Lifestyle</a>
+          </li>
+          <li>
+            <a href="#">Treatment</a>
+          </li>
+          <li>
+            <a href="#">Research</a>
+          </li>
+          <li>
+            <a href="#">Dispensaries & Collectives</a>
+          </li>
+          <li>
+            <a href="#">Products & Services</a>
+          </li>
+          <li>
+            <a href="#">Cooking</a>
+          </li>
+        </ul>
+        <div class="sa-icons">
+          <div class="search">
+            <a><i class="fas fa-search"></i></a>
+            <div class="search-field">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-green" type="submit">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user">
+            <a href="#"><i class="far fa-user-circle"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- second navigation END -->
+
+  <!-- bread crumbs Start -->
+  <div class="pager">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+        <li class="breadcrumb-item"><a href="category.html">NEWS</a></li>
+        <li class="breadcrumb-item active">How Cannabis Users Can Prepare Ahead of an Economic Recession</li>
+      </ul>
+    </div>
+  </div>
+  <!-- bread crumbs End -->
+
+
+  <!-- SINGLE POST START -->
+
+  <section class="blog-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="blog-tile-box">
+            <span>NEWS, POLITICS</span>
+            <h4>How Cannabis Users Can Prepare Ahead of an EconomicRecession MMJ Cards Amid the Outbreak</h4>
+            <div class="flex-row">
+              <div class="author-profile-tag">
+                <div class="img-holder">
+                  <img src="assets/images/active-user-icon.png" alt="">
+                </div>
+                <p>by Natasha Winkler</p>
+              </div>
+              <span class="date">July 26, 2019</span>
+            </div>
+          </div>
+
+          <div class="img-center">
+            <img src="assets/images/gallery4.jpg" class="img-fluid" alt="">
+          </div>
+
+          <p class="btext">
+            Coronavirus already has caused a number of state legislatures to shut down temporarily, including some that
+            were weighing recreational cannabis legalization measures. The nationwide coronavirus outbreak could hamper
+            cannabis legalization efforts along the East Coast and elsewhere, raising further questions about the launch
+            of lucrative new adult-use and medical markets in states like New York, Ohio, and Nebraska. Advocates are
+            pushing cannabis ballot referendums in nearly a dozen states, ranging from Idaho to New Jersey.
+          </p>
+
+          <h5 class="bh">Cannabis Legalization Won’t Make New York’s Budget This Year</h5>
+
+          <p class="btext">
+            Governors and state lawmakers who failed to pass legalization last year—most notably in New York—vowed that
+            2020 would be different. But social distancing has put ballot drives on pause, and state lawmakers are
+            overwhelmed with addressing the crisis at hand. Without the ability to gather in person, cannabis reform
+            efforts have stalled in multiple states across the country. New York’s effort to legalize cannabis this year
+            didn’t need another obstacle, but then came the novel coronavirus. The effects of COVID-19 now have derailed
+            Governor Andrew Cuomo’s fact-finding tour de cannabis in other legal states. Since New York’s fiscal year
+            began April 1st, it’s likely the virus delayed New York’s efforts to pass the legalization of recreational
+            cannabis through the budget.
+          </p>
+
+
+
+
+          <div class="img-center">
+            <img src="assets/images/mjcard-vector.png" alt="" class="img-fluid">
+          </div>
+
+          <h5 class="bh">Anxious Cannabis Advocates Must Continue to Wait For Action</h5>
+
+          <p class="btext">
+            Advocates in Nebraska have suspended collecting signatures in their medical marijuana legalization campaign
+            in response to the coronavirus. The group needs to collect 130,000 signatures by July to qualify medical
+            marijuana as a ballot initiative, but that appears unlikely unless the coronavirus threat ends within the
+            next few weeks. An advocacy group in Ohio needed to gather 443,000 valid signatures from registered voters
+            by July 1 to put recreational cannabis on the November ballot. But Ohio Governor Mike DeWine announced a
+            “stay-at-home”, like many other states; therefore suspending the group’s ability to mobilize for signatures.
+            <br><br>
+            The state of Maine’s implementation of a 2016 ballot measure legalizing recreational cannabis could be again
+            pushed back as part of the fight against the coronavirus. The planned rollout of Maine’s recreational
+            cannabis program in June could be delayed by coronavirus fears and the state’s efforts to stem the
+            pandemic’s spread, cannabis regulators have warned, emphasizing social distancing must remain a top
+            priority. Maine’s State Legislature’s early adjournment last week in response to COVID-19, also left up in
+            the air several related bills designed to smooth the transition to recreational sales, further complicating
+            the industry’s lawful local debut.
+          </p>
+
+          <h5 class="bh">Post-pandemic Profits</h5>
+
+          <p class="btext">Delegate Eleanor Holmes Norton, the District’s sole representative on Capitol Hill, said D.C.
+            was denied
+            $750 million in federal assistance because D.C. was classified in the last coronavirus relief bill as a
+            territory rather than a state – resulting in a financial shortfall. The representative proposed overcoming
+            this lost opportunity by allowing D.C. to legalize and tax recreational retail cannabis sales. With the
+            shutting down of the majority of the US economy, many already financially struggling states may consider the
+            legalization of recreational cannabis as an opportunity to make the much-needed revenue for locals.</p>
+
+          <div class="r-description">
+            <p>
+              Overall rating:
+              <span class="rates"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              4.6 out of 5 based on 48 reviews
+            </p>
+            <button class="btn btn-green" data-toggle="modal" data-target="#review-modal">Submite a Review</button>
+
+          </div>
+
+          <style>
+            #review-modal .modal-body {
+              padding: 50px 100px;
+              text-align: center;
+            }
+
+            @media(max-width:767px) {
+              #review-modal .modal-body {
+                padding: 40px 30px;
+              }
+            }
+
+            #review-modal .modal-body h2 {
+              font-family: "title";
+              font-size: 32px;
+              margin: 0px 0px 0px;
+              color: #000032;
+            }
+
+            #review-modal .modal-body p {
+              font-size: 14px;
+              color: #7b7b7b;
+              margin: 0px 0 0px;
+            }
+
+            #review-modal .modal-body .choose-star {
+              margin: 20px 0 30px;
+              font-size: 20px;
+            }
+
+            #review-modal .modal-body .choose-star i {
+              color: #ddd;
+            }
+
+            #review-modal .modal-body .choose-star i.chosen {
+              color: rgb(255, 217, 0);
+            }
+
+            #review-modal .modal-body .form-control {
+              min-height: 40px;
+              border-radius: 5px;
+              font-size: 14px;
+              box-shadow: none;
+              color: #4e565c;
+              background-color: #f1f1f1;
+              border: none;
+            }
+          </style>
+
+          <!-- The Modal -->
+          <div class="modal" id="review-modal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                  <h2>Rate Us</h2>
+                  <p>Please Choose a star rating 1-5 below</p>
+                  <div class="choose-star">
+                    <span>
+                      <input type="radio" name="choose-star" id="str5" value="5">
+                      <label for="str5"></label>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                      <input type="radio" name="choose-star" id="str4" value="4">
+                      <label for="str4"></label>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                      <input type="radio" name="choose-star" id="str3" value="3">
+                      <label for="str3"></label>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                      <input type="radio" name="choose-star" id="str2" value="2">
+                      <label for="str2"></label>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span>
+                      <input type="radio" name="choose-star" id="str1" value="1">
+                      <label for="str1"></label>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                  </div>
+                  <button type="button" class="btn btn-green" data-dismiss="modal">Rate Us</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="img-center">
+            <img src="assets/images/mj-ad.png" alt="" class="img-fluid">
+          </div>
+
+          <!-- SOCIAL POD START-->
+          <div class="social-pod horizontal">
+            <div class="s-title">
+              <h3>LIKE IT?</h3>
+              <p>SHARE WITH YOUR FRIENDS</p>
+            </div>
+            <div class="share-icons">
+              <a href="#" class="fb">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="gp">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="pint">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+              <a href="#" class="twt">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="lin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <!-- SOCIAL POD END -->
+
+          <!-- COMMEBT FORM START -->
+
+          <div class="comment-form">
+            <div class="common-title">
+              <h4>One Comment</h4>
+              <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="col-12">
+                <textarea name="message" id="mesage" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-green">Post</button>
+              </div>
+            </div>
+          </div>
+          <!-- COMMENT FORM END-->
+
+          <!-- COMMENTS -->
+          <div class="comments-list">
+            <div class="single-comment">
+              <h5>Jessica Jamessays:</h5>
+              <p>Delegate Eleanor Holmes Norton, the District’s sole representative on Capitol Hill, said D.C. was
+                denied $750 million in federal assistance because D.C. was classified in the last coronavirus relief
+                bill as a territory rather than a state – resulting in a financial shortfall. </p>
+              <a href="#">Reply</a>
+            </div>
+          </div>
+          <!-- COMMENTS END -->
+
+          <!-- RELATED POSTS START -->
+          <div class="related-posts">
+            <div class="common-title">
+              <h4>Related Posts</h4>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="img-holder">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <span>2 hours ago</span>
+                    <h5>How to Celebrate 20 During a Global</h5>
+                    <p>by Kat Helgson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="img-holder">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <span>2 hours ago</span>
+                    <h5>How to Celebrate 20 During a Global</h5>
+                    <p>by Kat Helgson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="img-holder">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <span>2 hours ago</span>
+                    <h5>How to Celebrate 20 During a Global</h5>
+                    <p>by Kat Helgson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="img-holder">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <span>2 hours ago</span>
+                    <h5>How to Celebrate 20 During a Global</h5>
+                    <p>by Kat Helgson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="img-holder">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <span>2 hours ago</span>
+                    <h5>How to Celebrate 20 During a Global</h5>
+                    <p>by Kat Helgson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="img-holder">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <span>2 hours ago</span>
+                    <h5>How to Celebrate 20 During a Global</h5>
+                    <p>by Kat Helgson</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RELATED POSTS END -->
+
+          <!-- LATEST POSTS START -->
+          <div class="latest-posts">
+            <div class="common-title">
+              <h4>Lates News</h4>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="new-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="new-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="new-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LATEST POSTS END -->
+
+        </div>
+        <div class="col-lg-4">
+          <!-- SOCIAL POD START-->
+          <div class="social-pod vertical">
+            <div class="s-title">
+              <h3>LIKE IT?</h3>
+              <p>SHARE WITH YOUR FRIENDS</p>
+            </div>
+            <div class="share-icons">
+              <a href="#" class="fb">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="gp">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="pint">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+              <a href="#" class="twt">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="lin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <!-- SOCIAL POD END -->
+
+          <div class="img-center">
+            <img src="assets/images/mjd-ad.png" class="img-fluid" alt="">
+          </div>
+
+          <!-- Trending START -->
+
+          <div class="trending-posts">
+            <div class="common-title">
+              <h4>Trending</h4>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="t-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span class="badge">By Kat Halgeson</span>
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="t-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span class="badge">By Kat Halgeson</span>
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="t-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span class="badge">By Kat Halgeson</span>
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="t-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span class="badge">By Kat Halgeson</span>
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="t-post">
+                  <div class="img-holder">
+                    <a href="#">
+                      <img src="assets/images/gallery3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="text">
+                    <span class="badge">By Kat Halgeson</span>
+                    <span>April 16, 2019</span>
+                    <a href="#">
+                      <h4>Why More People Are Getting MMJ Cards Amid the Outbreak</h4>
+                    </a>
+                    <p>When states legalize medical cannabis, patients with qualifying conditions are eligible for a
+                      medical cannabis card. When these same states then... legalize recreational cannabis, it...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trending END -->
+
+
+          <div class="sticky-box">
+
+            <div class="img-center">
+              <img src="assets/images/pp-pass.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SINGLE POSTui9 END -->
+
+  <!-- Footer Start -->
+  <footer class="site-footer bg-dark-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mt-20">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+              <h4 class="text-green font-fourth muesoFont">RESOURCES</h4>
+              <ul class="footer-links mt-20">
+                <li><a href="#." class="whitecolor">MMJ Doctors</a></li>
+                <li><a href="#." class="whitecolor"> Personalized Consult </a></li>
+                <li><a href="#." class="whitecolor"> Dispensaries </a></li>
+                <li><a href="#." class="whitecolor"> Cannabis Central </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+              <h4 class="text-green font-fourth muesoFont">EDUCATION</h4>
+              <ul class="footer-links mt-20">
+                <li><a href="#." class="whitecolor"> Cannabis 101 </a></li>
+                <li><a href="#." class="whitecolor"> Conditions Treated </a></li>
+                <li><a href="#." class="whitecolor"> Patient FAQ </a></li>
+                <li><a href="#." class="whitecolor"> Doctor FAQ </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+              <h4 class="text-green font-fourth muesoFont">INVOLVEMENT</h4>
+              <ul class="footer-links mt-20">
+                <li><a href="#." class="whitecolor"> Contact </a></li>
+                <li><a href="#." class="whitecolor"> Careers </a></li>
+                <li><a href="#." class="whitecolor"> Partnerships </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-50">
+              <h4 class="text-green font-fourth muesoFont">CONTACT</h4>
+              <ul class="footer-links mt-20">
+                <li><a href="#." class="whitecolor">
+                    <i class="fas fa-phone"></i> 1-833-663-7284 </a>
+                </li>
+                <li><a href="#." class="whitecolor">
+                    <i class="fas fa-blender-phone"></i> 1-844-287-3486 </a></li>
+                <li><a href="#." class="whitecolor">
+                    <i class="far fa-envelope"></i> info@veriheal.com </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-50">
+              <div class="mobile-center">
+                <h4 class="text-green text-uppercase rbotoFont">Search by state</h4>
+                <form class="webForm mt-10  d-inline-block">
+                  <select class="custom-select rbotoFont state-select">
+                    <option selected>ALABAMA</option>
+                    <option value="1">HTML5</option>
+                    <option value="2">CSS3</option>
+                    <option value="3">SCSS</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 offset-lg-4 offset-md-4 col-md-4 col-sm-6 col-6 mt-50 d-flex justify-content-end hide-after">
+              <ul class="socials mb-30">
+                <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 offset-lg-1 col-md-4 mt-20">
+          <div class="contact-box mb-30">
+            <h4 class="text-green font-fourth text-uppercase muesoFont text-center">
+              It’s time to clear the smoke.
+            </h4>
+            <h4 class="text-green font-fourth mt-20 text-center">Sign up for our newsletter.</h4>
+            <form class="webForm border-btm-form mt-20">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="NAME">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="EMAIL">
+              </div>
+              <button type="submit" class="btn-simple peech w-100">SUBSCRIBE</button>
+              <div class="form-group mt-20 mb-0">
+                <div class="form-check text-center">
+                  <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">
+                    Terms & Conditions
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-12 text-center">
+              <ul class="socials hide-before mt-10 mb-30">
+                <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+                <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+                <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+                <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+                <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights d-flex  align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+            <div class="whitecolor">
+              <p>© 2019 All Rights Reserved <a href="#.">Veriheal Inc </a>. </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 text-right desktop-showing">
+            <ul>
+              <li><a href="#.">TERMS </a></li>
+              <li><a href="#.">PRIVACY POLICY </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <style>
+    .fixed {
+      position: fixed;
+      top: 80px;
+    }
+  </style>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+
+    var distance = $('.sticky-box').offset().top;
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= distance) {
+        $('.sticky-box').addClass('fixed');
+      } else {
+        $('.sticky-box').removeClass('fixed');
+      }
+
+      if ($('.sticky-box').offset().top + $('.sticky-box').height() >= $('.site-footer').offset().top - 10)
+        $('.sticky-box').css({
+          'position': 'absolute',
+          'bottom': 0,
+          'top': 'auto'
+        });
+
+      if ($(document).scrollTop() + $('.sticky-box').height() < $('.site-footer').offset().top)
+        $('.sticky-box').css({
+          'position': 'fixed',
+          'top': 50,
+          'bottom': 'auto'
+        }); // restore when you scroll up
+    });
+
+
+    $(document).ready(function () {
+      // Check Radio-box
+      $(".choose-star input:radio").attr("checked", false);
+
+      $('.choose-star input').click(function () {
+        $(".choose-star span").removeClass('checked');
+        $(this).parent().addClass('checked');
+      });
+      $('input:radio').change(
+        function () {
+          var usersRating = this.value;
+          alert(usersRating);
+      });
+
+    });
+  </script>
+
+
+</body>
+
+</html>

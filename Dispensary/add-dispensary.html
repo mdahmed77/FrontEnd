@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="assets/css/rate.css" />
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/select2.css" />
+  <link rel="stylesheet" href="assets/css/ionRangeSlider.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <title>Dispensary | Veriheal</title>
+</head>
+
+<body>
+
+  <!-- Header Start -->
+  <header class="site-header">
+
+    <div class="overlay"></div>
+    <div class="mobile-bar"></div>
+
+    <div class="topbar">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="d-inline-flex justify-content-end align-items-center">
+            <ul class="socials">
+              <li><a href="#."> <i class="fab fa-facebook-f"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-instagram"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-twitter"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-youtube"></i> </a></li>
+              <li><a href="#."> <i class="fab fa-linkedin-in"></i> </a></li>
+            </ul>
+            <p class="mb-0 mx-4">1-833-663-7284 (Customer Support Available 24/7)</p>
+            <a href="#">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>Veriheal Reviews</span>
+            </a>
+          </div>
+          <div class="d-inline-flex justify-content-end align-items-center">
+            <div class="btn-group drop-drown">
+              <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                  class="fas fa-caret-down"></i> Login</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#login-modal" data-toggle="modal">Patient Login</a>
+                <a class="dropdown-item" href="#login-modal" data-toggle="modal">Doctor Login</a>
+                <a class="dropdown-item" href="#login-modal" data-toggle="modal">Dispensary Login</a>
+                <a class="dropdown-item" href="#login-modal" data-toggle="modal">Partner Login</a>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container">
+
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="brand"></a>
+
+        <button class="navbar-toggler off">
+          <i class="far fa-bars"></i>
+        </button>
+
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">MMJ Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dispensaries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cannabis Central</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Personalized Consult</a></li>
+          <li class="nav-item">
+            <a href="" class="btn btn-outline">Do You Qualify?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="links-holder">
+        <a href="#">Login</a>
+        <a href="#">Contact</a>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label>Dispensary Location</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search by your location here...">
+          <div class="input-group-append">
+            <button class="btn" type="submit">
+              <img src="assets/images/target.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="links-holder">
+        <a href="#">MMJ Doctors</a>
+        <a href="#">Dispensaries</a>
+        <a href="#">Cannabis Central</a>
+        <a href="#">Personalized Consult</a>
+      </div>
+      <hr>
+      <div class="links-holder">
+        <a href="#">1-833-663-7284</a>
+        <a href="#">info@veriheal.com</a>
+      </div>
+      <hr>
+      <ul class="socials mb-30">
+        <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+        <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+        <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+        <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+        <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+      </ul>
+    </div>
+
+  </header>
+  <!-- Header Ends -->
+
+
+  <section class="my-account">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-12">
+          <div class="sidebar">
+            <a href="#">Your Dispensaries</a>
+            <a href="#" class="active">Add New Dispensaries</a>
+          </div>
+        </div>
+        <div class="col-xl-9 col-12">
+          <div class="account-panel">
+            <h3 class="panel-title">Add New Dispensary</h3>
+            <form action="">
+              <div class="add-dispensary-form">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Add Tilte</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Listing Type</label>
+                      <select name="" id="" class="form-control">
+                        <option value="" disabled selected>Select Type</option>
+                        <option value="1">Type 1</option>
+                        <option value="1">Type 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Description</label>
+                      <textarea name="" id="" rows="5" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Logo Upload</label>
+                      <div class="gimg-container">
+                        <img src="" alt="" class="d-none">
+                        <input type="file">
+                        <div class="img-trigger">
+                          <i class="fal fa-plus-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Cover Upload</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control readonly-field" placeholder="Image Path">
+                        <div class="input-group-append">
+                          <button class="btn upload-file" type="button">
+                            <img src="assets/images/upload.png" alt="">
+                          </button>
+                          <input type="file" hidden>
+                        </div>
+                      </div>
+                      <span>maximum files size 32 MB.</span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Gallary Upload</label>
+                      <div class="d-flex flex-wrap">
+                        <div class="gimg-container">
+                          <div class="removeImg"><i class="far fa-times"></i></div>
+                          <img src="assets/images/art.jpg" alt="">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                        <div class="gimg-container">
+                          <div class="removeImg"><i class="far fa-times"></i></div>
+                          <img src="assets/images/art.jpg" alt="">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                        <div class="gimg-container">
+                          <div class="removeImg"><i class="far fa-times"></i></div>
+                          <img src="assets/images/art.jpg" alt="">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                        <div class="gimg-container">
+                          <div class="removeImg"><i class="far fa-times"></i></div>
+                          <img src="assets/images/art.jpg" alt="">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                        <div class="gimg-container">
+                          <div class="removeImg"><i class="far fa-times"></i></div>
+                          <img src="assets/images/art.jpg" alt="">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                        <div class="gimg-container">
+                          <div class="removeImg"><i class="far fa-times"></i></div>
+                          <img src="assets/images/art.jpg" alt="">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                        <div class="gimg-container">
+                          <img src="" alt="" class="d-none">
+                          <input type="file">
+                          <div class="img-trigger">
+                            <i class="fal fa-plus-circle"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <input type="email" class="form-control" placeholder="Your Email Address">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Phone Number</label>
+                      <input type="number" class="form-control" placeholder="Your Phone Number">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Website</label>
+                      <input type="url" class="form-control" placeholder="Your Website Url">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Social Networks</label>
+                      <div class="row">
+                        <div class="col-md-6 col-12">
+                          <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Select Network</option>
+                            <option value="">Facebook</option>
+                            <option value="">Twitter</option>
+                            <option value="">Instagram</option>
+                            <option value="">Pinterest</option>
+                            <option value="">LinkedIn</option>
+                            <option value="">Filckr</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6 col-12 mt-3 mt-md-0">
+                          <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Select Network</option>
+                            <option value="">Facebook</option>
+                            <option value="">Twitter</option>
+                            <option value="">Instagram</option>
+                            <option value="">Pinterest</option>
+                            <option value="">LinkedIn</option>
+                            <option value="">Filckr</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6 col-12 mt-3">
+                          <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Select Network</option>
+                            <option value="">Facebook</option>
+                            <option value="">Twitter</option>
+                            <option value="">Instagram</option>
+                            <option value="">Pinterest</option>
+                            <option value="">LinkedIn</option>
+                            <option value="">Filckr</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6 col-12 mt-3">
+                          <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Select Network</option>
+                            <option value="">Facebook</option>
+                            <option value="">Twitter</option>
+                            <option value="">Instagram</option>
+                            <option value="">Pinterest</option>
+                            <option value="">LinkedIn</option>
+                            <option value="">Filckr</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Work Hours</label>
+                      <div class="d-flex justify-content-between my-3">
+                        <div class="custom-radio">
+                          <input type="radio" name="workHours" id="enterhrs">
+                          <label for="enterhrs">Enter Hours</label>
+                        </div>
+                        <div class="custom-radio">
+                          <input type="radio" name="workHours" id="open">
+                          <label for="open">Open All Day</label>
+                        </div>
+                        <div class="custom-radio">
+                          <input type="radio" name="workHours" id="close">
+                          <label for="close">Closed All Day</label>
+                        </div>
+                        <div class="custom-radio">
+                          <input type="radio" name="workHours" id="appoint">
+                          <label for="appoint">By Appointment Only</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                          <select name="" id="" class="form-control">
+                            <option value="">Select Day</option>
+                          </select>
+                          <a href="#">Add Day</a>
+                        </div>
+                        <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                          <select name="" id="" class="form-control">
+                            <option value="">Open Time</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                          <select name="" id="" class="form-control">
+                            <option value="">Close Time</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Time Zone</label>
+                      <select name="" id="" class="form-control">
+                        <option value="Choose Time Zone">Choose Time Zone</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Add Location</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                          <button class="btn upload-file" type="button">
+                            <img src="assets/images/target.png" alt="">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="map-holder mt-4">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24842.390000877258!2d-76.98746929674532!3d38.89428304436249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1618738643516!5m2!1sen!2s"
+                          allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Region</label>
+                      <select name="" id="" class="form-control">
+                        <option value="Choose">Selct an Option</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">Video URL</label>
+                      <select name="" id="" class="form-control">
+                        <option value="Choose">Selct an Option</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="">Category</label>
+                    <select name="" id="" class="form-control multiple-options" multiple>
+                      <option value="Choose">Selct an Option</option>
+                      <option value="">Category1</option>
+                      <option value="">Category2</option>
+                      <option value="">Category3</option>
+                      <option value="">Category4</option>
+                      <option value="">Category5</option>
+                      <option value="">Category6</option>
+                      <option value="">Category7</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="">Tags</label>
+                    <select name="" id="" class="form-control multiple-options" multiple>
+                      <option value="Choose">Selct an Option</option>
+                      <option value="">tags</option>
+                      <option value="">tags</option>
+                      <option value="">tags</option>
+                      <option value="">tags</option>
+                      <option value="">tags</option>
+                      <option value="">tags</option>
+                      <option value="">tags</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="allow">
+                      <label for="allow">Allow Comments</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-green mt-4">Submit and Save</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="upper-foot">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-inline-flex align-items-center">
+          <img src="assets/images/pharmacy.png" alt="">
+          <div class="text ml-4">
+            <h2>Manage Your Dispensary</h2>
+            <p>EASILY ADD YOUR BUSINESS TO OUR DIRECTORY</p>
+          </div>
+        </div>
+        <button class="btn btn-green">Contact Us to Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <footer class="vh-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-6">
+          <div class="f-info">
+            <a href="#" class="f-brand">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+            <a href="#" class="cf-link"><i class="fas fa-phone fa-rotate-90"></i> 1-833-663-7284</a>
+            <a href="#" class="cf-link"><i class="fas fa-phone fa-rotate-90"></i> 1-844-287-3486</a>
+            <a href="#" class="cf-link"><i class="fas fa-envelope"></i> info@veriheal.com</a>
+            <div class="verified-images d-flex align-items-center">
+              <img src="assets/images/bbb.png" alt="">
+              <img src="assets/images/trust.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-6">
+          <div class="quick-links">
+            <h5 class="mt-xs-20">Resources</h5>
+            <a href="#">
+              MMJ Doctors
+            </a>
+            <a href="#">
+              Personalized Consult
+            </a>
+            <a href="#">
+              Dispensaries
+            </a>
+            <a href="#">
+              Cannabis Central
+            </a>
+            <a href="#">
+              Edibles Calculator
+            </a>
+            <a href="#">
+              Pricing
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-6">
+          <div class="quick-links">
+            <h5>Education</h5>
+            <a href="#">
+              Cannabis 101
+            </a>
+            <a href="#">
+              Conditions
+            </a>
+            <a href="#">
+              Patient FAQ
+            </a>
+            <a href="#">
+              Doctor FAQ
+            </a>
+            <a href="#">
+              Scholarship
+            </a>
+            <a href="#">
+              Meet The Experts
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-6">
+          <div class="quick-links">
+            <h5>Involvement</h5>
+            <a href="#">
+              About Us
+            </a>
+            <a href="#">
+              Contact
+            </a>
+            <a href="#">
+              Careers
+            </a>
+            <a href="#">
+              Partnerships
+            </a>
+            <a href="#">
+              Press
+            </a>
+            <a href="#">
+              Referral Program
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="vh-subscription">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-12">
+          <div class="field">
+            <h6>It’s Time to create the smoke.</h6>
+            <p>Signup for our newsletter.</p>
+            <input type="text" class="form-control" placeholder="Email Address">
+            <button class="btn btn-green">Sign Me Up</button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <ul class="socials mb-30">
+            <li><a href="#." class="social-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+            <li><a href="#." class="social-insta"> <i class="fab fa-instagram"></i> </a></li>
+            <li><a href="#." class="social-twitter"> <i class="fab fa-twitter"></i> </a></li>
+            <li><a href="#." class="social-youtube"> <i class="fab fa-youtube"></i> </a></li>
+            <li><a href="#." class="social-linkedin"> <i class="fab fa-linkedin-in"></i> </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-12 align-self-start">
+          <div class="field">
+            <h6>Search by State</h6>
+            <p>Find Veriheal products near you</p>
+            <select class="form-control" name="state" id="state">
+              <option value="ss" selected disabled>Select State</option>
+              <option value="state">State Name</option>
+              <option value="state">State Name</option>
+              <option value="state">State Name</option>
+              <option value="state">State Name</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="vh-copyright">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <p>All Rights Reserved Veriheal Inc. © 2020</p>
+        <div class="terms-policy-links">
+          <a href="#">TERMS</a>
+          <a href="#">PRIVACY POLICY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer END -->
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/rate.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/ionRangeSlider.js"></script>
+  <script src="assets/js/select2.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.multiple-options').select2();
+    });
+  </script>
+
+</body>
+
+</html>

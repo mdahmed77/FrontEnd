@@ -1,0 +1,218 @@
+.gift-banner
+{
+    margin-top:60px;
+    background-image:url('../images/gc-banner.png');
+    padding:230px 0px;
+    background-repeat: no-repeat;
+    background-position:0px 100%;
+    background-size: cover;
+    background-color:#ededed;
+}
+.gift-banner .text img
+{
+    width:auto;
+}
+.gift-banner .text h1
+{
+    text-transform: uppercase;
+    font-family: 'Museo_Slab';
+    font-size: 30px;
+    color:#51beb0;
+    margin:10px 0px;
+    
+}
+.gift-banner .text h1 .darked
+{
+    color:#060636;
+    border-bottom:1px solid #060636;
+    position:relative;
+}
+.gift-banner .text h1 .darked p
+{
+    font-family: boli;
+    text-transform: lowercase;
+    color:#e40f1e;
+    font-size:22px;
+    position:absolute;
+    top:100%;
+    right:0px;
+    margin-top:10px;
+    white-space: nowrap;
+}
+
+@media(max-width:991px)
+{
+    .gift-banner
+    {
+        background-position: 36% 100%;
+        padding:100px 0px;
+    }
+    .gift-banner .text 
+    {
+        margin-bottom:50px;
+        text-align:center;
+    }
+    .gift-banner img
+    {
+        max-width: 320px;
+        display: block;
+        margin:0 auto;
+        padding-right: 20px;
+    } 
+    .gift-banner .text img
+    {
+        display: block;
+        margin:0 auto;
+    } 
+    .gift-banner .text h1
+    {
+        font-size:24px;
+    }
+    .gift-banner .text h1 span p{
+        font-size:18px !important;
+    }
+}
+.gift-banner .text .btn-gradiant
+{
+    margin-top:50px;
+    margin-bottom:30px;
+}
+.egift-content h1
+{
+    color:#060636;
+    font-family: 'Museo_Slab';
+    font-size: 42px;
+    margin:0px 0px 25px;
+}
+.egift-content p
+{
+    color:#79797b;
+    margin:0px 0px 25px;
+    font-size: 18px;
+    font-family: 'MyriadPro-Regular';
+}
+.egift-content .btn-gradiant
+{
+    margin-bottom:30px;
+}
+.egift-content img
+{
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+.egift-content
+{
+    background-color:#ededed;
+    padding:0px 0px 100px;
+}
+.gc-faqs
+{
+    background-color:#ededed;
+    padding:0px 0px 100px;
+}
+.gc-faqs h2
+{
+    color:#060636;
+    font-family: 'Museo_Slab';
+    font-size: 42px;
+    text-align: center;
+    margin:0px 0px 25px;
+}
+.gc-faqs h2 ~ p
+{
+    text-align:center;
+    color:#79797b;
+    margin:10px 0px 60px;
+    font-size: 18px;
+    font-family: 'MyriadPro-Regular';
+}
+.gc-faqs .open-card
+{
+    box-shadow:0px 0px 30px 0px rgba(0,0,0,0.1);
+    opacity: 1 !important;
+}
+.gc-faqs .card ~ .card
+{
+    margin-top:20px;
+}
+.gc-faqs .card
+{
+    background-color:#fff;
+    border-radius:7px;
+    overflow: hidden;
+    border:none;
+    transition:.1s linear;
+    opacity: .65;
+}
+.gc-faqs .card .card-header
+{
+    border:none;
+    background-color:transparent;
+    font-size: 22px;
+    font-family: 'Museo_Slab';
+    color:#060636;
+    padding:20px 30px;
+}
+.gc-faqs .card .card-body
+{
+    border:none;
+    font-family: 'MyriadPro-Regular';
+    color:#79797b;
+    font-size: 16px;
+    padding:0px 30px 30px;
+}
+
+
+.btn-gradiant {
+    font-size: 18px;
+    font-family: 'Roboto-Bold';
+    display: inline-block;
+    width: auto;
+    padding: 12px 35px;
+    background-image: linear-gradient(to right, #299b8c, #237d5f);
+    border-radius: 50px;
+    color: #fff !important;
+    cursor: pointer;
+ }
+
+ .btn-gradiant:focus {
+    background-image: linear-gradient(to right, #299b8c, #237d5f);
+    color: #fff;
+    outline: none !important;
+    box-shadow: none !important;
+ }
+ .gc-form 
+ {
+    text-align: center;
+    background-color:#ededed;
+    padding:50px 0px 100px;
+}
+.gc-form .btn-gradiant
+{
+    min-width: 300px;
+}
+.gc-form h2
+{
+    color:#060636;
+    font-family: 'Museo_Slab';
+    font-size: 40px;
+    text-align: center;
+    margin:0px 0px 50px;
+}
+.gc-form .form-control
+{
+    min-height: 54px;
+    background-color: #fff;
+    color:#060636;
+    margin-bottom:10px;
+    width: 100%;
+    opacity:.65;
+}
+.gc-form .form-control:focus
+{
+    opacity:1;
+}
+.gc-form .btn
+{
+    margin-top:40px;
+}

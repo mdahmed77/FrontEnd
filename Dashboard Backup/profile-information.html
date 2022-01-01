@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard | Veriheal</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/datepicker.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+  
+  </head>
+  <body>
+
+    <div class="overlay"></div>
+    <!-- Main -->
+    <div class="vh-main">      
+      <div class="vh-flex">
+        
+        <!-- Side Bar Start -->
+      <div class="vh-sidebar">
+        <div class="vh-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <button class="btn btn-close hide-before"><i class="fal fa-times"></i></button>
+        </div>
+        <div class="left-navs">
+          <ul>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/home.png" alt=""> Dashboard <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="opened-nav">
+              <a href="#"><img src="assets/images/book-appointment.png" alt=""> Medical Marijuana Card</a>
+              <ul>
+                <li class="active">
+                  <a href="#">Information <i class="far fa-arrow-right"></i></a>
+                </li>
+                <li>
+                  <a href="#">Book Appintment <i class="far fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/consult.png" alt=""> Personalized Consult <i
+                  class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/my-appointments.png" alt=""> My Appointment <i class="far fa-arrow-right"></i></a>
+            </li>
+            <li class="closed-nav">
+              <a href="#"><img src="assets/images/edit.png" alt=""> Edit Profile <i class="far fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Veriheal.com</p>
+        </div>
+      </div>
+      <!-- Side Bar End -->
+        
+        <!-- Right Content Start -->
+
+        <div class="vh-rightpanel">
+
+          <!-- Header Start -->
+          <div class="header">
+            <!-- mobile menu button -->
+            <div class="menu-toggler hide-before">
+              <button class="btn btn-toggle"><i class="fal fa-bars"></i></button>
+            </div>
+            <div class="help hide-after">
+              <p><i class="far fa-question-circle"></i> Need a Help? &nbsp;&nbsp; Call Us Now (1-833-663-7284)</p>
+            </div>
+            <!-- Mobile Logo (Will show only in mobile) -->
+            <div class="brand hide-before">
+              <a href="#">
+                <img src="assets/images/mobile-logo.png" alt="">
+              </a>
+            </div>
+
+            <div class="user">
+              <ul>
+                <!-- Notification -->
+                 <li class="notify hide-after">
+                <a href="#">
+                  <span>2</span>
+                  <i class="far fa-bell"></i>
+                </a>
+                <div class="drop-menu">
+                  <ul>
+                    <li><a href="#">Update Your Account</a></li>
+                    <li><a href="#">Account Change Unread</a></li>
+                    <li><a href="#" class="read-already">Read Notification 3</a></li>
+                    <li><a href="#" class="read-already">Read Notification 4</a></li>
+                  </ul>
+                </div>
+              </li>
+                <!-- User Avtive -->
+                <li class="person">
+                  <div class="text hide-after">
+                    <p>John Smith</p>
+                    <a href="#">Logout</a>
+                  </div>
+                  <div class="icon-holder">
+                    <div class="badge hide-before">2</div>
+                    <img src="assets/images/active-user-icon.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- Header End -->
+				 
+					<!-- wrapper -->
+					<div class="vh-wrapper">
+            <p class="hide-before help-text">Need a Help? &nbsp; Call Us Now (1-833-663-7284)</p>
+						<!-- Steps Head Start -->
+						<div class="steps-header">
+							<a href="#" class="back-link disabled"><i class="far fa-arrow-left"></i> <span>Back to Home</span></a>
+							<div class="wizard-title">
+								<h1>Profile Information</h1>
+								<ul>
+									<li class="active-step">
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+									<li>
+										<div></div>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="next-link"><span>Medical History </span><i class="far fa-arrow-right"></i></a>
+						</div>
+						<!-- Steps Head End -->
+						
+						<!--Active Step  -->
+						<div class="active-wizard">
+              <div class="row">
+                <div class="col-12">
+                  <!-- Gender Radio Checks -->
+                  <div class="toggle-checks">
+                    <div class="check-box">
+                      <input type="radio" name="gender-check" id="male" checked/>
+                      <label for="male">
+                        <img src="assets/images/avatar.png" alt="">
+                        <p>Male</p>
+                      </label>
+                    </div>
+                    <div class="check-box">
+                      <input type="radio" name="gender-check" id="female" />
+                      <label for="female">
+                        <img src="assets/images/avatar-female.png" alt="">
+                        <p>Female</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="text" class="form-control" placeholder="Phone (123) 456 7890">
+                  <input type="text" class="form-control" placeholder="City">
+                  <input type="text" class="form-control" placeholder="State you live in">
+                  <input type="text" class="form-control" placeholder="Zip Code">
+                  <input type="text" class="form-control" placeholder="Time Zone">
+                  <textarea name="goals" id="goals" rows="4" class="form-control" placeholder="Goal (Summary)"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <div class="accoridians" id="accordion">
+                    <div class="card">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <div class="card-header">
+                          How do you want to feel? <img src="assets/images/verified.png" alt=""> <i
+                            class="far fa-plus"></i>
+                        </div>
+                      </a>
+                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                          <p class="note">
+                            <i class="fas fa-exclamation-triangle"></i> Must check atleast one checkbox
+                          </p>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="input-check">
+                                <input type="checkbox" id="hb">
+                                <label for="hb"> Happy/Bliss</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="slp" checked>
+                                <label for="slp"> Sleepy</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="ex">
+                                <label for="ex"> Excited</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="foc" checked>
+                                <label for="foc"> Focused</label>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="input-check">
+                                <input type="checkbox" id="rpf">
+                                <label for="rpf"> Relief/Pain-free</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="rxd">
+                                <label for="rxd"> Relaxed</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="mc">
+                                <label for="mc"> Mellow/Chill</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="ce">
+                                <label for="ce"> Creative/Elevated</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        <div class="card-header">
+                          What products are you intereseted in? <img src="assets/images/verified.png" alt=""> <i
+                            class="far fa-plus"></i>
+                        </div>
+                      </a>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          <p class="note">
+                            <i class="fas fa-exclamation-triangle"></i> Must check atleast one checkbox
+                          </p>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="input-check">
+                                <input type="checkbox" id="flw">
+                                <label for="flw"> Flower</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="caps" checked>
+                                <label for="caps"> Capsules</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="tincs">
+                                <label for="tincs"> Tinctures</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="topicals" checked>
+                                <label for="topicals"> Topicals</label>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="input-check">
+                                <input type="checkbox" id="oil">
+                                <label for="oil"> Oils</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="vap">
+                                <label for="vap"> Vaporizer</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="rdb">
+                                <label for="edb"> Edibles</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="ce">
+                                <label for="cbd"> CBD</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                        <div class="card-header">
+                          Cannabis Usage <img src="assets/images/verified.png" alt=""> <i class="far fa-plus"></i>
+                        </div>
+                      </a>
+                      <div id="collapseFive" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          <p class="note">
+                            <i class="fas fa-exclamation-triangle"></i> Must check atleast one checkbox
+                          </p>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="input-check">
+                                <input type="checkbox" id="nevercbs">
+                                <label for="nevercbs"> I've used cannabis before</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="currentcbs" checked>
+                                <label for="currentcbs"> I currently use cannabis</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="nda">
+                                <label for="nda"> I have a valid or expired medical marijuana recommendation</label>
+                              </div>
+                              <div class="input-check">
+                                <input type="checkbox" id="ncbs">
+                                <label for="ncbs"> I have never used cannabis before</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-20">
+                <div class="col-6 text-left">
+                  <a href="#" class="btn btn-default btn-back">Back</a>
+                </div>
+                <div class="col-6 text-right">
+                  <a href="#" class="btn btn-default btn-next">Next</a>
+                </div>
+              </div>
+						</div>
+						<!--Active Step END  -->
+
+					</div>
+
+          <div class="c-right hide-before">
+            <p>&copy; Veriheal.com</p>
+          </div>
+
+        </div>
+
+        <!-- Right Content ENd -->
+
+      </div>
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/progress.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  
+  </body>
+</html>

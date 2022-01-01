@@ -1,0 +1,86 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x : hidden;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+a
+{
+    transition:.1s linear;
+    text-decoration: none !important;
+}
+button, a, input, select
+{
+    outline: none !important;
+}
+
+footer
+{
+    background:#2B2B2B;
+}
+
+@media(max-width:991px) {
+    .hide-after {
+        display: none !important;
+    }
+}
+
+@media(min-width:992px) {
+    .hide-before {
+        display: none !important;
+    }
+}
+
+.gutter-15
+{
+    margin-left:-7px;
+    margin-right:-7px;
+    > div
+    {
+        padding-left:7px;
+        padding-right:7px;
+    }
+}
+
+.badge
+{
+    border-radius: 0px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.4000000059604645px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 20px;
+    padding:0px 7px;
+    margin-right:5px;
+    color:$atext;
+    img
+    {
+        width: auto;
+        margin-right: 5px;
+    }
+}
+.badge-success
+{
+    background: #E7F6EF;
+}
+.badge-danger
+{
+    background:#ff60401c; 
+}
+.badge-secondary
+{
+    background-color:#66666612;
+}

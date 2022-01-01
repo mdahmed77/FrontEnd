@@ -1,0 +1,120 @@
+.happy-intro
+{
+    position: relative;
+    background-image: none !important;
+    background-color: #d2efeb !important;
+    max-height: 690px !important;
+}
+
+.happy-intro::before
+{
+    background-color:#d2efeb !important;
+}
+.happy-intro .rating
+{
+    background-image: none;
+    padding:80px 15px 60px !important;
+    background-color:#d2efeb !important;
+    font-size: 18px;
+}
+
+.happy-intro .rating h1
+{
+    text-align:center;
+}
+
+.happy-intro .rating .client
+{
+    width:250px !important;
+    border-radius: 10px !important;
+    margin:0 auto;
+}
+.happy-intro .rating .MuseoSlabtext
+{
+    color:#000032 !important;
+    font-size:18px;
+    margin:0px;
+}
+.happy-intro .rating .star-rating
+{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.happy-intro .rating .f-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+.happy-intro .rating .f-text h5
+{
+    font-size: 24px;
+    color:#006495;
+    margin:-5px 0px 0px;
+    font-family: 'Roboto-Bold';
+}
+.happy-intro .rating .client ~ .client
+{
+    margin-top:20px !important;
+}
+
+.happy-intro .orange-box
+{
+    background-image: url('../images/wave-bg.png') !important;
+    padding: 230px 30px 250px 10vw;
+}
+
+.happy-intro .orange-box .text
+{
+    max-width:421px;
+    width: 100%;
+    margin:0 auto;
+}
+@media(min-width:991px)
+{
+    .happy-intro .orange-box
+    {
+        min-height: 760px;
+    }
+}
+.happy-intro .old-women
+{
+    position: absolute;
+    z-index: 70;
+    width:290px;
+    height: auto;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+@media(max-width:1199px)
+{
+    .happy-intro .old-women
+    {
+        width: 235px;
+    }
+}
+@media(max-width:991px)
+{
+    .happy-intro .old-women
+    {
+        display: none !important;
+    }
+    .happy-intro
+    {
+        max-height: initial !important;
+    }
+    .happy-intro .orange-box
+    {
+        background-size:cover !important;
+        background-position:center !important;
+        padding:100px 30px !important;
+    }
+    .happy-intro .orange-box .text h1,
+    .happy-intro .orange-box .text p
+    {
+        text-shadow: none !important;
+    }
+}

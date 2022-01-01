@@ -1,0 +1,51 @@
+@import "reset.scss";
+
+.right-buttons
+{
+    position: fixed;
+    z-index: 1070;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    a
+    {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 5px 0 0 5px;
+        background-color: $red;
+        color:#fff;
+        opacity: .75;
+        transition: .1s linear;
+        .icon
+        {
+            font-size: 18px;
+            height: 40px;
+            width: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text
+        {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: ob;
+            padding:2px 0px 0 0;
+            width: 0px;
+            overflow: hidden;
+            white-space: nowrap;
+            transition:.1s linear;
+        }
+        &:hover
+        {
+            opacity: 1;
+            .text
+            {
+                padding:2px 12px 0 0;
+                width: 79px;
+            }
+        }
+    }
+}
+
+@import "header.scss";
